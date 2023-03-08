@@ -40,3 +40,5 @@ vignettes/*.pdf
 
 # github connection
 github.R
+
+/.quarto/
