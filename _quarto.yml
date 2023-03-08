@@ -2,14 +2,21 @@ project:
   type: website
 
 website:
-  navbar:
-    background: primary
+  sidebar:
+    style: "docked"
     search: true
-    left:
-      - text: "Home"
-        file: index.qmd
-      - for_students.qmd
-      - about.qmd 
+    contents:
+      - section: "General Information"
+        contents:
+          - about.qmd 
+          - index.qmd
+          - coding_basics_for_this_course.qmd
+      - section: "For Students"
+        contents:
+          - for_students.qmd
+      - section: "For Instructors"
+        contents:
+         - for_instructors.qmd 
 format:
   html:
     theme: cosmo
