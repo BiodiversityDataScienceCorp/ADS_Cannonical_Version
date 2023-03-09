@@ -1,0 +1,39 @@
+**2023 Occurrence Map Instructions**
+
+\
+
+Using the species your group decided on, each person needs to turn in a .R file in which you
+
+1.  Obtain data
+
+    1.  From  GBIF
+
+    2.  Set limit = 4000
+
+2.  Clean data 
+
+    1.  Remove duplicates
+
+    2.  Remove where lat/long are NA
+
+    3.  Remove points where occurrence status is not present
+
+    4.  places that are not logical... be sure to justify with comments what points you determined were not logical ie. this species is endemic to Oregon so I can remove points in Australia
+
+3.  Create a map of the occurrence points
+
+    1.  Axes labels
+
+    2.  Borders of countries and states
+
+    3.  Descriptive title
+
+\
+
+Using comments, write a sentence or two describing what the occurrence points are. 
+
+\
+
+You will have class time on Tuesday Feb 14 to work on this. 
+
+\

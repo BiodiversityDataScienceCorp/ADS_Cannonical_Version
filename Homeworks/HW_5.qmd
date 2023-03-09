@@ -1,0 +1,50 @@
+**Natural History Information Instructions**
+
+\
+
+Fill in the following subsections for your group\'s chosen species. Each person will submit their own work. Later when making the final document for USFWS, you will aggregate and edit everyone\'s information into one document. This homework should be **a minimum of 1 page single spaced.** (Note - interpret \"pp\" below as paragraphs, not pages for your answers to this.)
+
+\
+
+See SSA for CactusFerruginousPygmyOwl <https://ecos.fws.gov/ServCat/DownloadFile/211651> for what this looks like in the final report. We are aiming for your sections to be included in the document, but not provide all of the content (USFWS needs to make a lot of content!). 
+
+\
+
+**Taxonomy:** (1-2 pp) What is this species referred to in the literature and how confident are we that it isn\'t a different species? E.g. species name, taxonomic affiliations, systematic relationships (ie close relatives), species status (ie how certain are we about the taxonomy)
+
+\
+
+**Key Identification Characteristics:** (1 pp) what characteristics do you use to id this species
+
+\
+
+**Habitats:** (1-2 pp) What kinds of habitats does your species affiliate with (ie riparian, alpine, thorn scrub, etc)
+
+\
+
+**Historic Range:** (1 pp) Where is the species thought to have occurred in the last 50 years 9e.g. Western North America, Central North America, Northern Florida etc, etc)
+
+\
+
+**References:** Please reference your information as best you can including primary sources whenever possible. Again this makes it easier for USFWS to make their final SSA report.
+
+\
+
+**For those of you looking for extra challenges in this exercise**
+
+\
+
+Professional Challenge: Add another section on key life history and/or population movement components you think will be useful for determining status of this species under the 3 Rs (Resiliency, Representation, and Redundancy)
+
+\
+
+Coding Challenge:Make your informational interview summary as a markdown file ready to be published on GitPages
+
+\
+\
+
+Pp = paragraph 
+
+	
+
+\

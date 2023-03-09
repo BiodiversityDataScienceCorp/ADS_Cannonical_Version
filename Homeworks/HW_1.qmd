@@ -1,0 +1,70 @@
+**HW 1: Data Science Tools Instructions**
+
+Purpose: The goal of this homework is to introduce you to the data science tools we will use in this class. We do not expect you to come into this class with this knowledge. Some of these tools will likely be new to everyone.
+
+Background: Data Science is an ever changing assortment of tools and approaches. In this course, we will use a variety of them to create a report on a species that is being evaluated for endangered species status. You will learn the natural history of a species and use data to create maps related to where the species has been found and where it could be found given the same environmental conditions using models. You will then share your report with the world on the internet using some of the tools listed below.  
+
+\
+This homework will introduce you to/ remind you of the following programs that are commonly used in ecological research to create projects like the one you will do this semester. All of these are essential tools in ecological and conservation research, for now. 
+
+-   **R Language for Programming**
+
+-   **R packages**
+
+-   **R Studio**
+
+-   **Git**
+
+-   **GitHub**
+
+-   **R Markdown**
+
+-   **Zenodo** 
+
+To Do: In a couple paragraphs for each tool (\~2-4 page single-spaced total), explain what each of the above tools is, and what it is primarily used for in data science. Of course you may Google these, but describe them in your own words. For each of these tools write a sentence or two about how they might be used in a project applied to conservation, like the one you will create this semester.
+
+\
+
+Feel free to use headers and subheaders to organize your work. For example, 
+
+**R Programming Language** (<https://www.r-project.org>)
+
+What is R? 
+
+R is an open source language and environment for statistical computing and graphics derived from the S language and environment developed in Bell Laboratories (AT&T) to turn ideas into software, quickly, and faithfully. Etc, etc, etc\
+
+Why use R for statistical computing and graphics?
+
+R provides a transparent and reproducible way to analyze and visualize data \
+
+How and why will I use R in my research project / life ?
+
+For everything! All the R. I use it to calculate my taxes and weekly budget
+
+\
+
+Finally, please create a [GitHub account](https://github.com/signup).
+
+\
+
+**For those of you looking for extra challenges in this exercise**
+
+\
+
+Professional Challenge: Identify 2 new skills from this exercise that you would now like in your course personal goals
+
+\
+
+Coding Challenge: Create this assignment in markdown 
+
+\
+
+**To Complete this Homework:**
+
+-   **L&C students upload your document in Moodle**
+
+-   **UA students upload your document into D2L**
+
+-   **Update the google sheet below with your GitHub and Slack Username <https://docs.google.com/spreadsheets/d/1ooLI9HfDxCiuGlLvv8L5sxLxbeWj6d5IGIapKAPUdA4/edit?usp=sharing>**
+
+-   If you have not joined Slack (in class activity), please do so [here](https://join.slack.com/t/adsmonarchcon-cgp8626/shared_invite/zt-1nducmn51-3vGovy2GVZoYK~t5JsMUKQ).

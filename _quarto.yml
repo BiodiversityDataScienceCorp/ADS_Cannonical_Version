@@ -20,6 +20,15 @@ website:
         - occ_map.qmd
         - sdm_current.qmd
         - sdm_future_qmd
+      - section: "Homeworks"
+        contents:
+        - HW_1.qmd
+        - HW_2_pt1.qmd
+        - HW_2_pt2.qmd
+        - HW_3.qmd
+        - HW_4.qmd
+        - HW_5.qmd
+        - HW_6.qmd
 format:
   html:
     theme: cosmo

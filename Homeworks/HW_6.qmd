@@ -1,0 +1,47 @@
+**Species Distribution Modeling Instructions**
+
+\
+
+Using the code from class, create 
+
+1.  A current species distribution of your focal SSA species
+
+2.  A future species distribution (70 years from now) of your focal SSA species 
+
+\
+
+Each data visualization of the model needs to include
+
+-   A descriptive title
+
+-   Axes labels
+
+-   Clear legend 
+
+-   Country and state borders
+
+\
+
+Each person needs to turn in
+
+1.  An image of your current species distribution of your focal species
+
+2.  An image of your future species distribution (70 years from now) of your focal species
+
+3.  The .R file you used to create those images
+
+\
+\
+
+**For those of you looking for extra challenges in this exercise**
+
+\
+
+Professional Challenge: Add a paragraph explaining this figure similar to what you would see in an SSA publication. E.g. **Figure 2:** Maxent Species Distribution Model of the Foothill Yellow-Legged Frog (Rana boylii). This species is mostly detected on coastal California however suitable habitat extends into the central valley. Occurrence data was downloaded from GBIF on 02/03/2023 (doi:) and available on GitHub (link).  
+
+\
+
+Coding Challenge: Transfer your .R  to a .md with instructions ready to be published on GitPages for others to learn how you did your model.
+
+\
+\
