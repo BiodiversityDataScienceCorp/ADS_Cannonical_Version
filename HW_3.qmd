@@ -1,0 +1,106 @@
+# HW 3: Practice with GitHub
+
+**Note: It is critical you do these steps in the exact order outlined below.**
+
+\
+
+**Getting your group repository onto your posit cloud**
+
+\
+
+1.  Log in to your personal GitHub account
+
+2.  Navigate to our class' organization, [BiodiversityDataScienceCorp](https://github.com/orgs/BiodiversityDataScienceCorp/repositories)
+
+3.  Find the repository that has your group name on it
+
+4.  Click the green code button and copy the link there
+
+5.  Log in to your posit cloud account
+
+6.  Create a new project: new project from Git Repository
+
+7.  Paste the link you copied from GitHub when prompted
+
+\
+
+You now should have a project in posit.cloud that is your local copy of your group's repository. This project should already be populated with a gitignore, license, and README file. There should be a Git tab in the top right corner of R studio.
+
+\
+
+**Setting up your group repository for commits/pushes/pulls**
+
+1.  In this new project in rstudio cloud, add a line in the gitignore file that says "github.R"
+
+2.  Create a new .R file and name it "github.R"
+
+3.  Copy the contents from the github.R file you have in the project you created during class
+
+4.  Paste them to the new github.R file in your group repository. Save it. Highlight all of the code and run it. 
+
+\
+
+You now should be able to commit/push/pull to/from GitHub to work collaboratively with your group. 
+
+\
+
+**To work collaboratively with GitHub / R studio, follow this flow**
+
+**\*Only one person edits the same file at a time.** If two people edit the same document simultaneously, you will have to do extra work to ensure all of your saves are committed properly. 
+
+**\*Multiple people can work at once on different files**. For example, Person A can edit your README while Person B edits your gitignore. 
+
+1.  Person A: Write some code in a file and click save when you are done
+
+2.  Person A: Commit and push the code. Leave a detailed commit message for your future self if you ever need to go back to a previous version. Be sure to push. 
+
+3.  Person B: Pull first!!! 
+
+4.  Person B: Edit the file. Save. Commit. Push. 
+
+5.  Person A: Pull. Etc. You now have a rhythm for working on the same file. 
+
+\
+
+**Setting up your repository's README file**
+
+\
+
+READMEs are written in markdown. See [this markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/) for a guide on how to create headings, change the font, etc. 
+
+\
+
+Your README file needs to contain, at the least: 
+
+1.  Your group members' names
+
+2.  Your species
+
+3.  Have each group member write one paragraph about their favorite species (and commit/push/pull themselves). Remember to take turns. 
+
+\
+
+**Tips**
+
+1.  Always save, commit, and push after working on a file
+
+2.  Always pull before working on a file
+
+3.  Give your commit messages descriptions that would help you if you needed to "undo" to go back to a previous version
+
+4.  Communicate with your group when you plan to work on a file so two people are not working on the same file at once
+
+\
+\
+
+**For those of you looking for extra challenges in this exercise**
+
+\
+
+Professional Challenge:Add your github information to your resume
+
+\
+
+Coding Challenge:  Add a photo of your species to your README file. You'll need to upload the photo to your repo, then you can use markdown syntax to call the photo. 
+
+\

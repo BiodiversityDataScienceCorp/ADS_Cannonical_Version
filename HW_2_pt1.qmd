@@ -1,0 +1,68 @@
+# HW 2 (Part 1): Informational Interview
+
+**HW 2 (Part 1): Informational Interview Instructions and Hints**
+
+\
+
+Instructions: Familiarize yourself with informational interviews by googling / [chatGPTing](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html) 'informational interview'. Suggested below is a youtube video to get you started too. During class on January 24, you will ask the USFWS folks the questions below in a small group setting. You will then summarize your perception of the interview, reflecting on what you learned with your personal course goals, and share with the others. 
+
+\
+
+Youtube Description of Informational Interviews: <https://www.youtube.com/watch?v=m6Pa4ZB4mvQ>
+
+\
+
+Potential Informational Interview Questions:
+
+\
+
+1.  What did your journey look like to get to where you are today?
+
+2.  What is your day-to-day life like at work?
+
+3.  What do you enjoy most about your work?
+
+4.  What is your biggest challenge at your job?
+
+5.  What would you like to be spending more time doing at your job?
+
+6.  What skill sets are most important in your role?
+
+7.  What professional trends or changes should I be aware of? What didn't you know prior to your position that you wish someone had told you?
+
+8.  If you were in my shoes, what people would you be talking with?
+
+9.  Can you connect me with 3 "nouns" (people/places/or things) I should be looking into?
+
+10. Students: come up with your own questions. What do you want to know from this expert? 
+
+\
+
+Summarize : Reflect on the informational interview you conducted. In 1 - 2 pages, please answer
+
+1.  Who did you interview? 
+
+2.  What was your interviewee's path to their current position?
+
+3.  What is their current position like (activities, challenges, skills, etc)? Do you think you would enjoy their job? Why or why not?
+
+4.  What was one thing that surprised you about your informational interview?
+
+5.  What "nouns" (Q8) did your interviewee connect you with? Are you interested in them? Have you followed up with them? 
+
+6.  Have you ever conducted an informational interview? How was this process for you in general? 
+
+\
+\
+
+**For those of you looking for extra challenges in this exercise**
+
+\
+
+Professional Challenge: Do informational interviews with 2 other people the USFWS folks suggest you chat with next
+
+\
+
+Coding Challenge: Make your informational interview summary as a markdown file
+
+\

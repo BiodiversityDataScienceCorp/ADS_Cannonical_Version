@@ -1,0 +1,16 @@
+# Occurrence Map
+
+
+### one more column to check of your data: is occurence status == PRESENT ?
+
+# set x and y limits
+
+xmax \<- max(cleanRana$longitude) xmin <- min(cleanRana$longitude) ymax \<- max(cleanRana$latitude) ymin <- min(cleanRana$latitude)
+
+# re-do map code with cleaned data and x/y limits
+
+ggplot()+ geom_polygon(data=wrld, mapping=aes(x=long, y=lat, group=group), fill="grey75", colour="grey60")+ geom_point(data=cleanRana, mapping=aes(x=longitude, y=latitude), show.legend=FALSE)+ labs(title="Species occurrences of R. draytonii from 1938 - 2023", x="longitude", y="latitude") + coord_fixed(xlim = c(xmin, xmax), ylim = c(ymin, ymax)) + scale_size_area() + borders("state")
+
+# make it better by adding a date range in the title
+
+range(na.omit(as.Date(cleanRana\$dateIdentified)))

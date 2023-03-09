@@ -8,32 +8,33 @@ website:
     contents:
       - section: "General Information"
         contents:
-          - about.qmd 
-          - index.qmd
+          - href: about.qmd 
+          - href: index.qmd
       - section: "Course Details"
         contents:
-          - for_students.qmd
+          - href: for_students.qmd
+          - href: reading_schedule.qmd 
       - section: "Lessons"
         contents:
-        - coding_basics_for_this_course.qmd
-        - data_aquisition_cleaning.qmd
-        - occ_map.qmd
-        - sdm_current.qmd
-        - sdm_future_qmd
+        - href: coding_basics_for_this_course.qmd
+        - href: data_aquisition_cleaning.qmd
+        - href: occ_map.qmd
+        - href: sdm_current.qmd
+        - href: sdm_future_qmd
       - section: "Homeworks"
         contents:
-        - HW_1.qmd
-        - HW_2_pt1.qmd
-        - HW_2_pt2.qmd
-        - HW_3.qmd
-        - HW_4.qmd
-        - HW_5.qmd
-        - HW_6.qmd
+        - href: HW_1.qmd
+        - href: HW_2_pt1.qmd
+        - href: HW_2_pt2.qmd
+        - href: HW_3.qmd
+        - href: HW_4.qmd
+        - href: HW_5.qmd
+        - href: HW_6.qmd
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
 
