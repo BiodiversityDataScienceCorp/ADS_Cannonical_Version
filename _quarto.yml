@@ -10,13 +10,16 @@ website:
         contents:
           - about.qmd 
           - index.qmd
-          - coding_basics_for_this_course.qmd
-      - section: "For Students"
+      - section: "Course Details"
         contents:
           - for_students.qmd
-      - section: "For Instructors"
+      - section: "Lessons"
         contents:
-         - for_instructors.qmd 
+        - coding_basics_for_this_course.qmd
+        - data_aquisition_cleaning.qmd
+        - occ_map.qmd
+        - sdm_current.qmd
+        - sdm_future_qmd
 format:
   html:
     theme: cosmo
