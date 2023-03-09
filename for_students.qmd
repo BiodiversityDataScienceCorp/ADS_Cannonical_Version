@@ -1,3 +1,19 @@
 ---
 title: "For Students"
 ---
+
+Class Schedule
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+|      |      |      |
+|      |      |      |
+|      |      |      |
+
+Reading Schedule
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+|      |      |      |
+|      |      |      |
+|      |      |      |

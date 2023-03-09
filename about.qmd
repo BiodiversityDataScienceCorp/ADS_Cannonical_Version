@@ -2,8 +2,9 @@
 title: "About"
 ---
 
-About this site
+# Course Aims
 
-```{r}
-1 + 1
-```
+# Target Audience
+
+# Course Pre-requisites
+
