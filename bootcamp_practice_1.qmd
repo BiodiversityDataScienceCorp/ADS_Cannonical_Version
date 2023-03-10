@@ -1,0 +1,114 @@
+# Bootcamp Practices
+
+## Bootcamp Lesson 1
+
+### Practice with
+- Variables
+- Functions
+- Printing to the screen
+
+1. Assign the number 500 to the variable numberButterflies
+```{r}
+```
+
+
+2. Calculate the cubed root of 26 and assign it to the variable y
+```{r}
+```
+
+
+3. Print the variable y
+```{r}
+```
+
+
+## Bootcamp Lesson 2
+
+### Practice with
+- Packages
+- Accessing specific columns in a data set
+- Assigning variables
+- Select
+- Filtering
+
+
+1. (Install if you haven't completed lesson 2) and load the tidyverse and palmerpenguins packages. 
+```{r}
+```
+
+
+2. Assign the bill length column to a variable called penguinBillLength
+```{r}
+```
+
+
+3. Assign the bill depth column to a variable called penguinBillDepth. 
+```{r}
+```
+
+For Questions 4 - 7, you can choose to either use the pipe %>% or not. Either way is great! 
+
+4. Assign only the columns island, bill_length_mm, and bill_depth_mm to a new variable (name it whatever you'd like!). 
+```{r}
+```
+
+5. Assign only the columns sex and year to the variable sexByYear. 
+```{r}
+```
+
+
+6. Create a subset of the data that includes all the columns only for male Gentoo penguins with flipper lengths greater than 20 mm. 
+```{r}
+```
+
+
+7. Create a subset of the data that includes all penguins on Biscoe island with flipper lengths greater than 20 mm. Remove all of the NA values as well. 
+```{r}
+```
+
+
+Challenge: Using the pipe %>%, string together two commands with only one line of code to create a data set that includes only the columns: species, sex, and flipper length, with only Adelie penguins whose flippers are greater than 180 mm. 
+```{r}
+```
+
+
+
+## Bootcamp Lesson 3
+
+### Practice with
+* Packages
+* Filtering
+* Ggplot
+
+### Instructions for plots
+Each plot should have axis labels, a title, and use colors to illustrate the data.
+
+
+1. (Install if you haven't completed lessons 2 or 3 or practice 2) and load the tidyverse and palmerpenguins packages. 
+```{r}
+```
+
+
+2. Create a subset of the data that includes all the data from the years 2007 and 2008.
+```{r}
+```
+
+
+3. Create a box plot of the bill lengths by male and female penguins of all species from the years 2007 and 2008. 
+```{r}
+```
+
+
+4. Create a subset of the data that includes only the female penguins. 
+```{r}
+```
+
+
+5. Create a box plot of the bill depth by species of only the female penguins. 
+```{r}
+```
+
+
+6. Create a scatter plot of the relationship between bill length and bill depth for penguins on only Dream island and color by species.
+```{r}
+```

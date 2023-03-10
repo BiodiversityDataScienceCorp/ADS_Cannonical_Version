@@ -41,7 +41,7 @@ Great! Now we have our query. We need to access the actual data from GBIF. We wi
 
 ```{r}
 rana <- myQuery$gbif$data$Rana_draytonii
-View(rana)
+
 ```
 
 Let's initially plot this data on a map. It can be especially useful with species occurrence data to look at the distribution on a world map to find any outliers. We will use the map data in ggplot2 to add country lines as well.

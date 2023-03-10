@@ -1,7 +1,34 @@
 # Coding Basics
 
-Prerequisites for this course:
+## About
 
-Skills necessary:
+While this course doesn't have any specific prerequisites, it is important to have a basic understanding of coding in R. Before attempting the lessons, you should be familiar with all of the content in this Coding Basics tab. There are three small lessons intended to get you familiar with the skills you will need to succeed in the remainder of the course.
 
-Building or reviewing coding skills
+## Structure
+
+There are three lessons, and three practices to gain more experience with what you will learn in the lessons. Each lesson is in its own file, but all of the practices are in one file.
+
+## Learning Objectives by Lesson
+
+### Bootcamp Lesson 1
+
+-   Gain some familiarity with rstudio
+-   Learn how to run R code in "code chunks"
+-   Perform some arithmetic with R
+-   Create variables in R, and assign values to them
+-   Functions
+
+### Bootcamp Lesson 2
+
+-   Installing and loading a package
+-   Opening and looking at a data set
+-   Accessing a specific column in a data set
+-   Selecting columns to create a new variable
+-   Relational operators
+-   Filtering
+-   The pipe %\>%
+
+### Bootcamp Lesson 3
+
+-   Load and filter data sets as needed
+-   Learn the basic elements of ggplot

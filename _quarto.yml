@@ -14,6 +14,12 @@ website:
         contents:
           - href: for_students.qmd
           - href: reading_schedule.qmd 
+      - section: "Coding Boot Camp"
+        contents: 
+          - href: bootcamp_1.qmd
+          - href: bootcamp_2.qmd
+          - href: bootcamp_3.qmd
+          - href: bootcamp_practice_1.qmd
       - section: "Lessons"
         contents:
         - href: coding_basics_for_this_course.qmd

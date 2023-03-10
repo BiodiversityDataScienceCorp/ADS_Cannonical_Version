@@ -1,0 +1,112 @@
+# Bootcamp Lesson 1
+
+## Welcome to rstudio!
+Let's start off by clicking the "Visual" button above, so this document is a little easier to read and work with. You'll likely get a popup window the first time, confirming that you want to switch to Visual Mode.
+Just click *Use Visual Mode*
+
+### Learning objectives
+-   Gain some familiarity with rstudio
+-   Learn how to run R code in "code chunks"
+-   Perform some arithmetic with R
+-   Create variables in R, and assign values to them
+-   Functions
+
+### rstudio windows
+You'll notice rstudio is divided into 4 windows. Let's take a look at each one:
+-   upper-left: this is the area for reading / writing files. We'll probably use this window the most this semester.
+-   lower-left: this is the console, where you can run R code directly. You might use this occasionally, but for the most part probably won't have to.
+-   upper-right: this window has a couple useful tabs:
+    -   Environment: any variables you create will be listed here. This can be useful for quick reference.
+    -   History: this shows the R commands you've run within a session.
+    - Connections: this will be important for using GitHub, which we will get to later in the semester
+-   lower-right: this window lists any files and folders that are part of your project/assignment. It also has tabs that can display plots and help documentation.
+You can resize windows / borders as needed in order to more easily focus on the particular window you're using.
+
+### Code chunks
+The grey rectangles below are "code chunks", where you can type and execute R code. We will use them in these lessons. In class, you will use .R files, which essentially are entirely code chunks. To run the code, click the green triangle in the upper-right corner of the code chunk.
+Let's try running the code chunk below, which is just some simple arithmetic:
+```{r}
+2 + 5 
+```
+
+Now it's your turn. In the code chunk below, enter a command to subtract 7 from 18, and run it:
+
+```{r}
+# Enter code below (by the way, I'm a comment. I'm a way for you to leave notes in the code. Simply put a hashtag and type away.)
+```
+
+### Variables
+
+Programming languages, including R, rely heavily on the use of *variables*. A variable is something you define and assign a value to. In the code chunk below, we're creating a variable called `x`, and assigning the value of 7 to it:
+
+```{r}
+# Notice we use a 'left pointing arrow' to assign the value
+x <- 7 
+```
+
+We don't get any real feedback from running the code above, but it's often a good idea to check your work by printing a variable's value to the screen. To do this, you can run code that simply lists the variable, here x. R will remember the variables you assign. You can see what R is "remembering" by looking at the environment tab in the top right.:
+
+```{r}
+# prints to the screen:
+x
+```
+
+It's worth noting that you can run multiple lines of code within a code chunk:
+
+```{r}
+# create a variable "penguinCount" and give it the value 3
+penguinCount <- 3
+# print to screen
+penguinCount
+```
+
+Now it's your turn. Work with your group / people next to you, and do the following:
+
+-   create a variable called `y`, assign three plus eight to it, and print to the screen.
+-   create a variable `z`, and assign `x+y` to it, and print to the screen
+
+```{r}
+# create the variable "y" here, and print to screen
+```
+
+```{r}
+# create the variable "z" here, and print to screen
+```
+
+
+#### Functions
+
+Coding languages, including R, have functions that help you quickly execute common tasks. Functions typically take the form of:
+
+functionName(argument1, argument2, etc....)
+
+*Arguments* are the inputs you send to a function, so it has all the information it needs to perform its operation.
+
+For example, the function `sqrt(number)` takes the square root of a number. This lets us quickly compute the answer, rather than having to write the formula for a square root.
+
+```{r}
+sqrt(9)
+```
+
+YOUR TURN: In the chunk below, create a variable `z`, set it equal to the square root of 90, and print it out:
+
+```{r}
+```
+
+One nice thing about rstudio is that you can readily access documentation for functions by using the "help" command:
+
+```{r}
+help(sqrt)
+```
+
+The documentation appears in the lower right window in the "help" tab.
+
+One key question: how do you know what functions exist, and what they do?\
+Answer: you Google what you're trying to do! In the case of R, you might search "How do I do 'x' in R?"
+
+Let's say you are interested in calculating the absolute value (positive distance from zero) of -35 in R. Take a moment with your group/neighbors, and try to find the answer by searching the internet. In the code chunk below, use the function you found to compute this calculation:
+
+```{r}
+# compute the absolute value of -35
+```
+You made it! 
