@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Lessons</a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Coding Boot Camp</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -141,6 +141,36 @@ ul.task-list li input[type="checkbox"] {
   <a href="./coding_basics_for_this_course.html" class="sidebar-item-text sidebar-link">Coding Basics</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bootcamp_1.html" class="sidebar-item-text sidebar-link">Bootcamp Lesson 1</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bootcamp_2.html" class="sidebar-item-text sidebar-link">Bootcamp Lesson 2</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bootcamp_3.html" class="sidebar-item-text sidebar-link">Bootcamp Lesson 3</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bootcamp_practice_1.html" class="sidebar-item-text sidebar-link">Bootcamp Practices</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Lessons</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data_aquisition_cleaning.html" class="sidebar-item-text sidebar-link">Querying, cleaning, and mapping GBIF data</a>
@@ -156,16 +186,21 @@ ul.task-list li input[type="checkbox"] {
   <a href="./sdm_current.html" class="sidebar-item-text sidebar-link active">Current SDM</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sdm_future.html" class="sidebar-item-text sidebar-link">Future SDM</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Homeworks</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Homeworks</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./HW_1.html" class="sidebar-item-text sidebar-link">HW 1: Data Science Tools</a>
@@ -212,10 +247,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#current-sdm" id="toc-current-sdm" class="nav-link active" data-scroll-target="#current-sdm">Current SDM</a></li>
-  <li><a href="#requirements-for-posit.cloud" id="toc-requirements-for-posit.cloud" class="nav-link" data-scroll-target="#requirements-for-posit.cloud">Requirements for posit.cloud</a></li>
-  <li><a href="#ram-to-at-least-5gb" id="toc-ram-to-at-least-5gb" class="nav-link" data-scroll-target="#ram-to-at-least-5gb">RAM to at least 5GB</a></li>
-  <li><a href="#in-project-file-select-no-for-all-fields-in-general" id="toc-in-project-file-select-no-for-all-fields-in-general" class="nav-link" data-scroll-target="#in-project-file-select-no-for-all-fields-in-general">In project file, select NO for all fields in General</a></li>
+  <li><a href="#current-sdm" id="toc-current-sdm" class="nav-link active" data-scroll-target="#current-sdm">Current SDM</a>
+  <ul class="collapse">
+  <li><a href="#what-is-an-sdm" id="toc-what-is-an-sdm" class="nav-link" data-scroll-target="#what-is-an-sdm">What is an SDM?</a></li>
+  </ul></li>
   <li><a href="#dependencies" id="toc-dependencies" class="nav-link" data-scroll-target="#dependencies">dependencies</a>
   <ul class="collapse">
   <li><a href="#section-1-obtaining-and-formatting-occurence-climate-data" id="toc-section-1-obtaining-and-formatting-occurence-climate-data" class="nav-link" data-scroll-target="#section-1-obtaining-and-formatting-occurence-climate-data">Section 1: Obtaining and Formatting Occurence / Climate Data</a></li>
@@ -260,15 +295,10 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="current-sdm" class="level1">
 <h1>Current SDM</h1>
+<section id="what-is-an-sdm" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-an-sdm">What is an SDM?</h3>
+<p>A Species Distribution Model.</p>
 </section>
-<section id="requirements-for-posit.cloud" class="level1">
-<h1>Requirements for posit.cloud</h1>
-</section>
-<section id="ram-to-at-least-5gb" class="level1">
-<h1>RAM to at least 5GB</h1>
-</section>
-<section id="in-project-file-select-no-for-all-fields-in-general" class="level1">
-<h1>In project file, select NO for all fields in General</h1>
 </section>
 <section id="dependencies" class="level1">
 <h1>dependencies</h1>

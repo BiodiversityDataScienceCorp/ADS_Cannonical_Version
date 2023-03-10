@@ -55,7 +55,7 @@ Once you break the problem down into steps, hopefully it'll be easier to tackle.
 
 Let's get the subset of the data that is only the male penguins. Assign this to the variable malePenguins. (Hint: if you don't know how to do this, look back at the filtering section of lesson_2.Rmd)
 ```{r}
-malePenguins <- penguins %>% filter(sex == "male")
+# malePenguins <- penguins %>% filter(sex == "male")
 ```
 
 
@@ -71,7 +71,7 @@ Looking at the code, here's how we're including the three basic parts of a ggplo
 
 
 ```{r}
-ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g))+geom_boxplot()
+# ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g))+geom_boxplot()
 ```
 
 
@@ -79,6 +79,7 @@ YOUR TURN:
 
 Let's say you want to see if there is a relationship between a penguin's body mass and it's flipper length. Create this scatter plot. You don't need to filter this data, since we are looking at all of the penguins. The x axis should be the body mass and the y axis should be the flipper length. Look at the ggplot2-cheatsheet.pdf to find out what the GEOM should be. 
 ```{r}
+#
 ```
 
 
@@ -87,22 +88,23 @@ Let's say you want to see if there is a relationship between a penguin's body ma
 You can specify labels to add to your plot by using the "labs()" function:
 
 ```{r}
-ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g)) + 
-  geom_boxplot() +
-  labs(x = "Penguin Species", y = "Body Mass (g)", title = "Penguin body mass is different by species")
+#ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g)) + 
+  #geom_boxplot() +
+  #labs(x = "Penguin Species", y = "Body Mass (g)", title = "Penguin body mass is different by species")
 ```
 
 Additionally you can add colors. You can add colors by a categorical variable (like species) by adding it to the aes argument. Here we will use "fill" because we want the color to fill the whole box. If we just have points, we can use "color = " instead. 
 
 ```{r}
-ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g, fill = species)) + 
-  geom_boxplot() +
-  labs(x = "Penguin Species", y = "Body Mass (g)", title = "Penguin body mass is different by species")
+#ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g, fill = species)) + 
+  #geom_boxplot() +
+  #labs(x = "Penguin Species", y = "Body Mass (g)", title = "Penguin body mass is different by species")
 ```
 
 YOUR TURN:
 Can you add some labels and color by species to your scatter plot?
 ```{r}
+#
 ```
 
 ### Saving your plot 
@@ -110,7 +112,7 @@ Can you add some labels and color by species to your scatter plot?
 To save your plot as a file, you can use the ggsave() function. ggsave will save the last plot generated:
 
 ```{r}
-ggsave("plot.png", height=5, width=5, units="cm", scale=3)
+#ggsave("plot.png", height=5, width=5, units="cm", scale=3)
 ```
 
 From there, you can download your pot file, and use it however you choose.
@@ -118,5 +120,5 @@ From there, you can download your pot file, and use it however you choose.
 
 Awesome job! 
 
-We are going to use ggplot to create maps later this semester. The important thing is that you are familiar with the syntax in ggplot, not the specifics of a boxplot or scatter plot. If you want more practice, check out practice_3.Rmd for more penguin action!
+We are going to use ggplot to create maps later this semester. The important thing is that you are familiar with the syntax in ggplot, not the specifics of a boxplot or scatter plot. 
 

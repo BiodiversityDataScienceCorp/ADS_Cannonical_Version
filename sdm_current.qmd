@@ -1,10 +1,7 @@
 # Current SDM
 
-# Requirements for posit.cloud
-
-# RAM to at least 5GB
-
-# In project file, select NO for all fields in General
+### What is an SDM?
+A Species Distribution Model. 
 
 # dependencies
 

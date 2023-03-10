@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data_aquisition_cleaning</title>
+<title>bootcamp_2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -200,17 +200,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./coding_basics_for_this_course.html" class="sidebar-item-text sidebar-link">Coding Basics</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./bootcamp_1.html" class="sidebar-item-text sidebar-link">Bootcamp Lesson 1</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bootcamp_2.html" class="sidebar-item-text sidebar-link">Bootcamp Lesson 2</a>
+  <a href="./bootcamp_2.html" class="sidebar-item-text sidebar-link active">Bootcamp Lesson 2</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -235,7 +230,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data_aquisition_cleaning.html" class="sidebar-item-text sidebar-link active">Querying, cleaning, and mapping GBIF data</a>
+  <a href="./coding_basics_for_this_course.html" class="sidebar-item-text sidebar-link">Coding Basics</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_aquisition_cleaning.html" class="sidebar-item-text sidebar-link">Querying, cleaning, and mapping GBIF data</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -304,14 +304,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#querying-cleaning-and-mapping-gbif-data" id="toc-querying-cleaning-and-mapping-gbif-data" class="nav-link active" data-scroll-target="#querying-cleaning-and-mapping-gbif-data">Querying, cleaning, and mapping GBIF data</a>
+  <li><a href="#bootcamp-lesson-2" id="toc-bootcamp-lesson-2" class="nav-link active" data-scroll-target="#bootcamp-lesson-2">Bootcamp Lesson 2</a>
   <ul class="collapse">
-  <li><a href="#in-this-lesson-you-will-learn" id="toc-in-this-lesson-you-will-learn" class="nav-link" data-scroll-target="#in-this-lesson-you-will-learn">In this lesson, you will learn</a></li>
-  <li><a href="#what-is-species-occurrence-data" id="toc-what-is-species-occurrence-data" class="nav-link" data-scroll-target="#what-is-species-occurrence-data">What is species occurrence data?</a></li>
-  <li><a href="#how-can-we-get-occurrence-data" id="toc-how-can-we-get-occurrence-data" class="nav-link" data-scroll-target="#how-can-we-get-occurrence-data">How can we get occurrence data?</a></li>
-  <li><a href="#how-can-we-plot-occurence-data-simply-to-look-for-outliers" id="toc-how-can-we-plot-occurence-data-simply-to-look-for-outliers" class="nav-link" data-scroll-target="#how-can-we-plot-occurence-data-simply-to-look-for-outliers">How can we plot occurence data simply to look for outliers</a></li>
-  <li><a href="#how-can-we-clean-our-data" id="toc-how-can-we-clean-our-data" class="nav-link" data-scroll-target="#how-can-we-clean-our-data">How can we clean our data</a></li>
-  <li><a href="#writing-our-data-to-a-csv-file" id="toc-writing-our-data-to-a-csv-file" class="nav-link" data-scroll-target="#writing-our-data-to-a-csv-file">Writing our data to a csv file</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#looking-at-a-data-set-and-accessing-a-column" id="toc-looking-at-a-data-set-and-accessing-a-column" class="nav-link" data-scroll-target="#looking-at-a-data-set-and-accessing-a-column">Looking at a data set and accessing a column</a></li>
+  <li><a href="#selecting" id="toc-selecting" class="nav-link" data-scroll-target="#selecting">Selecting</a></li>
+  <li><a href="#filtering" id="toc-filtering" class="nav-link" data-scroll-target="#filtering">Filtering</a></li>
+  <li><a href="#relational-operators" id="toc-relational-operators" class="nav-link" data-scroll-target="#relational-operators">Relational operators</a></li>
+  <li><a href="#logical-operators" id="toc-logical-operators" class="nav-link" data-scroll-target="#logical-operators">Logical Operators</a></li>
+  <li><a href="#the-pipe" id="toc-the-pipe" class="nav-link" data-scroll-target="#the-pipe">The “Pipe”</a></li>
+  <li><a href="#removing-na-values" id="toc-removing-na-values" class="nav-link" data-scroll-target="#removing-na-values">Removing NA values</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -321,28 +324,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="querying-cleaning-and-mapping-gbif-data" class="level1">
-<h1>Querying, cleaning, and mapping GBIF data</h1>
-<section id="in-this-lesson-you-will-learn" class="level3">
-<h3 class="anchored" data-anchor-id="in-this-lesson-you-will-learn">In this lesson, you will learn</h3>
+<section id="bootcamp-lesson-2" class="level1">
+<h1>Bootcamp Lesson 2</h1>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
 <ul>
-<li>What species occurrence data is</li>
-<li>How to obtain publicly-available occurrence data from GBIF</li>
-<li>How to plot occurrence data with ggplot</li>
-<li>How to clean occurrence data</li>
+<li>Installing and loading a package</li>
+<li>Opening and looking at a data set</li>
+<li>Accessing a specific column in a data set</li>
+<li>Selecting columns to create a new variable</li>
+<li>Relational operators</li>
+<li>Filtering</li>
+<li>The pipe %&gt;%</li>
 </ul>
 </section>
-<section id="what-is-species-occurrence-data" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-species-occurrence-data">What is species occurrence data?</h3>
-<p>Occurrence data is a record of where a species was at a given time.</p>
-</section>
-<section id="how-can-we-get-occurrence-data" class="level3">
-<h3 class="anchored" data-anchor-id="how-can-we-get-occurrence-data">How can we get occurrence data?</h3>
-<p>We can use the <a href="https://www.gbif.org/">Global Biodiversity Information Facility</a>. Data on GBIF is sourced from a wide variety of places: from users on iNaturalist equipped with a smartphone to museum specimens. You will read more about the accuracy of citizen science collected occurrence data on February 14.</p>
-<p>First we need to load the necessary packages. We will use the tidyverse for data cleaning and visualization. We will use a package called spocc, which stands for “interface to SPecies OCCurence data sources.”</p>
+<section id="packages" class="level3">
+<h3 class="anchored" data-anchor-id="packages">Packages</h3>
+<p>We often use packages when coding in R. Packages, very simply, are tool boxes that contain useful functions. We will use a package called the “tidyverse.” Tidyverse is designed for data science and is very useful for organizing, manipulating, and viewing our data.</p>
+<p>First we have to install a package if it has never been installed in a local project. You only have to do this once per file.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Install packages from cran, necessary to specify the repos on quarto but not on your local computer copy</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"spocc"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
 (as 'lib' is unspecified)</code></pre>
@@ -350,23 +351,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpwwORrG/downloaded_packages</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>) <span class="co">#includes ggplot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
-(as 'lib' is unspecified)</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-The downloaded binary packages are in
-    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpwwORrG/downloaded_packages</code></pre>
+    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmppUJdlB/downloaded_packages</code></pre>
 </div>
 </div>
-<p>Load libraries</p>
+<p>Once you have installed a package, you need to load it into your workspace. You need to do this every time you run the file.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(spocc)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.0     ✔ readr     2.1.4
@@ -380,64 +370,116 @@ The downloaded binary packages are in
 ℹ Use the ]8;;http://conflicted.r-lib.org/conflicted package]8;; to force all conflicts to become errors</code></pre>
 </div>
 </div>
-<p>Remember to use lots of comments on your own copy of this code, to help yourself remember later on!</p>
-<p>We can directly query occurrence data in R with the “occ” function, which is part of the spocc package.Take a look at the <a href="https://www.rdocumentation.org/packages/spocc/versions/0.1.0/topics/occ">documentation</a>. In groups: write a query for <em>Rana draytonii</em> from GBIF, from any country during any time period. Limit it to 5000 occurrences.</p>
+<p>Your turn. For this lesson, we will use the “palmerpenguins” package, which contains a data set. This data has various measurements of penguins collectd near Palmer Station in Antarctica and was made available by Dr.&nbsp;Kristen Gorman.</p>
+<p>Using the same syntax as above, install and load the “palmerpenguins” package.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>myQuery <span class="ot">&lt;-</span><span class="fu">occ</span>(<span class="at">query=</span><span class="st">"Rana draytonii"</span>, <span class="at">from=</span><span class="st">"gbif"</span>, <span class="at">limit=</span><span class="dv">5000</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>myQuery</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Searched: gbif
-Occurrences - Found: 4,632, Returned: 4,632
-Search type: Scientific
-  gbif: Rana draytonii (4632)</code></pre>
+
 </div>
-</div>
-<p>Great! Now we have our query. We need to access the actual data from GBIF. We will use the “$” to navigate the layers of this data.</p>
+<p>Now we have access to a data set, called penguins.</p>
+</section>
+<section id="looking-at-a-data-set-and-accessing-a-column" class="level3">
+<h3 class="anchored" data-anchor-id="looking-at-a-data-set-and-accessing-a-column">Looking at a data set and accessing a column</h3>
+<p>You can get a glance of a data set with the function “glimpse.”</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>rana <span class="ot">&lt;-</span> myQuery<span class="sc">$</span>gbif<span class="sc">$</span>data<span class="sc">$</span>Rana_draytonii</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># glimpse(penguins)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>From glimpse above, we can see that the data set contains 8 columns. To access one column, we use the dataSet$column syntax. We can then assign it to a variable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># islands &lt;- penguins$island</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now your turn. Create a variable (remember, to assign a variable use the syntax: x &lt;- thing) called penguinFlipperLength that is the flipper_length_mm column.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="how-can-we-plot-occurence-data-simply-to-look-for-outliers" class="level3">
-<h3 class="anchored" data-anchor-id="how-can-we-plot-occurence-data-simply-to-look-for-outliers">How can we plot occurence data simply to look for outliers</h3>
-<p>Let’s initially plot this data on a map. It can be especially useful with species occurrence data to look at the distribution on a world map to find any outliers. We will use the map data in ggplot2 to add country lines as well. We’ll go into more detail in the next lesson about using ggplot2 for an occurrence map.</p>
+<section id="selecting" class="level3">
+<h3 class="anchored" data-anchor-id="selecting">Selecting</h3>
+<p>While the syntax data$ColumnName is useful in many cases, there are times when we want to have multiple columns in a new variable. For example, we may be interested in only the penguin island and mass. We can do this with the select function.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>wrld<span class="ot">&lt;-</span>ggplot2<span class="sc">::</span><span class="fu">map_data</span>(<span class="st">"world"</span>) <span class="co"># obtaining world borders</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="at">data=</span>wrld, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>long, <span class="at">y=</span>lat, <span class="at">group=</span>group), <span class="at">fill=</span><span class="st">"grey75"</span>, <span class="at">colour=</span><span class="st">"grey60"</span>)<span class="sc">+</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>rana, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>longitude, <span class="at">y=</span>latitude), <span class="at">show.legend=</span><span class="cn">FALSE</span>)<span class="sc">+</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Species occurrences of R. draytonii"</span>, <span class="at">x=</span><span class="st">"longitude"</span>, <span class="at">y=</span><span class="st">"latitude"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1773 rows containing missing values (`geom_point()`).</code></pre>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># penguinIslandMass &lt;- select(penguins, island, body_mass_g)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell-output-display">
-<p><img src="data_aquisition_cleaning_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+<p>Your turn. Select species and flipper_length_mm and assign it to the variable penguinSpFlipper.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Select is very useful when we have a large data set that contains information that we are uninterested in, or when we need to put our data in a specific format.</p>
+</section>
+<section id="filtering" class="level3">
+<h3 class="anchored" data-anchor-id="filtering">Filtering</h3>
+<p>Let’s say we wanted to look at just a subset of the penguins. There are a few species of penguins in the data. We could scroll through all 344 rows of the data and note the species, or we could have R do this for us.</p>
+<p>To know all of the species present in the data, we can use the function ‘unique’. Unique looks for all of the unique values. The argument we will give unique is the specific column that we want to know all of the species of.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># unique(penguins$species)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Great! Now we see there are three species of penguins. Let’s say we want all of the data for only the Adelie penguins. We can accomplish this with filtering. The syntax is filter(data, column name <em>relational operator</em> value). Note that we need to put Adelie in quotes because it is a word. If we filter by a number, we don’t need quotes.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># adelieData &lt;- filter(penguins, species == "Adelie")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="how-can-we-clean-our-data" class="level3">
-<h3 class="anchored" data-anchor-id="how-can-we-clean-our-data">How can we clean our data</h3>
-<p>Now we want to clean our data. What do we need to do based on the reading for today? We need to: remove outliers (outside of normal sp range), remove duplicates, and deal with NA values. Looking at the map, we can see there are a few points in Africa. This is likely due to a recording error of the location, as they are near (0,0). We can also remove them on the basis of pre-existing knowledge that these frogs are only found in the southwestern United States. We are going to use the pipe %&gt;% to string together a series of commands.</p>
+<section id="relational-operators" class="level3">
+<h3 class="anchored" data-anchor-id="relational-operators">Relational operators</h3>
+<p>In the <code>filter</code> example above, we used “<code>==</code>” as part of our condition argument. The double equals is an example of a relational operator - it’s a character (or multiple characters) that represents a logical action or process. Practically speaking, the double equals means “is this field equal to this value?”. If the answer is “TRUE”, then the row is included as part of the filtered data set.</p>
+<p>Here are some other relational operators:</p>
+<ul>
+<li><p>&gt; (greater than)</p></li>
+<li><p>&lt; (less than)</p></li>
+<li><p>&lt;= (less than or equal to)</p></li>
+<li><p>&gt;= (greater than or equal to)</p></li>
+<li><p>!= (not equal to)</p></li>
+</ul>
+<p>In the <code>filter</code> function, relational operators are used to define a condition.</p>
+<p>Your turn. Create a variable called longFlipperData that is the subset of the penguin data with flipper length in mm greater than 22.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>cleanRana <span class="ot">&lt;-</span> rana <span class="sc">%&gt;%</span> </span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(longitude <span class="sc">&lt;</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span>  <span class="co"># this is one way of removing the pts in Africa</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(latitude <span class="sc">!=</span> <span class="st">"NA"</span>, longitude <span class="sc">!=</span> <span class="st">"NA"</span>) <span class="sc">%&gt;%</span>  <span class="co"># remove places where lat or long are NA</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(occurrenceStatus <span class="sc">==</span> <span class="st">"PRESENT"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">location =</span> <span class="fu">paste</span>(latitude, longitude, dateIdentified, <span class="at">sep =</span> <span class="st">"/"</span>)) <span class="sc">%&gt;%</span> <span class="co"># remove duplicates: create a new column that states the location and time</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(location, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>) <span class="co"># remove duplicates: keep only one per duplicated entry</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Our data, cleanRana, has over 140 columns! That is a lot of information that we do not need. We are going to pick out only the columns we need.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>cleanRanaSubset <span class="ot">&lt;-</span> cleanRana <span class="sc">%&gt;%</span> </span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(longitude, latitude, eventDate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="writing-our-data-to-a-csv-file" class="level3">
-<h3 class="anchored" data-anchor-id="writing-our-data-to-a-csv-file">Writing our data to a csv file</h3>
-<p>Lastly, we are going to write our clean data to a csv file so we can use it in later lessons.</p>
+<section id="logical-operators" class="level3">
+<h3 class="anchored" data-anchor-id="logical-operators">Logical Operators</h3>
+<p>There may be cases in which we want to filter our dataset based on more than one condition. In these cases, we would use logical operators. Maybe we want to find all the penguins that are both female and weigh over 5000 g. Here are the main logical operators:</p>
+<ul>
+<li><p>&amp; (and)</p></li>
+<li><p>| (or)</p></li>
+</ul>
+<p>In the <code>filter</code> function, logical operators are used to join conditions together.</p>
+<p>Here’s an example of how to use a logical operator with the <code>filter</code> function:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(cleanRanaSubset, <span class="st">"ranaData.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># femaleHeavyPenguins &lt;- filter(penguins, sex == "female" &amp; body_mass_g &gt; 5000)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Your turn. Create a variable called biscoeAndDreamSmall that contains all the penguins from either Biscoe OR Dream Island that are less than 3000 g.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="the-pipe" class="level3">
+<h3 class="anchored" data-anchor-id="the-pipe">The “Pipe”</h3>
+<p>The Tidyverse introduced a new convention to R called the “pipe”:</p>
+<p><code>%&gt;%</code></p>
+<p>The purpose of the pipe is to string functions and data together. You can think of it as sort of the glue that joins pieces of an assembly line together. Another way to think of it is to read it as “AND THEN”.</p>
+<p>Below we can rewrite a command using the filter function with the pipe. After the assignment symbol (&lt;-) we start with the data set, followed by the pipe, followed by the filter function. What’s different about the arguments in the filter function in this case?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#adelieData2 &lt;-penguins %&gt;% filter(species == "Adelie")</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">#adelieData2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Try using the pipe in the code chunk below to create a data subset of penguins that are male and assign it to the variable malePenguins. Print it to the screen.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create and print malePenguins. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can also use the pipe for select (and many other functions as well). Instead of putting the data name inside of the function, you can put it before the pipe.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#penguinIslandMass2 &lt;- penguins %&gt;% select(island, body_mass_g)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Your turn. Use the pipe syntax to assign the columns bill_length_mm and sex to a new variable with select.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="removing-na-values" class="level3">
+<h3 class="anchored" data-anchor-id="removing-na-values">Removing NA values</h3>
+<p>Our penguin data set contains NA values in some rows. Often, NA values create problems for calculating statistics and running models. There are many ways of doing this. One is to remove all rows with NAs in any column using the function na.omit.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#noNAPenguins &lt;- na.omit(penguins)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can see that there are 333 rows (by the 333 observations in the Environment tab). We started with 344 rows in the original penguin set.</p>
 <p>Great job!</p>
 
 

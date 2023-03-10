@@ -1,16 +1,62 @@
 # Occurrence Map
 
+### In this lesson, you will learn
 
-### one more column to check of your data: is occurence status == PRESENT ?
+-  How to plot species occurrence data onto a world map
 
-# set x and y limits
+### Install and load packages
+```{r}
+install.packages("tidyverse", repos = "http://cran.us.r-project.org") #includes ggplot
+```
 
-xmax \<- max(cleanRana$longitude) xmin <- min(cleanRana$longitude) ymax \<- max(cleanRana$latitude) ymin <- min(cleanRana$latitude)
+```{r}
+library(tidyverse)
+```
 
-# re-do map code with cleaned data and x/y limits
 
-ggplot()+ geom_polygon(data=wrld, mapping=aes(x=long, y=lat, group=group), fill="grey75", colour="grey60")+ geom_point(data=cleanRana, mapping=aes(x=longitude, y=latitude), show.legend=FALSE)+ labs(title="Species occurrences of R. draytonii from 1938 - 2023", x="longitude", y="latitude") + coord_fixed(xlim = c(xmin, xmax), ylim = c(ymin, ymax)) + scale_size_area() + borders("state")
+### Read the data 
+```{r}
+ranaData <- read_csv("ranaData.csv")
+```
 
-# make it better by adding a date range in the title
 
-range(na.omit(as.Date(cleanRana\$dateIdentified)))
+### Setting the x and y limits of our map
+
+We want our map to be centered on where our occurrence data is found. To do this, we will create x and y limits based on the latitude (y) and longitude (x) values of our cleaned data. 
+
+```{r}
+
+xmax <- max(ranaData$longitude) 
+xmin <- min(ranaData$longitude) 
+ymax <- max(ranaData$latitude) 
+ymin <- min(ranaData$latitude)
+
+```
+
+### Finding the date range
+
+Since we didn't specify the date range in our data acquisition call from GBIF, our species occurence data spans an unknown date range. It's a good idea to include the date range in the title of the plot. We can use the range function.
+
+```{r}
+range(na.omit(as.Date(ranaData$eventDate)))
+# our date identified ranges from 1891 to 2023
+```
+
+### Mapping
+
+We will use ggplot2 to plot our data and style our map. 
+
+```{r}
+wrld <- ggplot2::map_data("world") # obtaining world borders
+
+ggplot() + # call ggplot
+geom_polygon(data = wrld, mapping = aes(x=long, y=lat, group=group), fill="grey75", colour = "grey60") + # add world shapes, which are polygons stored in the df wrld
+                   # we can specify the color, which is the border, and the fill, which is                      the inside of the shape
+  geom_point(data = ranaData, mapping=aes(x=longitude, y=latitude), show.legend=FALSE) + # our lat/long data are points on an x/y grid. We suppress the legend. 
+  labs(title="Species occurrences of R. draytonii from 1891 - 2023", x="longitude", y="latitude") + # add labels to the graph
+  coord_fixed(xlim = c(xmin, xmax), ylim = c(ymin, ymax)) + # give it our x and y limits to center the graph
+  scale_size_area() + # scales the map accordingly 
+  borders("state") # add state borders 
+
+```
+
