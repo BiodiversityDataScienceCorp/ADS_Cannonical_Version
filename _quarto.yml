@@ -4,6 +4,7 @@ project:
 website:
   sidebar:
     style: "docked"
+    collapse-level: 1
     search: true
     contents:
       - section: "General Information"
@@ -26,7 +27,6 @@ website:
         - href: data_aquisition_cleaning.qmd
         - href: occ_map.qmd
         - href: sdm_current.qmd
-        - href: sdm_future.qmd
       - section: "Homeworks"
         contents:
         - href: HW_1.qmd

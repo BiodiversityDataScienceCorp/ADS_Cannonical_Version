@@ -1,13 +1,15 @@
-# Current SDM
+# Current and Future SDM
 
 ### In this lesson, you will learn
 
 - What an SDM is
 - How to create an SDM with the machine learning method, MaxEnt
 - How to predict your SDM result onto a geographic area given current environmental variables
+- How to predict your SDM result onto a geographic area given future environmental variables under CMIP5
+
 
 ### What is an SDM?
-A Species Distribution Model. 
+A Species Distribution Model. More here?
 
 # Install and load packages from CRAN
 
@@ -28,6 +30,8 @@ library(rJava)
 library(maps)
 
 ```
+
+## Current SDM
 
 ### Obtaining and formatting occurence data
 
@@ -119,7 +123,7 @@ colnames(backgroundPoints) <- c("longitude", "latitude")
 
 ```
 
-### Extract the climate data for the occurrencde and background points
+### Extract the climate data for the occurrence and background points
 
 We need the climate data at each of our occurrence and background points so MaxEnt can figure our which environmental conditions are (or are not) associated with our species. 
 
@@ -147,7 +151,7 @@ presenceAbsenceEnvDf <- as.data.frame(rbind(occEnv, absenceEnv))
 
 ### Create SDM with MaxEnt
 
-Finally we will creat our SDM with MaxEnt. We are using the dismo package, which actually runs the MaxEnt in java. 
+Finally we will creat our SDM with MaxEnt. We are using the dismo package, which actually runs the MaxEnt in java.  
 
 ```{r}
 
@@ -234,3 +238,81 @@ ggplot() +
   theme(legend.box.background=element_rect(),legend.box.margin=margin(5,5,5,5)) 
 
 ```
+
+Now that we've done the current SDM, we can move onto the future. We will use the model we already created and just change the future climate data to project onto.
+
+## Future SDM
+
+### Obtaining future climate data
+
+We will use getData from the raster package. We will work on migrating towards CMIP6, which will require a different data download method in the future. For now, this will work. You can specify which rcp, which is the greenhouse gas emission prediction. You can also specify which [climate model](https://rdrr.io/cran/raster/man/getData.html) you'd like to use, how many years into the future: 50 or 70 years from now. 
+```{r}
+
+futureClim <- raster::getData(name = 'CMIP5', var = 'bio', res = 2.5, rcp = 45, model = 'IP', year = 70)
+
+```
+
+The futureClim data has names that are inconsisent with the currentClim. We can rename them so we can predict the SDM onto this new layer.  
+
+```{r}
+
+names(futureClim) = names(currentClim) 
+
+```
+
+We can also look at current vs future climate variables, and see how they change. 
+
+```{r}
+
+plot(currentClim[[1]])
+
+plot(futureClim[[1]])
+
+```
+
+### Plot the model: getting the right area
+
+We need to crop our future climate data, just like we did with our current climate data. We will use the predictExtent we created in the current SDM. 
+
+```{r}
+
+geographicAreaFuture <- crop(futureClim, predictExtent)
+
+```
+
+# Predict the SDM over the new future climate data
+
+```{r}
+
+ranaPredictPlotFuture <- raster::predict(ranaSDM, geographicAreaFuture)
+
+```
+
+### Plotting in ggplot 2
+
+Ggplot2 requires us to convert our predictPlot to a data frame. First we convert it to a aspatial pixels data frame, then to a traditional data frame. 
+
+```{r}
+rasterFuture.spdf <- as(ranaPredictPlotFuture, "SpatialPixelsDataFrame") 
+ranaPredictDfFuture <- as.data.frame(rasterFuture.spdf)
+
+```
+
+
+Our x and y limits haven't changed since the current sdm, so we'll keep that part the same. Our ggplot2 call is going to be the same as the currend sdm, but with our new predict data frame. 
+
+```{r}
+wrld <- ggplot2::map_data("world")
+
+
+ggplot() + 
+  geom_polygon(data = wrld, mapping = aes(x = long, y = lat, group = group), fill = "grey75") + geom_raster(data = ranaPredictDfFuture, aes(x = x, y = y, fill = layer)) + 
+  scale_fill_gradientn(colors = terrain.colors(10, rev = T)) + 
+  coord_fixed(xlim = c(xmin, xmax), ylim = c(ymin, ymax), expand = F) + 
+  scale_size_area() + borders("world") + 
+  borders("state") + 
+  labs(title = "SDM of R. boylii Under \nCMIP 5 Climate Conditions", x = "longitude", y = "latitude", fill = "Env Suitability") + theme(legend.box.background=element_rect(),legend.box.margin=margin(5,5,5,5))
+
+```
+
+
