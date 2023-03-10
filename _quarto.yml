@@ -5,12 +5,12 @@ website:
   sidebar:
     style: "docked"
     collapse-level: 1
+    logo: bdsc-logo-circle.png
     search: true
     contents:
       - section: "General Information"
         contents:
           - href: about.qmd 
-          - href: index.qmd
       - section: "Course Details"
         contents:
           - href: for_students.qmd

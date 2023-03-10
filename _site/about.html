@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About this Course</title>
+<title>about</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,11 +40,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -63,13 +63,23 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./bdsc-logo-circle.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">About this Course</h1>
+      <h1 class="quarto-secondary-nav-title"></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -77,9 +87,14 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./bdsc-logo-circle.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
       <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -97,12 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">About this Course</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Info</a>
+  <a href="./about.html" class="sidebar-item-text sidebar-link active">Course Overview</a>
   </div>
 </li>
       </ul>
@@ -241,42 +251,56 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-aims" id="toc-course-aims" class="nav-link active" data-scroll-target="#course-aims">Course Aims</a></li>
-  <li><a href="#target-audience" id="toc-target-audience" class="nav-link" data-scroll-target="#target-audience">Target Audience</a></li>
-  <li><a href="#course-pre-requisites" id="toc-course-pre-requisites" class="nav-link" data-scroll-target="#course-pre-requisites">Course Pre-requisites</a></li>
+  <li><a href="#course-overview" id="toc-course-overview" class="nav-link active" data-scroll-target="#course-overview">Course Overview</a>
+  <ul class="collapse">
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#course-prerequisites" id="toc-course-prerequisites" class="nav-link" data-scroll-target="#course-prerequisites">Course Prerequisites</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block">About this Course</h1>
-</div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<section id="course-aims" class="level1">
-<h1>Course Aims</h1>
+<section id="course-overview" class="level1">
+<h1>Course Overview</h1>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<p>Welcome to Applied Data Science. This class is a structured practicum with the goal of supporting students to build knowledge and skills relevant to applying data science to issues of species conservation. The class is a collaboration between students at the University of Arizona and Lewis &amp; Clark College. We will work together with professionals at the US Fish &amp; Wildlife Service who are on the front lines of managing endangered species. You will work in teams to organize, clean, analyze and visualize data to help improve conservation approaches and management efforts for species of concern in the US. In this process you will be introduced to the realities of conservation jobs in governmental and nonprofit organizations and help you build professional skills that are relevant in these fields. You will also learn more about data science in general and project management best practices of working as a team.</p>
 </section>
-<section id="target-audience" class="level1">
-<h1>Target Audience</h1>
+<section id="course-prerequisites" class="level3">
+<h3 class="anchored" data-anchor-id="course-prerequisites">Course Prerequisites</h3>
+<p>None, but students should have had beginning experience with R programming language demonstrated in course work or other activity.</p>
 </section>
-<section id="course-pre-requisites" class="level1">
-<h1>Course Pre-requisites</h1>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h3>
+<p>During this course, we expect students to:</p>
+<ul>
+<li><p>Apply computational methods for handling and using data to inform questions and solve problems;</p></li>
+<li><p>Implement professional practices to produce data-informed deliverables useful for stakeholder decision making;</p></li>
+<li><p>Practice communicating insight from data through written, visual, and verbal media to a variety of audiences;</p></li>
+<li><p>Create a professional toolbox of applied data science skills useful for applications of interest and future careers;</p></li>
+<li><p>Summarize and appraise data science approaches as they relate to addressing real-world challenges.</p></li>
+</ul>
+</section>
+<section id="learning-outcomes" class="level3">
+<h3 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h3>
+<p>By the end of this course, students will:</p>
+<ul>
+<li>Define, differentiate, and explain the nature and application of modern computational methods for handling and using data as it relates to real-world situations and challenges;</li>
+</ul>
+<p>-Associate, examine, and compare how to infer meaning and insight from data through written, visual, and verbal communication to both experts and non-experts;</p>
+<ul>
+<li>Summarize, implement, and appraise data analytics and their interpretation in relation to real-world circumstances;</li>
+</ul>
+<p>-Practice, manage, and design a personal toolbox of data skills useful for various careers and professions</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
