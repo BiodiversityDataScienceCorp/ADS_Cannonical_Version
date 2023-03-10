@@ -45,3 +45,6 @@ github.R
 
 # climate data for sdm
 wc2-5/
+
+# maxent outputs
+maxent_outputs/
