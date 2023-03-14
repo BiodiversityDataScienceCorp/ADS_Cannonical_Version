@@ -1,0 +1,33 @@
+---
+title: "practice_1"
+author: "Mila pruiett"
+date: "2023-01-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Practice with
+- Variables
+- Functions
+- Printing to the screen
+
+1. Assign the number 500 to the variable numberButterflies
+```{r}
+
+```
+
+
+2. Calculate the cubed root of 26 and assign it to the variable y
+```{r}
+
+```
+
+
+3. Print the variable y
+```{r}
+
+```
+

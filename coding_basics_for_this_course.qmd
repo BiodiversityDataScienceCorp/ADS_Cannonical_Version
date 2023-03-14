@@ -8,6 +8,10 @@ While this course doesn't have any specific prerequisites, it is important to ha
 
 There are three lessons, and three practices to gain more experience with what you will learn in the lessons. Each lesson is in its own file, but all of the practices are in one file.
 
+
+## How to Use
+
+
 ## Learning Objectives by Lesson
 
 ### Bootcamp Lesson 1
