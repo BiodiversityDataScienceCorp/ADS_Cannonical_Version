@@ -42,3 +42,11 @@ vignettes/*.pdf
 github.R
 
 /.quarto/
+
+# climate data for sdm
+wc2-5/
+cmip5/
+
+# maxent outputs
+maxent_outputs/
+

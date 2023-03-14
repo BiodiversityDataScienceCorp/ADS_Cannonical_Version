@@ -1,101 +1,318 @@
-# Current SDM
+# Current and Future SDM
 
-# Requirements for posit.cloud
+### In this lesson, you will learn
 
-# RAM to at least 5GB
+- What an SDM is
+- How to create an SDM with the machine learning method, MaxEnt
+- How to predict your SDM result onto a geographic area given current environmental variables
+- How to predict your SDM result onto a geographic area given future environmental variables under CMIP5
 
-# In project file, select NO for all fields in General
 
-# dependencies
+### What is an SDM?
+A Species Distribution Model. More here?
 
-install.packages("dismo") install.packages("maptools") install.packages("tidyverse") install.packages("rJava") install.packages("maps")
+# Install and load packages from CRAN
 
-library(dismo) library(maptools) library(tidyverse) library(rJava) library(maps)
+```{r}
+install.packages("tidyverse", repos = "http://cran.us.r-project.org")
+install.packages("maptools", repos = "http://cran.us.r-project.org")
+install.packages("maps", repos = "http://cran.us.r-project.org")
+install.packages("rJava", repos = "http://cran.us.r-project.org")
+install.packages("dismo", repos = "http://cran.us.r-project.org")
 
-### Section 1: Obtaining and Formatting Occurence / Climate Data
+```
 
-# read occurrence data (stop to talk about camelCase)
+```{r}
+library(dismo) 
+library(maptools) 
+library(tidyverse) 
+library(rJava) 
+library(maps)
 
-ranaData \<- read_csv("ranaData.csv") ranaDataNotCoords \<- ranaData %\>% select(longitude, latitude)
+```
 
-# convert to spatial points, necessary for modelling and mapping
+## Current SDM
 
-ranaDataSpatialPts \<- SpatialPoints(ranaDataNotCoords, proj4string = CRS("+proj=longlat"))
+### Obtaining and formatting occurence data
 
-# obtain climate data: use get data only once
+First we need to read in our species occurence data. We will make two copies of this data. One copy is the plain data frame that we made before. Another we will convert to spatial points, which is necessary for the model later on. 
 
-getData("worldclim", var="bio", res=2.5) \# current data \# see what each variable is here: https://www.worldclim.org/data/bioclim.html#:\~:text=The%20bioclimatic%20variables%20represent%20annual,the%20wet%20and%20dry%20quarters). #?raster::getData
+```{r}
 
-# create a list of the files in wc2-5 filder so we can make a raster stack
+ranaData <- read_csv("ranaData.csv") # read the data
 
-# define raster: https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm
+ranaDataNotCoords <- ranaData %>% dplyr::select(longitude, latitude) # copy 1
 
-# raster consists of a matrix of cells (or pixels) organized into rows and columns
+ranaDataSpatialPts <- SpatialPoints(ranaDataNotCoords, proj4string = CRS("+proj=longlat")) # copy 2: spatial points
 
-# (or a grid) where each cell contains a value representing information, such as
+```
 
-# temperature. Rasters are digital aerial photographs, imagery from satellites,
+### Obtaining climate data
 
-# digital pictures, or even scanned maps.
+We need to obtain current climate data. We will get the bio variables from world clim at a 2.5 minute resolution. To see what each variable is, see the [worldclim website](https://www.worldclim.org/data/bioclim.html). You can see more details on this function with ?raster::getData
+```{r}
+getData("worldclim", var="bio", res=2.5) 
+```
 
-climList \<- list.files(path = "wc2-5/", pattern = ".bil\$", full.names = T) \# '..' leads to the path above the folder where the .rmd file is located
+The data we obtained are rasters. A raster consists of a matrix of cells (or pixels) organized into rows and columns, (or a grid) where each cell contains a value representing information, such as temperature. Rasters are digital aerial photographs, imagery from satellites, digital pictures, or even scanned maps.
 
-# stacking the bioclim variables to process them at one go
+To read more about rasters, check out [this article](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.html) on arcgis. 
 
-clim \<- raster::stack(climList)
+Now we will create a list of files in the climate data folder, called wc2-5. 
 
-plot(clim\[\[3\]\]) plot(ranaDataSpatialPts, add = T)
+```{r}
+currentClimList <- list.files(path = "wc2-5/", pattern = ".bil$", full.names = T)
 
-### Section 2: Adding Pseudo-Absence Points
+```
 
-# Create pseudo-absence points (making them up, using 'background' approach)
+We can take this list and create a raster stack, so we can process all the bioclim variables at one time. 
 
-# first we need a raster layer to make the points up on, just picking 1
+```{r}
+currentClim <- raster::stack(currentClimList)
 
-mask \<- raster(clim\[\[1\]\]) \# mask is the raster object that determines the area where we are generating pts
+```
 
-# determine geographic extent of our data (so we generate random points reasonably nearby)
+We can check out a single layer of the data we just got. Here i'll plot bioclim 3, isothermality, and add our species occurrence data on top.
 
-geographicExtent \<- extent(x = ranaDataSpatialPts)
+```{r}
+plot(currentClim[[3]]) 
+plot(ranaDataSpatialPts, add = T)
 
-# Random points for background (same number as our observed points we will use )
+```
 
-set.seed(7536) \# seed set so we get the same background points each time we run this code backgroundPoints \<- randomPoints(mask = mask, n = nrow(ranaDataNotCoords), \# n should be same n as in the pts to be used to test ext = geographicExtent, extf = 1.25, \# draw a slightly larger area than where our sp was found (ask katy what is appropriate here) warn = 0) \# don't complain about not having a coordinate reference system
+Looks good! We have the world climate data, and our points are where we would expect them to be. 
 
-# add col names (can click and see right now they are x and y)
+### Adding background points 
 
-colnames(backgroundPoints) \<- c("longitude", "latitude")
+MaxEnt requires background points, points where we do NOT have occurrence data. We will walk through the steps required to generate that here. 
 
-### Section 3: Collate Env Data and Point Data into Proper Model Formats
+First we need a raster layer to make the points up on. We can pick any of the currentClim. 
 
-# Data for observation sites (presence and background), with climate data
+```{r}
+mask <- raster(currentClim[[1]]) # mask is the raster object that determines the area where we are generating pts
 
-occEnv \<- na.omit(raster::extract(x = clim, y = ranaDataNotCoords)) absenceEnv\<- na.omit(raster::extract(x = clim, y = backgroundPoints)) \# again, many NA values
+```
 
-# Create data frame with presence training data and backround points (0 = abs, 1 = pres)
+We want to generate our random points reasonably nearby our occurrence points. For example, we know this frog species is only found in the US state of California, so it doesn't make sense to generate absence data on any other continent than North America. If your species is globally spread, or theoretically could be, you will need to change the details in the random points call next.
 
-presenceAbsenceV \<- c(rep(1, nrow(occEnv)), rep(0, nrow(absenceEnv))) presenceAbsenceEnvDf \<- as.data.frame(rbind(occEnv, absenceEnv))
+We can find the geographic extent of our data, which requires spatial points data. 
 
-### Section 4: Create SDM with Maxent
+```{r}
+geographicExtent <- extent(x = ranaDataSpatialPts)
 
-# create a new folder called maxent_outputs
+```
 
-ranaSDM \<- dismo::maxent(x = presenceAbsenceEnvDf, \# env conditions p = presenceAbsenceV, \# p = 1, a = 0 path = "maxent_outputs" )
+We need to generate at least 1,000 random points. We have 4000 occurrence points, so we will generate as many background points as occurrence points that we have. 
 
-# view the maxent model by navigating in maxent_outputs folder for the html
+```{r}
+set.seed(7536) # seed set so we get the same background points each time we run this code
 
-response(ranaSDM) \### Section 5: Plot the Model \### \# clim is huge and it isn't reasonable to predict over whole world \# first we will make it smaller predictExtent \<- 1.25 \* geographicExtent geographicArea \<- crop(clim, predictExtent) \# crop clim data to predict extent
+backgroundPoints <- randomPoints(mask = mask, # shape we want our points generated onto 
+                                 n = nrow(ranaDataNotCoords), # needs to be at least 1000
+                                 ext = geographicExtent, # our geographic extent
+                                 extf = 1.25, # how much bigger than our occ extent do we want background pts
+                                 warn = 0) # don't complain about not having a coordinate reference system
 
-ranaPredictPlot \<- raster::predict(ranaSDM, geographicArea)
+```
 
-# for ggplot, we need the prediction to be a data frame
+Finally, we rename the columns of our background points from x & y to longitude & latitude so they make sense in light of mapping. 
 
-raster.spdf \<- as(ranaPredictPlot, "SpatialPixelsDataFrame") ranaPredictDf \<- as.data.frame(raster.spdf)
+```{r}
 
-# plot in ggplot
+colnames(backgroundPoints) <- c("longitude", "latitude")
 
-wrld \<- ggplot2::map_data("world")
+```
 
-xmax \<- max(ranaPredictDf$x) xmin <- min(ranaPredictDf$x) ymax \<- max(ranaPredictDf$y) ymin <- min(ranaPredictDf$y)
+### Extract the climate data for the occurrence and background points
 
-ggplot() + geom_polygon(data = wrld, aes(x = long, y = lat, group = group), fill = "grey") + geom_raster(data = ranaPredictDf, aes(x = x, y = y, fill = layer)) + scale_fill_gradientn(colors = terrain.colors(10, rev = T)) + coord_fixed(xlim = c(xmin, xmax), ylim = c(ymin, ymax), expand = F) + borders("state") + geom_point(data = ranaDataNotCoords, aes(x = longitude, y = latitude, alpha = 0.5))
+We need the climate data at each of our occurrence and background points so MaxEnt can figure our which environmental conditions are (or are not) associated with our species. 
+
+```{r}
+occEnv <- na.omit(raster::extract(x = currentClim, y = ranaDataNotCoords))
+absenceEnv <- na.omit(raster::extract(x = currentClim, y = backgroundPoints)) 
+
+```
+
+### Create data frame with presence training data and backround points (0 = abs, 1 = pres)
+
+We need objects that contain all the data necessary to run MaxEnt: the response variable (a vector of 1s and 0s for presences and absences) and the predictor variables (the climate data associated with each occurrence or background point).
+
+Create the response variable. 
+```{r}
+presenceAbsenceV <- c(rep(1, nrow(occEnv)), rep(0, nrow(absenceEnv))) 
+
+```
+
+Create the predictor variables data frame. 
+```{r}
+presenceAbsenceEnvDf <- as.data.frame(rbind(occEnv, absenceEnv))
+
+```
+
+### Create SDM with MaxEnt
+
+Finally we will creat our SDM with MaxEnt. We are using the dismo package, which actually runs the MaxEnt in java.  
+
+```{r}
+
+ranaSDM <- dismo::maxent(x = presenceAbsenceEnvDf, # env conditions 
+                         p = presenceAbsenceV, # p = 1, a = 0 
+                         path = "maxent_outputs" )
+                          
+```
+
+We can view the results of the MaxEnt model 
+
+```{r}
+response(ranaSDM)
+
+```
+
+
+### Plot the model: getting the right area
+
+Our climate data, currentClim, is huge and it isn't reasonable to predict the distribution of our species over whole world .
+
+We will make it smaller. The prediction extent needs to be the same as the extent of our random points generation. 
+
+```{r}
+predictExtent <- 1.25 * geographicExtent 
+
+```
+
+Now we can create the geographic area over which we want our model prediction
+
+```{r}
+geographicArea <- crop(currentClim, predictExtent) 
+
+```
+
+And finally, we can predict our SDM over this area. 
+
+```{r}
+ranaPredictPlot <- raster::predict(ranaSDM, geographicArea)
+
+```
+
+# Plotting in ggplot2
+
+Ggplot2 requires us to convert our predictPlot to a data frame. First we convert it to a aspatial pixels data frame, then to a traditional data frame. 
+
+```{r}
+raster.spdf <- as(ranaPredictPlot, "SpatialPixelsDataFrame") 
+ranaPredictDf <- as.data.frame(raster.spdf)
+
+```
+
+We will use all the same layers as we used in our occurrence map, and just add our sdm layer over the top. 
+
+We've increased the extent of our geographic range by predicting over the background points extent, so we need to set new x and y limits. 
+
+```{r}
+
+xmax <- max(ranaPredictDf$x) 
+xmin <- min(ranaPredictDf$x) 
+ymax <- max(ranaPredictDf$y) 
+ymin <- min(ranaPredictDf$y)
+
+```
+
+We will use all the same formatting that we did for our occurrence map, and simply add our sdm layer. 
+
+```{r}
+wrld <- ggplot2::map_data("world")
+
+ggplot() +
+  geom_polygon(data = wrld, mapping = aes(x = long, y = lat, group = group),
+               fill = "grey75", color = "grey") +
+  geom_raster(data = ranaPredictDf, aes(x = x, y = y, fill = layer)) + # our sdm layer
+  scale_fill_gradientn(colors = terrain.colors(10, rev = T)) + # choose colors for sdm layer
+  coord_fixed(xlim = c(xmin, xmax), ylim = c(ymin, ymax), expand = F) + # expand = F fixes weird margin
+  scale_size_area() +
+  borders("state") +
+  borders("world") +
+  labs(title = "SDM of R. draytonii Under Current Climate Conditions",
+       x = "longitude",
+       y = "latitude",
+       fill = "Environmental Suitability") +
+  theme(legend.box.background=element_rect(),legend.box.margin=margin(5,5,5,5)) 
+
+```
+
+Now that we've done the current SDM, we can move onto the future. We will use the model we already created and just change the future climate data to project onto.
+
+## Future SDM
+
+### Obtaining future climate data
+
+We will use getData from the raster package. We will work on migrating towards CMIP6, which will require a different data download method in the future. For now, this will work. You can specify which rcp, which is the greenhouse gas emission prediction. You can also specify which [climate model](https://rdrr.io/cran/raster/man/getData.html) you'd like to use, how many years into the future: 50 or 70 years from now. 
+```{r}
+
+futureClim <- raster::getData(name = 'CMIP5', var = 'bio', res = 2.5, rcp = 45, model = 'IP', year = 70)
+
+```
+
+The futureClim data has names that are inconsisent with the currentClim. We can rename them so we can predict the SDM onto this new layer.  
+
+```{r}
+
+names(futureClim) = names(currentClim) 
+
+```
+
+We can also look at current vs future climate variables, and see how they change. 
+
+```{r}
+
+plot(currentClim[[1]])
+
+plot(futureClim[[1]])
+
+```
+
+### Plot the model: getting the right area
+
+We need to crop our future climate data, just like we did with our current climate data. We will use the predictExtent we created in the current SDM. 
+
+```{r}
+
+geographicAreaFuture <- crop(futureClim, predictExtent)
+
+```
+
+# Predict the SDM over the new future climate data
+
+```{r}
+
+ranaPredictPlotFuture <- raster::predict(ranaSDM, geographicAreaFuture)
+
+```
+
+### Plotting in ggplot 2
+
+Ggplot2 requires us to convert our predictPlot to a data frame. First we convert it to a aspatial pixels data frame, then to a traditional data frame. 
+
+```{r}
+rasterFuture.spdf <- as(ranaPredictPlotFuture, "SpatialPixelsDataFrame") 
+ranaPredictDfFuture <- as.data.frame(rasterFuture.spdf)
+
+```
+
+
+Our x and y limits haven't changed since the current sdm, so we'll keep that part the same. Our ggplot2 call is going to be the same as the currend sdm, but with our new predict data frame. 
+
+```{r}
+wrld <- ggplot2::map_data("world")
+
+
+ggplot() + 
+  geom_polygon(data = wrld, mapping = aes(x = long, y = lat, group = group), fill = "grey75") + geom_raster(data = ranaPredictDfFuture, aes(x = x, y = y, fill = layer)) + 
+  scale_fill_gradientn(colors = terrain.colors(10, rev = T)) + 
+  coord_fixed(xlim = c(xmin, xmax), ylim = c(ymin, ymax), expand = F) + 
+  scale_size_area() + borders("world") + 
+  borders("state") + 
+  labs(title = "SDM of R. boylii Under \nCMIP 5 Climate Conditions", x = "longitude", y = "latitude", fill = "Env Suitability") + theme(legend.box.background=element_rect(),legend.box.margin=margin(5,5,5,5))
+
+```
+
+

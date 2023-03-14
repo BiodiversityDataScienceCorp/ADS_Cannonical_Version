@@ -4,23 +4,29 @@ project:
 website:
   sidebar:
     style: "docked"
+    collapse-level: 1
+    logo: bdsc-logo-circle.png
     search: true
     contents:
       - section: "General Information"
         contents:
           - href: about.qmd 
-          - href: index.qmd
       - section: "Course Details"
         contents:
           - href: for_students.qmd
           - href: reading_schedule.qmd 
+      - section: "Coding Boot Camp"
+        contents: 
+          - href: coding_basics_for_this_course.qmd
+          - href: bootcamp_1.qmd
+          - href: bootcamp_2.qmd
+          - href: bootcamp_3.qmd
+          - href: bootcamp_practice_1.qmd
       - section: "Lessons"
         contents:
-        - href: coding_basics_for_this_course.qmd
         - href: data_aquisition_cleaning.qmd
         - href: occ_map.qmd
         - href: sdm_current.qmd
-        - href: sdm_future_qmd
       - section: "Homeworks"
         contents:
         - href: HW_1.qmd

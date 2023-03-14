@@ -1,0 +1,124 @@
+# Bootcamp Lesson 3
+
+### Learning objectives  
+
+- Load and filter datasets as needed
+- Learn the basic elements of ggplot
+
+
+### What is ggplot?
+
+ggplot is an R package created by Hadley Wickham (he's kind of a big deal in the R world). The "gg" translates to "grammar of graphics", and is founded in the idea that all data visualizations are comprised of three components:
+
+* data set
+* aesthetics, or visual marks that represent the data (i.e. the stuff that you see)
+* geometric objects, or "geoms" (e.g the type of plot)
+
+ggplot is part of the "tidyverse" - a series of packages that share common strategies for working with data and generating visualizations. We can load all the packages at once (including readr, dplyr, and other packages for working with data) by running this command:
+
+```{r}
+library(tidyverse)
+```
+
+
+### Getting Help  
+ggplot has many, many options and possibilities. When getting started (and even once you're a ggplot expert), it's a good idea to refer to documentation. In the "Files" section, click on the "ggplot2-cheatsheet.pdf". The RStudio "help" function is also useful:
+
+```{r}
+help(ggplot)
+```
+
+```{r}
+help(geom_jitter)
+```
+
+As always, entering your question or error message into your favorite search engine is trypically a pretty effective way to get help. Chances are good that someone else has already encountered a ggplot problem you've encountered, and the answers are likely online.
+
+
+### Penguin Data
+
+We are going to use the penguins data set again. To call up this data, we need to load the palmerpenguins package. 
+
+```{r}
+library(palmerpenguins)
+```
+
+
+Our goal is to create a box plot that shows the difference in mass between the male penguins of the different species. With any programming problem, it's good to think about it in terms of steps:
+
+* load the data set
+* filter the data so it only contains data I'm interested in
+* create a chart with that data
+
+Once you break the problem down into steps, hopefully it'll be easier to tackle. Plus, each individual step is 'googleable', so help is not far away.
+
+
+Let's get the subset of the data that is only the male penguins. Assign this to the variable malePenguins. (Hint: if you don't know how to do this, look back at the filtering section of lesson_2.Rmd)
+```{r}
+# malePenguins <- penguins %>% filter(sex == "male")
+```
+
+
+Our "mary" variable now just has the count of "Marys" over time. Let's do a line plot to see the change over time. Here is the code we will run:
+
+ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g))+geom_box()
+
+Looking at the code, here's how we're including the three basic parts of a ggplot chart: 
+
+* DATA - data=malePenguins
+* AESTHETICS - mapping=aes(x=species, y=body_mass_g)  
+* GEOM - +geom_boxplot()  to create a box plot
+
+
+```{r}
+# ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g))+geom_boxplot()
+```
+
+
+YOUR TURN:
+
+Let's say you want to see if there is a relationship between a penguin's body mass and it's flipper length. Create this scatter plot. You don't need to filter this data, since we are looking at all of the penguins. The x axis should be the body mass and the y axis should be the flipper length. Look at the ggplot2-cheatsheet.pdf to find out what the GEOM should be. 
+```{r}
+#
+```
+
+
+### Labels & Colors
+
+You can specify labels to add to your plot by using the "labs()" function:
+
+```{r}
+#ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g)) + 
+  #geom_boxplot() +
+  #labs(x = "Penguin Species", y = "Body Mass (g)", title = "Penguin body mass is different by species")
+```
+
+Additionally you can add colors. You can add colors by a categorical variable (like species) by adding it to the aes argument. Here we will use "fill" because we want the color to fill the whole box. If we just have points, we can use "color = " instead. 
+
+```{r}
+#ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g, fill = species)) + 
+  #geom_boxplot() +
+  #labs(x = "Penguin Species", y = "Body Mass (g)", title = "Penguin body mass is different by species")
+```
+
+YOUR TURN:
+Can you add some labels and color by species to your scatter plot?
+```{r}
+#
+```
+
+### Saving your plot 
+
+To save your plot as a file, you can use the ggsave() function. ggsave will save the last plot generated:
+
+```{r}
+#ggsave("plot.png", height=5, width=5, units="cm", scale=3)
+```
+
+From there, you can download your pot file, and use it however you choose.
+
+
+Awesome job! 
+
+We are going to use ggplot to create maps later this semester. The important thing is that you are familiar with the syntax in ggplot, not the specifics of a boxplot or scatter plot. 
+

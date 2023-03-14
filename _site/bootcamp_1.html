@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>occ_map</title>
+<title>bootcamp_1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -192,12 +192,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Coding Boot Camp</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Coding Boot Camp</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./coding_basics_for_this_course.html" class="sidebar-item-text sidebar-link">Coding Basics</a>
@@ -205,7 +205,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bootcamp_1.html" class="sidebar-item-text sidebar-link">Bootcamp Lesson 1</a>
+  <a href="./bootcamp_1.html" class="sidebar-item-text sidebar-link active">Bootcamp Lesson 1</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -227,12 +227,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Lessons</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Lessons</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data_aquisition_cleaning.html" class="sidebar-item-text sidebar-link">Querying, cleaning, and mapping GBIF data</a>
@@ -240,7 +240,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./occ_map.html" class="sidebar-item-text sidebar-link active">Occurrence Map</a>
+  <a href="./occ_map.html" class="sidebar-item-text sidebar-link">Occurrence Map</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -304,14 +304,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#occurrence-map" id="toc-occurrence-map" class="nav-link active" data-scroll-target="#occurrence-map">Occurrence Map</a>
+  <li><a href="#bootcamp-lesson-1" id="toc-bootcamp-lesson-1" class="nav-link active" data-scroll-target="#bootcamp-lesson-1">Bootcamp Lesson 1</a>
   <ul class="collapse">
-  <li><a href="#in-this-lesson-you-will-learn" id="toc-in-this-lesson-you-will-learn" class="nav-link" data-scroll-target="#in-this-lesson-you-will-learn">In this lesson, you will learn</a></li>
-  <li><a href="#install-and-load-packages" id="toc-install-and-load-packages" class="nav-link" data-scroll-target="#install-and-load-packages">Install and load packages</a></li>
-  <li><a href="#read-the-data" id="toc-read-the-data" class="nav-link" data-scroll-target="#read-the-data">Read the data</a></li>
-  <li><a href="#setting-the-x-and-y-limits-of-our-map" id="toc-setting-the-x-and-y-limits-of-our-map" class="nav-link" data-scroll-target="#setting-the-x-and-y-limits-of-our-map">Setting the x and y limits of our map</a></li>
-  <li><a href="#finding-the-date-range" id="toc-finding-the-date-range" class="nav-link" data-scroll-target="#finding-the-date-range">Finding the date range</a></li>
-  <li><a href="#mapping" id="toc-mapping" class="nav-link" data-scroll-target="#mapping">Mapping</a></li>
+  <li><a href="#welcome-to-rstudio" id="toc-welcome-to-rstudio" class="nav-link" data-scroll-target="#welcome-to-rstudio">Welcome to rstudio!</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#rstudio-windows" id="toc-rstudio-windows" class="nav-link" data-scroll-target="#rstudio-windows">rstudio windows</a></li>
+  <li><a href="#code-chunks" id="toc-code-chunks" class="nav-link" data-scroll-target="#code-chunks">Code chunks</a></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -321,101 +322,107 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="occurrence-map" class="level1">
-<h1>Occurrence Map</h1>
-<section id="in-this-lesson-you-will-learn" class="level3">
-<h3 class="anchored" data-anchor-id="in-this-lesson-you-will-learn">In this lesson, you will learn</h3>
+<section id="bootcamp-lesson-1" class="level1">
+<h1>Bootcamp Lesson 1</h1>
+<section id="welcome-to-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="welcome-to-rstudio">Welcome to rstudio!</h2>
+<p>Let’s start off by clicking the “Visual” button above, so this document is a little easier to read and work with. You’ll likely get a popup window the first time, confirming that you want to switch to Visual Mode. Just click <em>Use Visual Mode</em></p>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
 <ul>
-<li>How to plot species occurrence data onto a world map</li>
+<li>Gain some familiarity with rstudio</li>
+<li>Learn how to run R code in “code chunks”</li>
+<li>Perform some arithmetic with R</li>
+<li>Create variables in R, and assign values to them</li>
+<li>Functions</li>
 </ul>
 </section>
-<section id="install-and-load-packages" class="level3">
-<h3 class="anchored" data-anchor-id="install-and-load-packages">Install and load packages</h3>
+<section id="rstudio-windows" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-windows">rstudio windows</h3>
+<p>You’ll notice rstudio is divided into 4 windows. Let’s take a look at each one: - upper-left: this is the area for reading / writing files. We’ll probably use this window the most this semester. - lower-left: this is the console, where you can run R code directly. You might use this occasionally, but for the most part probably won’t have to. - upper-right: this window has a couple useful tabs: - Environment: any variables you create will be listed here. This can be useful for quick reference. - History: this shows the R commands you’ve run within a session. - Connections: this will be important for using GitHub, which we will get to later in the semester - lower-right: this window lists any files and folders that are part of your project/assignment. It also has tabs that can display plots and help documentation. You can resize windows / borders as needed in order to more easily focus on the particular window you’re using.</p>
+</section>
+<section id="code-chunks" class="level3">
+<h3 class="anchored" data-anchor-id="code-chunks">Code chunks</h3>
+<p>The grey rectangles below are “code chunks”, where you can type and execute R code. We will use them in these lessons. In class, you will use .R files, which essentially are entirely code chunks. To run the code, click the green triangle in the upper-right corner of the code chunk. Let’s try running the code chunk below, which is just some simple arithmetic:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>) <span class="co">#includes ggplot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
-(as 'lib' is unspecified)</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">5</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>
-The downloaded binary packages are in
-    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpMaKige/downloaded_packages</code></pre>
+<pre><code>[1] 7</code></pre>
 </div>
 </div>
+<p>Now it’s your turn. In the code chunk below, enter a command to subtract 7 from 18, and run it:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.0     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.1     ✔ tibble    3.1.8
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the ]8;;http://conflicted.r-lib.org/conflicted package]8;; to force all conflicts to become errors</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Enter code below (by the way, I'm a comment. I'm a way for you to leave notes in the code. Simply put a hashtag and type away.)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="read-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="read-the-data">Read the data</h3>
+<section id="variables" class="level3">
+<h3 class="anchored" data-anchor-id="variables">Variables</h3>
+<p>Programming languages, including R, rely heavily on the use of <em>variables</em>. A variable is something you define and assign a value to. In the code chunk below, we’re creating a variable called <code>x</code>, and assigning the value of 7 to it:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ranaData <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"ranaData.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>New names:
-Rows: 1778 Columns: 4
-── Column specification
-──────────────────────────────────────────────────────── Delimiter: "," dbl
-(3): ...1, longitude, latitude date (1): eventDate
-ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
-Specify the column types or set `show_col_types = FALSE` to quiet this message.
-• `` -&gt; `...1`</code></pre>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Notice we use a 'left pointing arrow' to assign the value</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">7</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</section>
-<section id="setting-the-x-and-y-limits-of-our-map" class="level3">
-<h3 class="anchored" data-anchor-id="setting-the-x-and-y-limits-of-our-map">Setting the x and y limits of our map</h3>
-<p>We want our map to be centered on where our occurrence data is found. To do this, we will create x and y limits based on the latitude (y) and longitude (x) values of our cleaned data.</p>
+<p>We don’t get any real feedback from running the code above, but it’s often a good idea to check your work by printing a variable’s value to the screen. To do this, you can run code that simply lists the variable, here x. R will remember the variables you assign. You can see what R is “remembering” by looking at the environment tab in the top right.:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>xmax <span class="ot">&lt;-</span> <span class="fu">max</span>(ranaData<span class="sc">$</span>longitude) </span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>xmin <span class="ot">&lt;-</span> <span class="fu">min</span>(ranaData<span class="sc">$</span>longitude) </span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>ymax <span class="ot">&lt;-</span> <span class="fu">max</span>(ranaData<span class="sc">$</span>latitude) </span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>ymin <span class="ot">&lt;-</span> <span class="fu">min</span>(ranaData<span class="sc">$</span>latitude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="finding-the-date-range" class="level3">
-<h3 class="anchored" data-anchor-id="finding-the-date-range">Finding the date range</h3>
-<p>Since we didn’t specify the date range in our data acquisition call from GBIF, our species occurence data spans an unknown date range. It’s a good idea to include the date range in the title of the plot. We can use the range function.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(<span class="fu">na.omit</span>(<span class="fu">as.Date</span>(ranaData<span class="sc">$</span>eventDate)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># prints to the screen:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "1891-09-30" "2023-02-20"</code></pre>
+<pre><code>[1] 7</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># our date identified ranges from 1891 to 2023</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="mapping" class="level3">
-<h3 class="anchored" data-anchor-id="mapping">Mapping</h3>
-<p>We will use ggplot2 to plot our data and style our map.</p>
+<p>It’s worth noting that you can run multiple lines of code within a code chunk:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>wrld <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">map_data</span>(<span class="st">"world"</span>) <span class="co"># obtaining world borders</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> <span class="co"># call ggplot</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_polygon</span>(<span class="at">data =</span> wrld, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>long, <span class="at">y=</span>lat, <span class="at">group=</span>group), <span class="at">fill=</span><span class="st">"grey75"</span>, <span class="at">colour =</span> <span class="st">"grey60"</span>) <span class="sc">+</span> <span class="co"># add world shapes, which are polygons stored in the df wrld</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>                   <span class="co"># we can specify the color, which is the border, and the fill, which is                      the inside of the shape</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> ranaData, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>longitude, <span class="at">y=</span>latitude), <span class="at">show.legend=</span><span class="cn">FALSE</span>) <span class="sc">+</span> <span class="co"># our lat/long data are points on an x/y grid. We suppress the legend. </span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Species occurrences of R. draytonii from 1891 - 2023"</span>, <span class="at">x=</span><span class="st">"longitude"</span>, <span class="at">y=</span><span class="st">"latitude"</span>) <span class="sc">+</span> <span class="co"># add labels to the graph</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>(<span class="at">xlim =</span> <span class="fu">c</span>(xmin, xmax), <span class="at">ylim =</span> <span class="fu">c</span>(ymin, ymax)) <span class="sc">+</span> <span class="co"># give it our x and y limits to center the graph</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_area</span>() <span class="sc">+</span> <span class="co"># scales the map accordingly </span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">borders</span>(<span class="st">"state"</span>) <span class="co"># add state borders </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="occ_map_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a variable "penguinCount" and give it the value 3</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>penguinCount <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># print to screen</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>penguinCount</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
 </div>
 </div>
+<p>Now it’s your turn. Work with your group / people next to you, and do the following:</p>
+<ul>
+<li>create a variable called <code>y</code>, assign three plus eight to it, and print to the screen.</li>
+<li>create a variable <code>z</code>, and assign <code>x+y</code> to it, and print to the screen</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the variable "y" here, and print to screen</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the variable "z" here, and print to screen</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="functions" class="level4">
+<h4 class="anchored" data-anchor-id="functions">Functions</h4>
+<p>Coding languages, including R, have functions that help you quickly execute common tasks. Functions typically take the form of:</p>
+<p>functionName(argument1, argument2, etc….)</p>
+<p><em>Arguments</em> are the inputs you send to a function, so it has all the information it needs to perform its operation.</p>
+<p>For example, the function <code>sqrt(number)</code> takes the square root of a number. This lets us quickly compute the answer, rather than having to write the formula for a square root.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">9</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+<p>YOUR TURN: In the chunk below, create a variable <code>z</code>, set it equal to the square root of 90, and print it out:</p>
+<div class="cell">
+
+</div>
+<p>One nice thing about rstudio is that you can readily access documentation for functions by using the “help” command:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The documentation appears in the lower right window in the “help” tab.</p>
+<p>One key question: how do you know what functions exist, and what they do?<br>
+Answer: you Google what you’re trying to do! In the case of R, you might search “How do I do ‘x’ in R?”</p>
+<p>Let’s say you are interested in calculating the absolute value (positive distance from zero) of -35 in R. Take a moment with your group/neighbors, and try to find the answer by searching the internet. In the code chunk below, use the function you found to compute this calculation:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compute the absolute value of -35</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You made it!</p>
 
 
+</section>
+</section>
 </section>
 </section>
 

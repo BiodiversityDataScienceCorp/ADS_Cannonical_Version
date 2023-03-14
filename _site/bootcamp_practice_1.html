@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>occ_map</title>
+<title>bootcamp_practice_1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -192,12 +192,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Coding Boot Camp</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Coding Boot Camp</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./coding_basics_for_this_course.html" class="sidebar-item-text sidebar-link">Coding Basics</a>
@@ -220,19 +220,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bootcamp_practice_1.html" class="sidebar-item-text sidebar-link">Bootcamp Practices</a>
+  <a href="./bootcamp_practice_1.html" class="sidebar-item-text sidebar-link active">Bootcamp Practices</a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Lessons</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Lessons</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./data_aquisition_cleaning.html" class="sidebar-item-text sidebar-link">Querying, cleaning, and mapping GBIF data</a>
@@ -240,7 +240,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./occ_map.html" class="sidebar-item-text sidebar-link active">Occurrence Map</a>
+  <a href="./occ_map.html" class="sidebar-item-text sidebar-link">Occurrence Map</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -304,14 +304,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#occurrence-map" id="toc-occurrence-map" class="nav-link active" data-scroll-target="#occurrence-map">Occurrence Map</a>
+  <li><a href="#bootcamp-practices" id="toc-bootcamp-practices" class="nav-link active" data-scroll-target="#bootcamp-practices">Bootcamp Practices</a>
   <ul class="collapse">
-  <li><a href="#in-this-lesson-you-will-learn" id="toc-in-this-lesson-you-will-learn" class="nav-link" data-scroll-target="#in-this-lesson-you-will-learn">In this lesson, you will learn</a></li>
-  <li><a href="#install-and-load-packages" id="toc-install-and-load-packages" class="nav-link" data-scroll-target="#install-and-load-packages">Install and load packages</a></li>
-  <li><a href="#read-the-data" id="toc-read-the-data" class="nav-link" data-scroll-target="#read-the-data">Read the data</a></li>
-  <li><a href="#setting-the-x-and-y-limits-of-our-map" id="toc-setting-the-x-and-y-limits-of-our-map" class="nav-link" data-scroll-target="#setting-the-x-and-y-limits-of-our-map">Setting the x and y limits of our map</a></li>
-  <li><a href="#finding-the-date-range" id="toc-finding-the-date-range" class="nav-link" data-scroll-target="#finding-the-date-range">Finding the date range</a></li>
-  <li><a href="#mapping" id="toc-mapping" class="nav-link" data-scroll-target="#mapping">Mapping</a></li>
+  <li><a href="#bootcamp-lesson-1" id="toc-bootcamp-lesson-1" class="nav-link" data-scroll-target="#bootcamp-lesson-1">Bootcamp Lesson 1</a>
+  <ul class="collapse">
+  <li><a href="#practice-with" id="toc-practice-with" class="nav-link" data-scroll-target="#practice-with">Practice with</a></li>
+  </ul></li>
+  <li><a href="#bootcamp-lesson-2" id="toc-bootcamp-lesson-2" class="nav-link" data-scroll-target="#bootcamp-lesson-2">Bootcamp Lesson 2</a>
+  <ul class="collapse">
+  <li><a href="#practice-with-1" id="toc-practice-with-1" class="nav-link" data-scroll-target="#practice-with-1">Practice with</a></li>
+  </ul></li>
+  <li><a href="#bootcamp-lesson-3" id="toc-bootcamp-lesson-3" class="nav-link" data-scroll-target="#bootcamp-lesson-3">Bootcamp Lesson 3</a>
+  <ul class="collapse">
+  <li><a href="#practice-with-2" id="toc-practice-with-2" class="nav-link" data-scroll-target="#practice-with-2">Practice with</a></li>
+  <li><a href="#instructions-for-plots" id="toc-instructions-for-plots" class="nav-link" data-scroll-target="#instructions-for-plots">Instructions for plots</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -321,101 +328,149 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<section id="occurrence-map" class="level1">
-<h1>Occurrence Map</h1>
-<section id="in-this-lesson-you-will-learn" class="level3">
-<h3 class="anchored" data-anchor-id="in-this-lesson-you-will-learn">In this lesson, you will learn</h3>
+<section id="bootcamp-practices" class="level1">
+<h1>Bootcamp Practices</h1>
+<section id="bootcamp-lesson-1" class="level2">
+<h2 class="anchored" data-anchor-id="bootcamp-lesson-1">Bootcamp Lesson 1</h2>
+<section id="practice-with" class="level3">
+<h3 class="anchored" data-anchor-id="practice-with">Practice with</h3>
 <ul>
-<li>How to plot species occurrence data onto a world map</li>
+<li>Variables</li>
+<li>Functions</li>
+<li>Printing to the screen</li>
+</ul>
+<ol type="1">
+<li>Assign the number 500 to the variable numberButterflies</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Calculate the cubed root of 26 and assign it to the variable y</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="1">
+<li>Print the variable y</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="bootcamp-lesson-2" class="level2">
+<h2 class="anchored" data-anchor-id="bootcamp-lesson-2">Bootcamp Lesson 2</h2>
+<section id="practice-with-1" class="level3">
+<h3 class="anchored" data-anchor-id="practice-with-1">Practice with</h3>
+<ul>
+<li>Packages</li>
+<li>Accessing specific columns in a data set</li>
+<li>Assigning variables</li>
+<li>Select</li>
+<li>Filtering</li>
+</ul>
+<ol type="1">
+<li>(Install if you haven’t completed lesson 2) and load the tidyverse and palmerpenguins packages.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Assign the bill length column to a variable called penguinBillLength</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="1">
+<li>Assign the bill depth column to a variable called penguinBillDepth.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>For Questions 4 - 7, you can choose to either use the pipe %&gt;% or not. Either way is great!</p>
+<ol start="4" type="1">
+<li>Assign only the columns island, bill_length_mm, and bill_depth_mm to a new variable (name it whatever you’d like!).</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="5" type="1">
+<li>Assign only the columns sex and year to the variable sexByYear.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="6" type="1">
+<li>Create a subset of the data that includes all the columns only for male Gentoo penguins with flipper lengths greater than 20 mm.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="7" type="1">
+<li>Create a subset of the data that includes all penguins on Biscoe island with flipper lengths greater than 20 mm. Remove all of the NA values as well.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Challenge: Using the pipe %&gt;%, string together two commands with only one line of code to create a data set that includes only the columns: species, sex, and flipper length, with only Adelie penguins whose flippers are greater than 180 mm.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="bootcamp-lesson-3" class="level2">
+<h2 class="anchored" data-anchor-id="bootcamp-lesson-3">Bootcamp Lesson 3</h2>
+<section id="practice-with-2" class="level3">
+<h3 class="anchored" data-anchor-id="practice-with-2">Practice with</h3>
+<ul>
+<li>Packages</li>
+<li>Filtering</li>
+<li>Ggplot</li>
 </ul>
 </section>
-<section id="install-and-load-packages" class="level3">
-<h3 class="anchored" data-anchor-id="install-and-load-packages">Install and load packages</h3>
+<section id="instructions-for-plots" class="level3">
+<h3 class="anchored" data-anchor-id="instructions-for-plots">Instructions for plots</h3>
+<p>Each plot should have axis labels, a title, and use colors to illustrate the data.</p>
+<ol type="1">
+<li>(Install if you haven’t completed lessons 2 or 3 or practice 2) and load the tidyverse and palmerpenguins packages.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>) <span class="co">#includes ggplot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
-(as 'lib' is unspecified)</code></pre>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-The downloaded binary packages are in
-    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpMaKige/downloaded_packages</code></pre>
-</div>
-</div>
+<ol start="2" type="1">
+<li>Create a subset of the data that includes all the data from the years 2007 and 2008.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.0     ✔ readr     2.1.4
-✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.1     ✔ tibble    3.1.8
-✔ lubridate 1.9.2     ✔ tidyr     1.3.0
-✔ purrr     1.0.1     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the ]8;;http://conflicted.r-lib.org/conflicted package]8;; to force all conflicts to become errors</code></pre>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</section>
-<section id="read-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="read-the-data">Read the data</h3>
+<ol start="3" type="1">
+<li>Create a box plot of the bill lengths by male and female penguins of all species from the years 2007 and 2008.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ranaData <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"ranaData.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>New names:
-Rows: 1778 Columns: 4
-── Column specification
-──────────────────────────────────────────────────────── Delimiter: "," dbl
-(3): ...1, longitude, latitude date (1): eventDate
-ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
-Specify the column types or set `show_col_types = FALSE` to quiet this message.
-• `` -&gt; `...1`</code></pre>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</section>
-<section id="setting-the-x-and-y-limits-of-our-map" class="level3">
-<h3 class="anchored" data-anchor-id="setting-the-x-and-y-limits-of-our-map">Setting the x and y limits of our map</h3>
-<p>We want our map to be centered on where our occurrence data is found. To do this, we will create x and y limits based on the latitude (y) and longitude (x) values of our cleaned data.</p>
+<ol start="4" type="1">
+<li>Create a subset of the data that includes only the female penguins.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>xmax <span class="ot">&lt;-</span> <span class="fu">max</span>(ranaData<span class="sc">$</span>longitude) </span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>xmin <span class="ot">&lt;-</span> <span class="fu">min</span>(ranaData<span class="sc">$</span>longitude) </span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>ymax <span class="ot">&lt;-</span> <span class="fu">max</span>(ranaData<span class="sc">$</span>latitude) </span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>ymin <span class="ot">&lt;-</span> <span class="fu">min</span>(ranaData<span class="sc">$</span>latitude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="finding-the-date-range" class="level3">
-<h3 class="anchored" data-anchor-id="finding-the-date-range">Finding the date range</h3>
-<p>Since we didn’t specify the date range in our data acquisition call from GBIF, our species occurence data spans an unknown date range. It’s a good idea to include the date range in the title of the plot. We can use the range function.</p>
+<ol start="5" type="1">
+<li>Create a box plot of the bill depth by species of only the female penguins.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(<span class="fu">na.omit</span>(<span class="fu">as.Date</span>(ranaData<span class="sc">$</span>eventDate)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "1891-09-30" "2023-02-20"</code></pre>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># our date identified ranges from 1891 to 2023</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="mapping" class="level3">
-<h3 class="anchored" data-anchor-id="mapping">Mapping</h3>
-<p>We will use ggplot2 to plot our data and style our map.</p>
+<ol start="6" type="1">
+<li>Create a scatter plot of the relationship between bill length and bill depth for penguins on only Dream island and color by species.</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>wrld <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">map_data</span>(<span class="st">"world"</span>) <span class="co"># obtaining world borders</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> <span class="co"># call ggplot</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_polygon</span>(<span class="at">data =</span> wrld, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span>long, <span class="at">y=</span>lat, <span class="at">group=</span>group), <span class="at">fill=</span><span class="st">"grey75"</span>, <span class="at">colour =</span> <span class="st">"grey60"</span>) <span class="sc">+</span> <span class="co"># add world shapes, which are polygons stored in the df wrld</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>                   <span class="co"># we can specify the color, which is the border, and the fill, which is                      the inside of the shape</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> ranaData, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>longitude, <span class="at">y=</span>latitude), <span class="at">show.legend=</span><span class="cn">FALSE</span>) <span class="sc">+</span> <span class="co"># our lat/long data are points on an x/y grid. We suppress the legend. </span></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Species occurrences of R. draytonii from 1891 - 2023"</span>, <span class="at">x=</span><span class="st">"longitude"</span>, <span class="at">y=</span><span class="st">"latitude"</span>) <span class="sc">+</span> <span class="co"># add labels to the graph</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>(<span class="at">xlim =</span> <span class="fu">c</span>(xmin, xmax), <span class="at">ylim =</span> <span class="fu">c</span>(ymin, ymax)) <span class="sc">+</span> <span class="co"># give it our x and y limits to center the graph</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_size_area</span>() <span class="sc">+</span> <span class="co"># scales the map accordingly </span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">borders</span>(<span class="st">"state"</span>) <span class="co"># add state borders </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="occ_map_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
-</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
+</section>
 </section>
 </section>
 

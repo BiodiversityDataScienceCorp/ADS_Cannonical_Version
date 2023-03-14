@@ -1,0 +1,175 @@
+# Bootcamp Lesson 2
+
+### Learning objectives
+- Installing and loading a package
+- Opening and looking at a data set
+- Accessing a specific column in a data set
+- Selecting columns to create a new variable
+- Relational operators
+- Filtering 
+- The pipe %>% 
+
+### Packages
+We often use packages when coding in R. Packages, very simply, are tool boxes that contain useful functions. We will use a package called the "tidyverse." Tidyverse is designed for data science and is very useful for organizing, manipulating, and viewing our data. 
+
+First we have to install a package if it has never been installed in a local project. You only have to do this once per file.
+
+```{r}
+install.packages("tidyverse", repos = "http://cran.us.r-project.org")
+```
+Once you have installed a package, you need to load it into your workspace. You need to do this every time you run the file.
+
+```{r}
+library("tidyverse")
+```
+
+Your turn. For this lesson, we will use the "palmerpenguins" package, which contains a data set. This data has various measurements of penguins collectd near Palmer Station in Antarctica and was made available by Dr. Kristen Gorman. 
+
+Using the same syntax as above, install and load the "palmerpenguins" package.
+```{r}
+```
+
+Now we have access to a data set, called penguins.
+
+### Looking at a data set and accessing a column 
+
+You can get a glance of a data set with the function "glimpse."
+```{r}
+# glimpse(penguins)
+```
+
+From glimpse above, we can see that the data set contains 8 columns. To access one column, we use the dataSet$column syntax. We can then assign it to a variable. 
+```{r}
+# islands <- penguins$island
+```
+
+Now your turn. Create a variable (remember, to assign a variable use the syntax: x <- thing) called penguinFlipperLength that is the flipper_length_mm column.
+```{r}
+# 
+```
+
+### Selecting
+While the syntax data$ColumnName is useful in many cases, there are times when we want to have multiple columns in a new variable. For example, we may be interested in only the penguin island and mass. We can do this with the select function. 
+
+```{r}
+# penguinIslandMass <- select(penguins, island, body_mass_g)
+```
+
+
+Your turn. Select species and flipper_length_mm and assign it to the variable penguinSpFlipper.
+```{r}
+# 
+```
+
+Select is very useful when we have a large data set that contains information that we are uninterested in, or when we need to put our data in a specific format. 
+
+### Filtering
+
+Let's say we wanted to look at just a subset of the penguins. There are a few species of penguins in the data. We could scroll through all 344 rows of the data and note the species, or we could have R do this for us. 
+
+To know all of the species present in the data, we can use the function 'unique'. Unique looks for all of the unique values. The argument we will give unique is the specific column that we want to know all of the species of.  
+
+```{r}
+# unique(penguins$species)
+```
+
+Great! Now we see there are three species of penguins. Let's say we want all of the data for only the Adelie penguins. We can accomplish this with filtering. The syntax is filter(data, column name *relational operator* value). Note that we need to put Adelie in quotes because it is a word. If we filter by a number, we don't need quotes. 
+```{r}
+# adelieData <- filter(penguins, species == "Adelie")
+```
+
+
+### Relational operators
+
+In the `filter` example above, we used "`==`" as part of our condition argument. The double equals is an example of a relational operator - it's a character (or multiple characters) that represents a logical action or process. Practically speaking, the double equals means "is this field equal to this value?". If the answer is "TRUE", then the row is included as part of the filtered data set.
+
+Here are some other relational operators:
+
+-   \> (greater than)
+
+-   \< (less than)
+
+-   \<= (less than or equal to)
+
+-   \>= (greater than or equal to)
+
+-   != (not equal to)
+
+In the `filter` function, relational operators are used to define a condition.
+
+
+Your turn. Create a variable called longFlipperData that is the subset of the penguin data with flipper length in mm greater than 22.
+```{r}
+#
+```
+
+### Logical Operators
+
+There may be cases in which we want to filter our dataset based on more than one condition. In these cases, we would use logical operators. Maybe we want to find all the penguins that are both female and weigh over 5000 g. Here are the main logical operators:
+
+-   & (and)
+
+-   \| (or)
+
+In the `filter` function, logical operators are used to join conditions together.
+
+Here's an example of how to use a logical operator with the `filter` function:
+
+```{r}
+# femaleHeavyPenguins <- filter(penguins, sex == "female" & body_mass_g > 5000)
+```
+
+
+Your turn. Create a variable called biscoeAndDreamSmall that contains all the penguins from either Biscoe OR Dream Island that are less than 3000 g.
+```{r}
+#
+```
+
+
+### The "Pipe"
+
+The Tidyverse introduced a new convention to R called the "pipe":
+
+`%>%`
+
+The purpose of the pipe is to string functions and data together. You can think of it as sort of the glue that joins pieces of an assembly line together. Another way to think of it is to read it as "AND THEN".
+
+Below we can rewrite a command using the filter function with the pipe. After the assignment symbol (\<-) we start with the data set, followed by the pipe, followed by the filter function. What's different about the arguments in the filter function in this case?
+
+```{r}
+#adelieData2 <-penguins %>% filter(species == "Adelie")
+#adelieData2
+```
+
+Try using the pipe in the code chunk below to create a data subset of penguins that are male and assign it to the variable malePenguins. Print it to the screen. 
+
+```{r}
+# create and print malePenguins. 
+```
+
+You can also use the pipe for select (and many other functions as well). Instead of putting the data name inside of the function, you can put it before the pipe.
+
+```{r}
+#penguinIslandMass2 <- penguins %>% select(island, body_mass_g)
+```
+
+Your turn. Use the pipe syntax to assign the columns bill_length_mm and sex to a new variable with select.
+```{r}
+#
+```
+
+
+
+### Removing NA values
+
+Our penguin data set contains NA values in some rows. Often, NA values create problems for calculating statistics and running models. There are many ways of doing this. One is to remove all rows with NAs in any column using the function na.omit. 
+
+```{r}
+#noNAPenguins <- na.omit(penguins)
+```
+
+You can see that there are 333 rows (by the 333 observations in the Environment tab). We started with 344 rows in the original penguin set. 
+
+
+
+Great job!
