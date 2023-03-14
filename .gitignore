@@ -50,3 +50,6 @@ cmip5/
 # maxent outputs
 maxent_outputs/
 
+# rana data
+ranaData.csv
+
