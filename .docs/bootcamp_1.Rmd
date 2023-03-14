@@ -110,18 +110,3 @@ Let's say you are interested in calculating the absolute value (positive distanc
 # compute the absolute value of -35
 ```
 You made it! 
-
-
-
-```{r}
-install.packages("downloadthis", repos = "http://cran.us.r-project.org")
-```
-
-```{r}
-library(downloadthis)
-```
-
-```{r}
-download_file(path = "docs/bootcamp_1.Rmd", button_label = "Download file", button_type = "default", has_icon = TRUE, icon = "fa fa-save", self_contained = FALSE)
-```
-
