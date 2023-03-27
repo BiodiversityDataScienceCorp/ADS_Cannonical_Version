@@ -21,7 +21,7 @@ This homework will introduce you to/ remind you of the following programs that a
 
 -   **R Markdown**
 
--   **Zenodo** 
+-   **Zenodo**
 
 To Do: In a couple paragraphs for each tool (\~2-4 page single-spaced total), explain what each of the above tools is, and what it is primarily used for in data science. Of course you may Google these, but describe them in your own words. For each of these tools write a sentence or two about how they might be used in a project applied to conservation, like the one you will create this semester.
 
@@ -31,7 +31,7 @@ Feel free to use headers and subheaders to organize your work. For example, 
 
 **R Programming Language** (<https://www.r-project.org>)
 
-What is R? 
+What is R?
 
 R is an open source language and environment for statistical computing and graphics derived from the S language and environment developed in Bell Laboratories (AT&T) to turn ideas into software, quickly, and faithfully. Etc, etc, etc\
 
@@ -57,7 +57,7 @@ Professional Challenge: Identify 2 new skills from this exercise that you would 
 
 \
 
-Coding Challenge: Create this assignment in markdown 
+Coding Challenge: Create this assignment in markdown
 
 \
 

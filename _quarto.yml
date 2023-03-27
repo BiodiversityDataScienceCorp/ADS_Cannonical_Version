@@ -8,10 +8,14 @@ website:
     logo: bdsc-logo-circle.png
     search: true
     contents:
-      - section: "General Information"
+      - section: "Home"
+        contents:
+        - href: home.qmd
+        - href: getting_started.qmd
+      - section: "Syllabus"
         contents:
           - href: about.qmd 
-      - section: "Course Details"
+      - section: "Schedule"
         contents:
           - href: for_students.qmd
           - href: reading_schedule.qmd 
@@ -36,9 +40,13 @@ website:
         - href: HW_4.qmd
         - href: HW_5.qmd
         - href: HW_6.qmd
+      - section: "People"
+        contents:
+        - href: about_us.qmd
+      
 format:
   html:
-    theme: cosmo
+    theme: minty
     css: styles.css
     toc: true
 
