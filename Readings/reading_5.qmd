@@ -1,0 +1,13 @@
+# Week 5 Readings
+
+## Links
+
+[Ecological niche](https://www.youtube.com/watch?v=z31y-ZtegZ8&feature=youtu.be)
+
+[General intro to the concept of SDM](https://www.natureserve.org/products/species-distribution-modeling)
+
+[More detailed slide deck about SDM](https://docs.google.com/presentation/d/1h7zgDBwZowA9LJMD-Oj-LH3YrkgaK1vA/edit#slide=id.p1)
+
+[About MaxEnt, a type of SDM](https://support.bccvl.org.au/support/solutions/articles/6000083216-maxent)
+
+## Reading Questions

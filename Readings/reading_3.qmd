@@ -1,0 +1,11 @@
+# Week 3 Readings
+
+## Links
+
+[Data cleaning](https://www.tableau.com/learn/articles/what-is-data-cleaning)
+
+[iNaturalist and Scientific Discoveries](https://edis.ifas.ufl.edu/publication/UW458) - read through Data Validation
+
+[Uses of GBIF in conservation](https://www.gbif.org/conservation) - watch the video
+
+## Reading Questions

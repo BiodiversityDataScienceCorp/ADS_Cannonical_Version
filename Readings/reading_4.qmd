@@ -1,0 +1,11 @@
+# Week 4 Readings
+
+## Links
+
+[Scientific article on public database accuracy for SDMs](https://onlinelibrary.wiley.com/doi/10.1111/geb.12326) - case study, read introduction and discussion
+
+[Abstract from Biodiversity Information Science and Standards 2022](https://biss.pensoft.net/article/93823/) - conference proceedings abstract
+
+[USGS Wildlife wrangler GitLab](https://code.usgs.gov/sas/bioscience/wildlife-wrangler) - read ReadMe.md especially Valuable Features
+
+## Reading Questions

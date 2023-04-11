@@ -1,0 +1,13 @@
+# Week 2 Readings
+
+## Links
+
+[R (programming language)](https://en.wikipedia.org/wiki/R_(programming_language))
+
+[IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)
+
+[The Center for Open Science](https://www.cos.io/)
+
+[UNESCO Recommendations for Open Science](https://www.youtube.com/watch?v=I3Wkvx_ZaFo)
+
+## Reading Questions
