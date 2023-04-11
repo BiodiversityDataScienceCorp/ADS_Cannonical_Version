@@ -22,10 +22,10 @@ website:
       - section: "Coding Boot Camp"
         contents: 
           - href: coding_basics_for_this_course.qmd
-          - href: bootcamp_1.qmd
-          - href: bootcamp_2.qmd
-          - href: bootcamp_3.qmd
-          - href: bootcamp_practice_1.qmd
+          - href: Bootcamp/bootcamp_1.qmd
+          - href: Bootcamp/bootcamp_2.qmd
+          - href: Bootcamp/bootcamp_3.qmd
+          - href: Bootcamp/bootcamp_practice_1.qmd
       - section: "Lessons"
         contents:
         - href: data_aquisition_cleaning.qmd
@@ -33,13 +33,13 @@ website:
         - href: sdm_current.qmd
       - section: "Assignment"
         contents:
-        - href: HW_1.qmd
-        - href: HW_2_pt1.qmd
-        - href: HW_2_pt2.qmd
-        - href: HW_3.qmd
-        - href: HW_4.qmd
-        - href: HW_5.qmd
-        - href: HW_6.qmd
+        - href: Assignments/HW_1.qmd
+        - href: Assignments/HW_2_pt1.qmd
+        - href: Assignments/HW_2_pt2.qmd
+        - href: Assignments/HW_3.qmd
+        - href: Assignments/HW_4.qmd
+        - href: Assignments/HW_5.qmd
+        - href: Assignments/HW_6.qmd
       - section: "People"
         contents:
         - href: about_us.qmd

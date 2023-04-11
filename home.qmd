@@ -1,15 +1,20 @@
 # About
-Description. 
+
+{{< fa people-group >}} [Our Team](about_us.qmd)
+
+{{< fa message >}} [Contact Us](contact.qmd)
 
 # For Students
-- Syllabus
-- Schedule
-- Coding Boot Camp 
-- Lessons
-- Homework
+
+{{< fa scroll >}}   [Syllabus](about.qmd) 
+
+{{< fa calendar >}}  [Schedule](schedule.qmd)
+
+{{< fa shoe-prints >}} [Coding Boot Camp](coding_basics_for_this_course.qmd)
 
 
 # For Instructors
-- Creating your own website
-- Tips
+
+{{< fa window-restore >}} [Creating your own website]()
+
 
