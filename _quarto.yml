@@ -17,7 +17,7 @@ website:
           - href: about.qmd 
       - section: "Schedule"
         contents:
-          - href: for_students.qmd
+          - href: schedule.qmd
           - href: reading_schedule.qmd 
       - section: "Coding Boot Camp"
         contents: 
@@ -46,7 +46,7 @@ website:
       
 format:
   html:
-    theme: minty
+    theme: sandstone
     css: styles.css
     toc: true
 
