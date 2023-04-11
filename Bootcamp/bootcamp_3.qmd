@@ -11,7 +11,7 @@ library(downloadthis)
 
 
 ```{r, echo=FALSE, message=FALSE}
-downloadthis::download_file(path = "_bootcamp_Rmds/bootcamp_3.Rmd", button_label = "Download file", button_type = "default", has_icon = TRUE, icon = "fa fa-save", self_contained = FALSE)
+downloadthis::download_file(path = "../_bootcamp_Rmds/bootcamp_3.Rmd", button_label = "Download file", button_type = "default", has_icon = TRUE, icon = "fa fa-save", self_contained = FALSE)
 ``` 
 
 ### Learning objectives  

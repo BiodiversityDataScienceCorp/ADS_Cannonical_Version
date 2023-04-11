@@ -1,0 +1,152 @@
+# Github / RStudio lesson
+
+
+Overview
+
+Today we will be working with two primary technologies, and setting up and practicing how they interact with each other:
+
+
+
+**Github** - a website to showcase projects that typically include computer programming. [Here's a sample project](https://github.com/BiodiversityDataScienceCorp/Pineneedles-main-repo) from last year's class.
+
+
+
+**RStudio** - a programming environment for the R programming language. We will be using the web version of RStudio, on the website [posit.cloud](https://posit.cloud).
+
+
+
+Step 1: Create a new GitHub repository.
+
+A repository contains all of your project's files and each file's revision history.
+
+-   Sign in to your [github](https://github.com) account.
+
+-   Click the "Repositories" tab (or, click your icon in the upper right corner, and select Your Repositories)
+
+-   Click the ![](https://lh5.googleusercontent.com/WUk7F7Gkrkl96RKnUEQ7iB97_U6clYvddtIz7muLCS-0es_uZUqrjcrDAQ28-s6dHs6xQbr4ovqXdanTSrtG5V9ElmPVkRvrXWce5zx9WJjay4-cjMIcjaz8QsDQ8DGcY03pmpWun6Zmx-L3sr-pb9E)button.
+
+-   In the resulting page:
+
+    -   Give your repository a name (e.g. rstudio-test or something similar) and description (e.g. Practicing github and posit.cloud).
+
+    -   Make sure public is selected.
+
+    -   Check the box to Add a README file.
+
+    -   Under Add .gitignore, select the R template.
+
+    -   Under Choose a license, select BSD-2 Clause "Simplified" License.
+
+    -   Click Create repository.
+
+-   While on your repository's page, copy the URL (or just leave the tab open).
+
+
+
+Step 2: Create a Personal Access Token in GitHub.
+
+This is your authentication key that lets Github and RStudio communicate.
+
+-   While signed in to GitHub, click your user icon in the top right, and select "Settings".
+
+-   Scroll down the resulting page, and select "Developer Settings" from the left menu.
+
+-   Select "Personal Access Tokens -\> Tokens (classic)"
+
+-   Click "Generate New Token -\> Generate New Token (classic)"
+
+    -   Add a note to identify the token (e.g. "For use with posit.cloud")
+
+    -   Expiration: select "custom", and set it to sometime in mid-May.
+
+    -   Select scopes: click the "repo" checkbox.
+
+    -   At the bottom, click "Generate Token"
+
+-   In the resulting page, copy your token, and **save it somewhere safe**!!
+
+    -   You might consider[slacking](https://adsmonarchcon-cgp8626.slack.com) it to yourself.
+
+
+
+Step 3: Signing in to posit.cloud, and creating a new project from your GitHub repository.
+
+Posit.cloud contains the web version of RStudio, which you will use for group work.
+
+-   Follow this link to posit.cloud: <https://posit.cloud/spaces/322886/join?access_code=eMHmVALtwA4bmBTQHFcXWhN7l_tGQLgcffwfmxqH>
+
+-   Click "Log In with Google", and sign in with your university gmail account.
+
+-   When prompted to join space, click "Yes".
+
+-   Note: the left tab lists your workspaces. You have a personal workspace ("Your Workspace"), and a course-specific workspace ("RNR 496B / DSCI 245 - 23/SP - Prudic/Binford"). For the work in this class, make sure the class workspace is selected.
+
+-   Click the Content tab at the top, and click New Project-\>New Project from Git Repository.
+
+-   Paste the URL of your Github repository from Step 1 in the window, and click Ok. This will initiate the creation of the project, and will pull any files from the GitHub repository into the project.
+
+-   Quick overview of rstudio windows:
+
+    -   Upper left: where you read/write files in your project.
+
+    -   Lower left: R console, where R code can be executed
+
+    -   Upper right: Environment Variables, History, Git tabs (for projects from GitHub repositories)
+
+    -   Lower right: Files
+
+
+
+Step 4: Connecting your rstudio project to your GitHub repository
+
+This is necessary to synchronize the work you do on rstudio with your GH repository.
+
+-   In your rstudio project, either create a new .R file (File-\>New File-\>R script), or use the default "Untitled1" file in the upper-left window.
+
+-   Copy the contents of [this](https://raw.githubusercontent.com/jeremymcwilliams/rstudio-cloud-github-connector/main/github.sample.R), and paste it into your file in RStudio.
+
+-   In that file, edit the three lines that define the email, user, and token variable values:
+
+    -   email: the email associated with your GitHub account
+
+    -   user: your github user account
+
+    -   token: the personal access token you created inStep 2
+
+-   Save this file as github.R.
+
+-   Open the .gitignore file, scroll to the end, add github.R on a new line, and save.
+
+-   Go back to github.R, highlight its contents, and click "Run".
+
+    -   This will install necessary R packages, and allow you to "push" content from your rstudio project to your GitHub repository.
+
+
+
+Step 5: Practice the rstudio/GitHub workflow
+
+Write code-commit-push-pull.
+
+-   Create a new .R file by clicking on the ![](https://lh3.googleusercontent.com/aah8Fi6q6VBXGUElGYS4jK0CpuqNFNNWkt6gkT-YL5F1n2hzhizIMl3W9pnYGIMcfNysOSOhWvmiMdmqMM3XMkdYXZVSVN_FhyFWaBuOIjTIjtJuR_duqJw4dltwECpoDddDKCzM4j_4o6F_TWetBoI) tab in the lower right pane
+
+-   Write some code or #comments 
+
+-   Save the file and give it a name
+
+-   Go to the ![](https://lh5.googleusercontent.com/GeHCSaLX0TLrncOLyG83R82EKjZnAEzbgHUXU3KILFCF9L4H3WWh7FjLqC1Y6MphEb4yPB_D_oe0EvZRlDfNbMxuXISllz2dA-PLLUHCwDfZ35YwHOW7MuNgoaPoy4-OhT9BS3oyBzurRPL6374dsQ8) Git tab of the upper right pane
+
+-   Open github.R, highlight all of the contents, and run it. You only need to do this every once in a while to connect with github
+
+-   Click on the box to highlight your newly created .R file ![](https://lh4.googleusercontent.com/Fs5AnfUF7zvZ2QKsXjWO2HgTqMjYg8jDhh6q6ADKF4aAIkS5xY7DY2CfdxQSlDgq2Z26y9cwirIAFXVWBVzOA7pDiVKqXQK7y_e7gBBUbYhlCE6Jzk0J2wRz09kU7BBnXULqsyXN14iC3oRRpJ-U-h8)
+
+-   Click on commit
+
+-   Now you should be in a new window. Write a commit message and hit the commit button
+
+-   Exit out of the commit window.
+
+-   Click on push in the Git tab of R studio cloud. Now your github repository should be updated and contain this file you just created. Go check it out.
+
+-   Pull after every commit and before working on a file. This isn't necessary when you are the only contributor to a project, but it is a good habit to get into when you are working in your team. 
+
+Time permitting, repeat the workflow by editing your README.md file, using [markdown](https://www.markdownguide.org/cheat-sheet/). (this will be addressed more in the homework).

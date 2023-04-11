@@ -5,7 +5,7 @@ website:
   sidebar:
     style: "docked"
     collapse-level: 1
-    logo: bdsc-logo-circle.png
+    logo: _images/bdsc-logo-circle.png
     search: true
     contents:
       - section: "Home"
