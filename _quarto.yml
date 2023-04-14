@@ -13,7 +13,7 @@ website:
       - href: Info/our_team.qmd
       - href: Info/contact_us.qmd
       - href: Info/syllabus.qmd
-      - href: Info/schedule.qmd
+      - href: schedule.qmd
       - section: "Coding Boot Camp"
         contents: 
           - href: Bootcamp/coding_basics_for_this_course.qmd

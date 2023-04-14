@@ -5,7 +5,7 @@ title: "Class Schedule"
 ## Class Schedule
 
 | **Week** | **Topic**                           | **Reading**                                    | **Lesson**                                                           | **Assignment**                                  |
-|---------------|---------------|---------------|---------------|---------------|
+|----------|-------------------------------------|------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------|
 | 1        | Accounts creation                   | [{{< fa book-open >}}](Readings/reading_1.qmd) |                                                                      | [{{< fa keyboard >}}](Assignments/HW_1.qmd)     |
 | 2        | Endangered Species Act              | [{{< fa book-open >}}](Readings/reading_2.qmd) |                                                                      | [{{< fa keyboard >}}](Assignments/HW_2_pt1.qmd) |
 | 3        | GitHub, R, R studio                 | [{{< fa book-open >}}](Readings/reading_3.qmd) | [{{< fa person-chalkboard >}}](Lessons/github_rstudio.qmd)           | [{{< fa keyboard >}}](Assignments/HW_3.qmd)     |

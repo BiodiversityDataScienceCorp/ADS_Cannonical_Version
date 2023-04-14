@@ -172,7 +172,7 @@
     "href": "For_Instructors/create_website.html",
     "title": "",
     "section": "",
-    "text": "Creating Website\ninstructions on how to create the website"
+    "text": "If you’d like to create your own version of the website, here are the steps you need to follow.\n\n\n\nHave R and R studio on your local machine\nHave Quarto on your local machine\nHave a GitHub account\nGenerate a personal access token in GitHub. Remember to put the token somewhere safe! You won’t be able to look at it again once you exit that window.\n\n\n\n\n\nFork the repository. This should create a repository in your profile at https:://github.com/your-username/ADS_Cannonical_Version.\nClone the repository to your local machine.\nIntegrate GitHub and your credentials into R. You can do this by filling out the githubConnect.R file in your copy of the repo with your credentials, and running it. Very important: Add the githubConnect.R file to the .gitignore before moving on so you don’t accidentally commit your token. Learn more about .gitignore files here\nModify! Some files that may be especially of interest to modify are the\n\n\nsyllabus\nschedule\nassignment submission instructions"
   },
   {
     "objectID": "For_Instructors/tips.html",
