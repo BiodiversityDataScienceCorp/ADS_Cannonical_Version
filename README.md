@@ -30,13 +30,30 @@ All files that begin with "_" are not rendered in quarto.
 
 `Readings` All readings as .qmd files with links to external sources and accompanying questions, plus an explanatory .qmd file for how to make the most of them. Rendered in website. 
 
-`Info` This is where the miscellaneous course information lives (syllabus, schedule, instructor contacts, etc). 
+`Info` This is where the miscellaneous course information lives (syllabus, instructor info, contact info). 
 
 
 ## Dependencies
+All packages used in the .qmd files will be loaded when the site is previewed or rendered. 
+
+To run the website locally, you need to [install quarto](https://quarto.org/docs/get-started/). 
+
+You also need the font awesome extension. Instructions can be found [here](https://github.com/quarto-ext/fontawesome). 
 
 ## Repo and Website Maintainers
+The website and repo is currently maintained by Mila Pruiett. 
 
 ## Contact Us
+Reach out to ameliapruiett@lclark.edu with any questions. 
 
 ## Getting Started
+You can engage with our materials in a few ways.
+
+### A. Using the website materials only
+.Rmd or .qmd files are available for all of the coding lessons to be downloaded directly from the website. You can use the readings and everything as they are right now, without having to clone this repository. 
+
+### B. Using the repo only 
+We use the standard GitHub workflow. You can [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo and access all the content from there. Forking this repo will not automatically deploy a GitHub pages website for you. 
+
+### C. Creating your own webiste and integrating the repo 
+First you'll need to fork this repo. You can then modify any of the materials. Then publish your repo to your own GitHub pages, instructions [here](https://quarto.org/docs/publishing/github-pages.html). 

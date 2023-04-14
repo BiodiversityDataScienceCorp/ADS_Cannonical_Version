@@ -1,34 +1,35 @@
 # Syllabus
 
 ### Description
+
 Welcome to Applied Data Science. This class is a structured practicum with the goal of supporting students to build knowledge and skills relevant to applying data science to issues of species conservation. The class is a collaboration between students at the University of Arizona and Lewis & Clark College. We will work together with professionals at the US Fish & Wildlife Service who are on the front lines of managing endangered species. You will work in teams to organize, clean, analyze and visualize data to help improve conservation approaches and management efforts for species of concern in the US. In this process you will be introduced to the realities of conservation jobs in governmental and nonprofit organizations and help you build professional skills that are relevant in these fields. You will also learn more about data science in general and project management best practices of working as a team.
 
 ### Course Prerequisites
+
 None, but students should have had beginning experience with R programming language demonstrated in course work or other activity.
 
 ### Learning Objectives
+
 During this course, we expect students to:
 
-- Apply computational methods for handling and using data to inform questions and solve problems;
+-   Apply computational methods for handling and using data to inform questions and solve problems;
 
-- Implement professional practices to produce data-informed deliverables useful for stakeholder decision making;
+-   Implement professional practices to produce data-informed deliverables useful for stakeholder decision making;
 
-- Practice communicating insight from data through written, visual, and verbal media to a variety of audiences;
+-   Practice communicating insight from data through written, visual, and verbal media to a variety of audiences;
 
-- Create a professional toolbox of applied data science skills useful for applications of interest and future careers;
+-   Create a professional toolbox of applied data science skills useful for applications of interest and future careers;
 
-- Summarize and appraise data science approaches as they relate to addressing real-world challenges.
+-   Summarize and appraise data science approaches as they relate to addressing real-world challenges.
 
 ### Learning Outcomes
+
 By the end of this course, students will:
 
-- Define, differentiate, and explain the nature and application of modern computational methods for handling and using data as it relates to real-world situations and challenges; 
+-   Define, differentiate, and explain the nature and application of modern computational methods for handling and using data as it relates to real-world situations and challenges;
 
--Associate, examine, and compare how to infer meaning and insight from data through written, visual, and verbal communication to both experts and non-experts;
+-   Associate, examine, and compare how to infer meaning and insight from data through written, visual, and verbal communication to both experts and non-experts;
 
-- Summarize, implement, and appraise data analytics and their interpretation in relation to real-world circumstances;
+-   Summarize, implement, and appraise data analytics and their interpretation in relation to real-world circumstances;
 
--Practice, manage, and design a personal toolbox of data skills useful for various careers and professions
-
-
-
+-   Practice, manage, and design a personal toolbox of data skills useful for various careers and professions
