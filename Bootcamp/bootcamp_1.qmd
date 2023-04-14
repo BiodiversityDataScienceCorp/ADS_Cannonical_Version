@@ -1,5 +1,20 @@
 # Bootcamp Lesson 1
 
+You can save a blank version of this lesson to your computer to run the code chunks yourself by downloading the file below and opening it in your R studio. Come back and check your answers here!
+
+```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+
+install.packages("downloadthis", repos = "http://cran.us.r-project.org")
+
+library(downloadthis)
+```
+
+
+```{r, echo=FALSE, message=FALSE}
+downloadthis::download_file(path = "../_bootcamp_Rmds/bootcamp_1.Rmd", button_label = "Download file", button_type = "default", has_icon = TRUE, icon = "fa fa-save", self_contained = FALSE)
+```
+
+
 ## Welcome to rstudio!
 Let's start off by clicking the "Visual" button above, so this document is a little easier to read and work with. You'll likely get a popup window the first time, confirming that you want to switch to Visual Mode.
 Just click *Use Visual Mode*
@@ -116,13 +131,5 @@ You made it!
 ```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 
 install.packages("downloadthis", repos = "http://cran.us.r-project.org")
-```
-
-```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
-library(downloadthis)
-```
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-downloadthis::download_file(path = "../_bootcamp_Rmds/bootcamp_1.Rmd", button_label = "Download file", button_type = "default", has_icon = TRUE, icon = "fa fa-save", self_contained = FALSE)
 ```
 

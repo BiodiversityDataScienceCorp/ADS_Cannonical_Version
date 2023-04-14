@@ -1,4 +1,6 @@
-* to uncomment everything once the UC davis server is back up, highlight everything and hit comand+shift+c on a mac
+# SDM
+
+to uncomment everything once the UC davis server is back up, highlight everything and hit comand+shift+c on a mac
 
 <!-- # Current and Future SDM -->
 

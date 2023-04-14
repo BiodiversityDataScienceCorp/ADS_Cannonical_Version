@@ -1,11 +1,25 @@
----
-title: "Info"
----
+# Home
 
-This is a Quarto website.
+[{{< fa people-group >}}](our_team.qmd) Our Team
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+[{{< fa message >}}](contact_us.qmd) Contact Us
 
-```{r}
-1 + 1
-```
+# Course Materials
+
+[{{< fa scroll >}}](syllabus.qmd) Syllabus
+
+[{{< fa calendar >}}](schedule.qmd) Schedule
+
+[{{< fa code >}}](Bootcamp/coding_basics_for_this_course.qmd) Coding Boot Camp
+
+[{{< fa book-open >}}](Readings/readings.qmd)  Readings
+
+[{{< fa person-chalkboard >}}](Lessons/lessons.qmd) Lessons
+
+[{{< fa keyboard >}}](Assignments/assignments.qmd) Assignments
+
+# For Instructors
+
+[{{< fa window-restore >}}](For_Instructors/create_website.qmd) Creating your own website
+
+[{{< fa info >}}](For_Instructors/tips.qmd) Tips

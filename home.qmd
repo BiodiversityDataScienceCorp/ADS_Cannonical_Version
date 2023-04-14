@@ -1,20 +1,25 @@
-# About
+# Home
 
-{{< fa people-group >}} [Our Team](about_us.qmd)
+[{{< fa people-group >}}](our_team.qmd) Our Team
 
-{{< fa message >}} [Contact Us](contact.qmd)
+[{{< fa message >}}](contact_us.qmd) Contact Us
 
-# For Students
+# Course Materials
 
-{{< fa scroll >}}   [Syllabus](about.qmd) 
+[{{< fa scroll >}}](syllabus.qmd) Syllabus
 
-{{< fa calendar >}}  [Schedule](schedule.qmd)
+[{{< fa calendar >}}](schedule.qmd) Schedule
 
-{{< fa shoe-prints >}} [Coding Boot Camp](coding_basics_for_this_course.qmd)
+[{{< fa code >}}](Bootcamp/coding_basics_for_this_course.qmd) Coding Boot Camp
 
+[{{< fa book-open >}}](Readings/readings.qmd)  Readings
+
+[{{< fa person-chalkboard >}}](Lessons/lessons.qmd) Lessons
+
+[{{< fa keyboard >}}](Assignments/assignments.qmd) Assignments
 
 # For Instructors
 
-{{< fa window-restore >}} [Creating your own website]()
+[{{< fa window-restore >}}](For_Instructors/create_website.qmd) Creating your own website
 
-
+[{{< fa info >}}](For_Instructors/tips.qmd) Tips

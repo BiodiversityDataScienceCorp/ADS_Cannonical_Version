@@ -8,31 +8,27 @@ website:
     logo: _images/bdsc-logo-circle.png
     search: true
     contents:
-      - section: "Home"
-        contents:
-        - href: home.qmd
-        - href: getting_started.qmd
-      - section: "Syllabus"
-        contents:
-          - href: about.qmd 
-      - section: "Schedule"
-        contents:
-          - href: schedule.qmd
-          - href: reading_schedule.qmd 
+      - href: home.qmd
+      - href: our_team.qmd
+      - href: contact_us.qmd
+      - href: syllabus.qmd
+      - href: schedule.qmd
       - section: "Coding Boot Camp"
         contents: 
-          - href: coding_basics_for_this_course.qmd
+          - href: Bootcamp/coding_basics_for_this_course.qmd
           - href: Bootcamp/bootcamp_1.qmd
           - href: Bootcamp/bootcamp_2.qmd
           - href: Bootcamp/bootcamp_3.qmd
           - href: Bootcamp/bootcamp_practice_1.qmd
       - section: "Lessons"
         contents:
-        - href: data_aquisition_cleaning.qmd
-        - href: occ_map.qmd
-        - href: sdm_current.qmd
-      - section: "Assignment"
+        - href: Lessons/lessons.qmd
+        - href: Lessons/data_aquisition_cleaning.qmd
+        - href: Lessons/occ_map.qmd
+        - href: Lesssons/sdm.qmd
+      - section: "Assignments"
         contents:
+        - href: Assignments/assignments.qmd
         - href: Assignments/HW_1.qmd
         - href: Assignments/HW_2_pt1.qmd
         - href: Assignments/HW_2_pt2.qmd
@@ -40,9 +36,18 @@ website:
         - href: Assignments/HW_4.qmd
         - href: Assignments/HW_5.qmd
         - href: Assignments/HW_6.qmd
-      - section: "People"
+      - section: "Readings"
         contents:
-        - href: about_us.qmd
+        - href: Readings/readings.qmd
+        - href: Readings/reading_1.qmd
+        - href: Readings/reading_2.qmd
+        - href: Readings/reading_3.qmd
+        - href: Readings/reading_4.qmd
+        - href: Readings/reading_5.qmd
+      - section: "For Instructors"
+        contents:
+        - href: For_Instructors/create_website.qmd
+        - href: For_Instructors/tips.qmd
       
 format:
   html:
