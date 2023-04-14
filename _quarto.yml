@@ -9,7 +9,7 @@ website:
     logo: _images/bdsc-logo-circle.png
     search: true
     contents:
-      - href: Info/home.qmd
+      - href: home.qmd
       - href: Info/our_team.qmd
       - href: Info/contact_us.qmd
       - href: Info/syllabus.qmd
