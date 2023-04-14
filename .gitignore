@@ -53,3 +53,7 @@ maxent_outputs/
 # rana data
 ranaData.csv
 
+/.quarto/
+/_site/
+.DS_Store
+

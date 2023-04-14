@@ -10,10 +10,10 @@ website:
     search: true
     contents:
       - href: home.qmd
-      - href: our_team.qmd
-      - href: contact_us.qmd
-      - href: syllabus.qmd
-      - href: schedule.qmd
+      - href: Info/our_team.qmd
+      - href: Info/contact_us.qmd
+      - href: Info/syllabus.qmd
+      - href: Info/schedule.qmd
       - section: "Coding Boot Camp"
         contents: 
           - href: Bootcamp/coding_basics_for_this_course.qmd
