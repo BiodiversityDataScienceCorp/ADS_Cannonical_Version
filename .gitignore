@@ -55,4 +55,5 @@ ranaData.csv
 
 /.quarto/
 /_site/
+.DS_Store
 
