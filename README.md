@@ -1,9 +1,3 @@
----
-editor: 
-  markdown: 
-    wrap: 72
----
-
 ## Applied Data Science (ADS) Course
 
 This class is a structured practicum with the goal of supporting
@@ -191,9 +185,6 @@ Instructions
     This should create a repository in your profile at
     https:://github.com/your-username/ADS_Cannonical_Version
 
-```{=html}
-<!-- -->
-```
 2.  [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
     the repository to your local machine.
 
