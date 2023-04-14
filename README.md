@@ -22,7 +22,7 @@ All files that begin with "_" are not rendered in quarto.
 
 `Bootcamp` Keys for the .qmd files for the coding boot camp. Students can download the blank versions given at the top of each file, and then check their answers here. Rendered in website. 
 
-`docs` Folder where site is rendered to. When creating the website in GitHub pages, this is the target directory. Contents are generated automatically when quarto render is ran in terminal. Lines up with the target directory listed in the [`quarto.yml`](quarto.yml) file. 
+`.docs` Folder where site is rendered to. When creating the website in GitHub pages, this is the target directory. Contents are generated automatically when quarto render is ran in terminal. Lines up with the target directory listed in the [`quarto.yml`](_quarto.yml) file. 
 
 `For_Instructors` Includes the .qmd files for the instructor information on how to create your own website by forking this repository and general tips for success. Rendered in website. 
 
