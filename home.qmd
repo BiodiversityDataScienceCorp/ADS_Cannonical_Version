@@ -1,14 +1,14 @@
 # Home
 
-[{{< fa people-group >}}](our_team.qmd) Our Team
+[{{< fa people-group >}}](Info/our_team.qmd) Our Team
 
-[{{< fa message >}}](contact_us.qmd) Contact Us
+[{{< fa message >}}](Info/contact_us.qmd) Contact Us
 
 # Course Materials
 
-[{{< fa scroll >}}](syllabus.qmd) Syllabus
+[{{< fa scroll >}}](Info/syllabus.qmd) Syllabus
 
-[{{< fa calendar >}}](schedule.qmd) Schedule
+[{{< fa calendar >}}](Info/schedule.qmd) Schedule
 
 [{{< fa code >}}](Bootcamp/coding_basics_for_this_course.qmd) Coding Boot Camp
 

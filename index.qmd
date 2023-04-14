@@ -6,9 +6,9 @@
 
 # Course Materials
 
-[{{< fa scroll >}}](syllabus.qmd) Syllabus
+[{{< fa scroll >}}](Info/syllabus.qmd) Syllabus
 
-[{{< fa calendar >}}](schedule.qmd) Schedule
+[{{< fa calendar >}}](Info/schedule.qmd) Schedule
 
 [{{< fa code >}}](Bootcamp/coding_basics_for_this_course.qmd) Coding Boot Camp
 

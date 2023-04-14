@@ -222,5 +222,40 @@
     "title": "Class Schedule",
     "section": "",
     "text": "Week\nTopic\nReading\nLesson\nAssignment\n\n\n\n\n1\nAccounts creation\n\n\n\n\n\n2\nEndangered Species Act\n\n\n\n\n\n3\nGitHub, R, R studio\n\n\n\n\n\n4\nGBIF - data wrangling, viz\n\n\n\n\n\n5\nFocal species - data wrangling, viz\n\n\n\n\n\n6\nCurrent SDM\n\n\n\n\n\n7\nFuture SDM\n\n\n\n\n\n8\nFocal species SDM\n\n\n\n\n\n9\nFocal species presentation + repo\n\n\n\n\n\n10\nPresentation\n\n\n\n\n\n11\nGroup work re stakeholder feedback\n\n\n\n\n\n12\nGroup work re stakeholder feedback\n\n\n\n\n\n13\nGroup work for final presentations\n\n\n\n\n\n14\nStakeholder visit\n\n\n\n\n\n15\nReflection and evaluation"
+  },
+  {
+    "objectID": "Info/home.html",
+    "href": "Info/home.html",
+    "title": "",
+    "section": "",
+    "text": "Home\n Our Team\n Contact Us\n\n\nCourse Materials\n Syllabus\n Schedule\n Coding Boot Camp\n Readings\n Lessons\n Assignments\n\n\nFor Instructors\n Creating your own website\n Tips"
+  },
+  {
+    "objectID": "Info/contact_us.html",
+    "href": "Info/contact_us.html",
+    "title": "",
+    "section": "",
+    "text": "Contact Us"
+  },
+  {
+    "objectID": "Info/syllabus.html",
+    "href": "Info/syllabus.html",
+    "title": "",
+    "section": "",
+    "text": "Syllabus\n\nDescription\nWelcome to Applied Data Science. This class is a structured practicum with the goal of supporting students to build knowledge and skills relevant to applying data science to issues of species conservation. The class is a collaboration between students at the University of Arizona and Lewis & Clark College. We will work together with professionals at the US Fish & Wildlife Service who are on the front lines of managing endangered species. You will work in teams to organize, clean, analyze and visualize data to help improve conservation approaches and management efforts for species of concern in the US. In this process you will be introduced to the realities of conservation jobs in governmental and nonprofit organizations and help you build professional skills that are relevant in these fields. You will also learn more about data science in general and project management best practices of working as a team.\n\n\nCourse Prerequisites\nNone, but students should have had beginning experience with R programming language demonstrated in course work or other activity.\n\n\nLearning Objectives\nDuring this course, we expect students to:\n\nApply computational methods for handling and using data to inform questions and solve problems;\nImplement professional practices to produce data-informed deliverables useful for stakeholder decision making;\nPractice communicating insight from data through written, visual, and verbal media to a variety of audiences;\nCreate a professional toolbox of applied data science skills useful for applications of interest and future careers;\nSummarize and appraise data science approaches as they relate to addressing real-world challenges.\n\n\n\nLearning Outcomes\nBy the end of this course, students will:\n\nDefine, differentiate, and explain the nature and application of modern computational methods for handling and using data as it relates to real-world situations and challenges;\n\n-Associate, examine, and compare how to infer meaning and insight from data through written, visual, and verbal communication to both experts and non-experts;\n\nSummarize, implement, and appraise data analytics and their interpretation in relation to real-world circumstances;\n\n-Practice, manage, and design a personal toolbox of data skills useful for various careers and professions"
+  },
+  {
+    "objectID": "Info/our_team.html",
+    "href": "Info/our_team.html",
+    "title": "",
+    "section": "",
+    "text": "We have a deep bench of support available at both Lewis & Clark College and the University of Arizona. Here is a list of all of our support, listed by category.\n\n\n\n\nKaty Prudic, Assistant Professor, School of Natural Resources, University of Arizona UAZ instructor of record\nGreta Binford, Professor, Biology Dept, Lewis & Clark LC instructor of record\n\n\n\nJeremy McWilliams, Head of Digital Services, Watzek Library, Lewis & Clark\nEthan Davis, Data Science Specialist, Watzek Library, Lewis & Clark\nJeff Olivier, Data Science Specialist, Libraries, University of Arizona\nMila Pruiett, Data Science Coordinator, Lewis & Clark\n\n\n\nJill Williams Associate Research Professor, Gender and Womens Studies, University of Arizona"
+  },
+  {
+    "objectID": "Info/schedule.html",
+    "href": "Info/schedule.html",
+    "title": "Class Schedule",
+    "section": "",
+    "text": "Week\nTopic\nReading\nLesson\nAssignment\n\n\n\n\n1\nAccounts creation\n\n\n\n\n\n2\nEndangered Species Act\n\n\n\n\n\n3\nGitHub, R, R studio\n\n\n\n\n\n4\nGBIF - data wrangling, viz\n\n\n\n\n\n5\nFocal species - data wrangling, viz\n\n\n\n\n\n6\nCurrent SDM\n\n\n\n\n\n7\nFuture SDM\n\n\n\n\n\n8\nFocal species SDM\n\n\n\n\n\n9\nFocal species presentation + repo\n\n\n\n\n\n10\nPresentation\n\n\n\n\n\n11\nGroup work re stakeholder feedback\n\n\n\n\n\n12\nGroup work re stakeholder feedback\n\n\n\n\n\n13\nGroup work for final presentations\n\n\n\n\n\n14\nStakeholder visit\n\n\n\n\n\n15\nReflection and evaluation"
   }
 ]
