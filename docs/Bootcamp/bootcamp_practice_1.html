@@ -121,6 +121,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../site_libs/font-awesome-5.13.0/js/script.js"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -173,6 +174,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Info/syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">Class Schedule</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -354,22 +360,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bootcamp-practices" id="toc-bootcamp-practices" class="nav-link active" data-scroll-target="#bootcamp-practices">Bootcamp Practices</a>
-  <ul class="collapse">
-  <li><a href="#bootcamp-lesson-1" id="toc-bootcamp-lesson-1" class="nav-link" data-scroll-target="#bootcamp-lesson-1">Bootcamp Lesson 1</a>
-  <ul class="collapse">
-  <li><a href="#practice-with" id="toc-practice-with" class="nav-link" data-scroll-target="#practice-with">Practice with</a></li>
-  </ul></li>
-  <li><a href="#bootcamp-lesson-2" id="toc-bootcamp-lesson-2" class="nav-link" data-scroll-target="#bootcamp-lesson-2">Bootcamp Lesson 2</a>
-  <ul class="collapse">
-  <li><a href="#practice-with-1" id="toc-practice-with-1" class="nav-link" data-scroll-target="#practice-with-1">Practice with</a></li>
-  </ul></li>
-  <li><a href="#bootcamp-lesson-3" id="toc-bootcamp-lesson-3" class="nav-link" data-scroll-target="#bootcamp-lesson-3">Bootcamp Lesson 3</a>
-  <ul class="collapse">
-  <li><a href="#practice-with-2" id="toc-practice-with-2" class="nav-link" data-scroll-target="#practice-with-2">Practice with</a></li>
-  <li><a href="#instructions-for-plots" id="toc-instructions-for-plots" class="nav-link" data-scroll-target="#instructions-for-plots">Instructions for plots</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#bootcamp-practices" id="toc-bootcamp-practices" class="nav-link active" data-scroll-target="#bootcamp-practices">Bootcamp Practices</a></li>
+  <li><a href="#once-youve-completed-the-lesson" id="toc-once-youve-completed-the-lesson" class="nav-link" data-scroll-target="#once-youve-completed-the-lesson">Once you’ve completed the lesson</a></li>
   </ul>
 </nav>
     </div>
@@ -380,6 +372,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="bootcamp-practices" class="level1">
 <h1>Bootcamp Practices</h1>
+<p>You can save a blank version of this lesson to your computer to run the code chunks yourself by downloading the file below and opening it in your R studio. Come back and check your answers here!</p>
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<a onclick="fetch('data:text/x-markdown;base64,IyBCb290Y2FtcCBQcmFjdGljZXMKCllvdSBjYW4gc2F2ZSBhIGJsYW5rIHZlcnNpb24gb2YgdGhlc2UgcHJhY3RpY2VzIHRvIHlvdXIgY29tcHV0ZXIgdG8gcnVuIHRoZSBjb2RlIGNodW5rcyB5b3Vyc2VsZiBieSBkb3dubG9hZGluZyB0aGUgZmlsZSBiZWxvdyBhbmQgb3BlbmluZyBpdCBpbiB5b3VyIFIgc3R1ZGlvLiBDb21lIGJhY2sgYW5kIGNoZWNrIHlvdXIgYW5zd2VycyBoZXJlIQoKYGBge3IsIGVjaG89RkFMU0UsIHJlc3VsdHM9J2hpZGUnLCBtZXNzYWdlPUZBTFNFLCB3YXJuaW5nPUZBTFNFfQoKaW5zdGFsbC5wYWNrYWdlcygiZG93bmxvYWR0aGlzIiwgcmVwb3MgPSAiaHR0cDovL2NyYW4udXMuci1wcm9qZWN0Lm9yZyIpCgpsaWJyYXJ5KGRvd25sb2FkdGhpcykKYGBgCgoKYGBge3IsIGVjaG89RkFMU0UsIG1lc3NhZ2U9RkFMU0V9CmRvd25sb2FkdGhpczo6ZG93bmxvYWRfZmlsZShwYXRoID0gIl9ib290Y2FtcF9SbWRzL2Jvb3RjYW1wX3ByYWN0aWNlcy5SbWQiLCBidXR0b25fbGFiZWwgPSAiRG93bmxvYWQgZmlsZSIsIGJ1dHRvbl90eXBlID0gImRlZmF1bHQiLCBoYXNfaWNvbiA9IFRSVUUsIGljb24gPSAiZmEgZmEtc2F2ZSIsIHNlbGZfY29udGFpbmVkID0gRkFMU0UpCmBgYCAKCgojIyBCb290Y2FtcCBMZXNzb24gMQoKIyMjIFByYWN0aWNlIHdpdGgKLSBWYXJpYWJsZXMKLSBGdW5jdGlvbnMKLSBQcmludGluZyB0byB0aGUgc2NyZWVuCgoxLiBBc3NpZ24gdGhlIG51bWJlciA1MDAgdG8gdGhlIHZhcmlhYmxlIG51bWJlckJ1dHRlcmZsaWVzCmBgYHtyfQojCmBgYAoKCjIuIENhbGN1bGF0ZSB0aGUgY3ViZWQgcm9vdCBvZiAyNiBhbmQgYXNzaWduIGl0IHRvIHRoZSB2YXJpYWJsZSB5CmBgYHtyfQojCmBgYAoKCjMuIFByaW50IHRoZSB2YXJpYWJsZSB5CmBgYHtyfQojCmBgYAoKCiMjIEJvb3RjYW1wIExlc3NvbiAyCgojIyMgUHJhY3RpY2Ugd2l0aAotIFBhY2thZ2VzCi0gQWNjZXNzaW5nIHNwZWNpZmljIGNvbHVtbnMgaW4gYSBkYXRhIHNldAotIEFzc2lnbmluZyB2YXJpYWJsZXMKLSBTZWxlY3QKLSBGaWx0ZXJpbmcKCgoxLiAoSW5zdGFsbCBpZiB5b3UgaGF2ZW4ndCBjb21wbGV0ZWQgbGVzc29uIDIpIGFuZCBsb2FkIHRoZSB0aWR5dmVyc2UgYW5kIHBhbG1lcnBlbmd1aW5zIHBhY2thZ2VzLiAKYGBge3J9CiMKYGBgCgoKMi4gQXNzaWduIHRoZSBiaWxsIGxlbmd0aCBjb2x1bW4gdG8gYSB2YXJpYWJsZSBjYWxsZWQgcGVuZ3VpbkJpbGxMZW5ndGgKYGBge3J9CiMKYGBgCgoKMy4gQXNzaWduIHRoZSBiaWxsIGRlcHRoIGNvbHVtbiB0byBhIHZhcmlhYmxlIGNhbGxlZCBwZW5ndWluQmlsbERlcHRoLiAKYGBge3J9CiMKYGBgCgpGb3IgUXVlc3Rpb25zIDQgLSA3LCB5b3UgY2FuIGNob29zZSB0byBlaXRoZXIgdXNlIHRoZSBwaXBlICU+JSBvciBub3QuIEVpdGhlciB3YXkgaXMgZ3JlYXQhIAoKNC4gQXNzaWduIG9ubHkgdGhlIGNvbHVtbnMgaXNsYW5kLCBiaWxsX2xlbmd0aF9tbSwgYW5kIGJpbGxfZGVwdGhfbW0gdG8gYSBuZXcgdmFyaWFibGUgKG5hbWUgaXQgd2hhdGV2ZXIgeW91J2QgbGlrZSEpLiAKYGBge3J9CiMKYGBgCgo1LiBBc3NpZ24gb25seSB0aGUgY29sdW1ucyBzZXggYW5kIHllYXIgdG8gdGhlIHZhcmlhYmxlIHNleEJ5WWVhci4gCmBgYHtyfQojCmBgYAoKCjYuIENyZWF0ZSBhIHN1YnNldCBvZiB0aGUgZGF0YSB0aGF0IGluY2x1ZGVzIGFsbCB0aGUgY29sdW1ucyBvbmx5IGZvciBtYWxlIEdlbnRvbyBwZW5ndWlucyB3aXRoIGZsaXBwZXIgbGVuZ3RocyBncmVhdGVyIHRoYW4gMjAgbW0uIApgYGB7cn0KIwpgYGAKCgo3LiBDcmVhdGUgYSBzdWJzZXQgb2YgdGhlIGRhdGEgdGhhdCBpbmNsdWRlcyBhbGwgcGVuZ3VpbnMgb24gQmlzY29lIGlzbGFuZCB3aXRoIGZsaXBwZXIgbGVuZ3RocyBncmVhdGVyIHRoYW4gMjAgbW0uIFJlbW92ZSBhbGwgb2YgdGhlIE5BIHZhbHVlcyBhcyB3ZWxsLiAKYGBge3J9CiMKYGBgCgoKQ2hhbGxlbmdlOiBVc2luZyB0aGUgcGlwZSAlPiUsIHN0cmluZyB0b2dldGhlciB0d28gY29tbWFuZHMgd2l0aCBvbmx5IG9uZSBsaW5lIG9mIGNvZGUgdG8gY3JlYXRlIGEgZGF0YSBzZXQgdGhhdCBpbmNsdWRlcyBvbmx5IHRoZSBjb2x1bW5zOiBzcGVjaWVzLCBzZXgsIGFuZCBmbGlwcGVyIGxlbmd0aCwgd2l0aCBvbmx5IEFkZWxpZSBwZW5ndWlucyB3aG9zZSBmbGlwcGVycyBhcmUgZ3JlYXRlciB0aGFuIDE4MCBtbS4gCmBgYHtyfQojCmBgYAoKCgojIyBCb290Y2FtcCBMZXNzb24gMwoKIyMjIFByYWN0aWNlIHdpdGgKKiBQYWNrYWdlcwoqIEZpbHRlcmluZwoqIEdncGxvdAoKIyMjIEluc3RydWN0aW9ucyBmb3IgcGxvdHMKRWFjaCBwbG90IHNob3VsZCBoYXZlIGF4aXMgbGFiZWxzLCBhIHRpdGxlLCBhbmQgdXNlIGNvbG9ycyB0byBpbGx1c3RyYXRlIHRoZSBkYXRhLgoKCjEuIChJbnN0YWxsIGlmIHlvdSBoYXZlbid0IGNvbXBsZXRlZCBsZXNzb25zIDIgb3IgMyBvciBwcmFjdGljZSAyKSBhbmQgbG9hZCB0aGUgdGlkeXZlcnNlIGFuZCBwYWxtZXJwZW5ndWlucyBwYWNrYWdlcy4gCmBgYHtyfQojCmBgYAoKCjIuIENyZWF0ZSBhIHN1YnNldCBvZiB0aGUgZGF0YSB0aGF0IGluY2x1ZGVzIGFsbCB0aGUgZGF0YSBmcm9tIHRoZSB5ZWFycyAyMDA3IGFuZCAyMDA4LgpgYGB7cn0KIwpgYGAKCgozLiBDcmVhdGUgYSBib3ggcGxvdCBvZiB0aGUgYmlsbCBsZW5ndGhzIGJ5IG1hbGUgYW5kIGZlbWFsZSBwZW5ndWlucyBvZiBhbGwgc3BlY2llcyBmcm9tIHRoZSB5ZWFycyAyMDA3IGFuZCAyMDA4LiAKYGBge3J9CiMKYGBgCgoKNC4gQ3JlYXRlIGEgc3Vic2V0IG9mIHRoZSBkYXRhIHRoYXQgaW5jbHVkZXMgb25seSB0aGUgZmVtYWxlIHBlbmd1aW5zLiAKYGBge3J9CiMKYGBgCgoKNS4gQ3JlYXRlIGEgYm94IHBsb3Qgb2YgdGhlIGJpbGwgZGVwdGggYnkgc3BlY2llcyBvZiBvbmx5IHRoZSBmZW1hbGUgcGVuZ3VpbnMuIApgYGB7cn0KIwpgYGAKCgo2LiBDcmVhdGUgYSBzY2F0dGVyIHBsb3Qgb2YgdGhlIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIGJpbGwgbGVuZ3RoIGFuZCBiaWxsIGRlcHRoIGZvciBwZW5ndWlucyBvbiBvbmx5IERyZWFtIGlzbGFuZCBhbmQgY29sb3IgYnkgc3BlY2llcy4KYGBge3J9CiMKYGBgCg==').then(res => res.blob()).then(blob => {
+      const downloadURL = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      document.body.appendChild(a);
+      a.href = downloadURL;
+      a.download = 'bootcamp_practices.Rmd'; a.click();
+      window.URL.revokeObjectURL(downloadURL);
+      document.body.removeChild(a);
+    });">
+<button class="btn btn-default"><i class="fa fa-save"></i> Download file</button>
+</a>
+</div>
+</div>
+</section>
+<section id="once-youve-completed-the-lesson" class="level1">
+<h1>Once you’ve completed the lesson</h1>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand To See Solutions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <section id="bootcamp-lesson-1" class="level2">
 <h2 class="anchored" data-anchor-id="bootcamp-lesson-1">Bootcamp Lesson 1</h2>
 <section id="practice-with" class="level3">
@@ -393,19 +419,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Assign the number 500 to the variable numberButterflies</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>numberButterflies <span class="ot">&lt;-</span> <span class="dv">500</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="1">
 <li>Calculate the cubed root of 26 and assign it to the variable y</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">26</span><span class="sc">^</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="3" type="1">
 <li>Print the variable y</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.962496</code></pre>
+</div>
 </div>
 </section>
 </section>
@@ -424,48 +453,95 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>(Install if you haven’t completed lesson 2) and load the tidyverse and palmerpenguins packages.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
+(as 'lib' is unspecified)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+The downloaded binary packages are in
+    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//Rtmpbzhkoz/downloaded_packages</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
+(as 'lib' is unspecified)</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+The downloaded binary packages are in
+    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//Rtmpbzhkoz/downloaded_packages</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.0     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.1     ✔ tibble    3.2.0
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the ]8;;http://conflicted.r-lib.org/conflicted package]8;; to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"palmerpenguins"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="1">
-<li>Assign the bill length column to a variable called penguinBillLength</li>
+<li>Assign the bill length column to a variable called penguinBillLength. Remember the data name is penguins.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>penguinBillLength <span class="ot">&lt;-</span> penguins<span class="sc">$</span>bill_length_mm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="3" type="1">
 <li>Assign the bill depth column to a variable called penguinBillDepth.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>penguinBillDepth <span class="ot">&lt;-</span> penguins<span class="sc">$</span>bill_depth_mm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>For Questions 4 - 7, you can choose to either use the pipe %&gt;% or not. Either way is great!</p>
 <ol start="4" type="1">
 <li>Assign only the columns island, bill_length_mm, and bill_depth_mm to a new variable (name it whatever you’d like!).</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># standard way</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>dataSubset <span class="ot">&lt;-</span> <span class="fu">select</span>(penguins, island, bill_length_mm, bill_depth_mm)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># with the pipe</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>dataSubset2 <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">select</span>(island, bill_length_mm, bill_depth_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="5" type="1">
 <li>Assign only the columns sex and year to the variable sexByYear.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># standard way</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>sexByYear <span class="ot">&lt;-</span> <span class="fu">select</span>(penguins, sex, year)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># with the pipe</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>sexByYear2 <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">select</span>(sex, year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="6" type="1">
-<li>Create a subset of the data that includes all the columns only for male Gentoo penguins with flipper lengths greater than 20 mm.</li>
+<li>Create a subset of the data that includes all the columns for only male Gentoo penguins with flipper lengths greater than 20 mm.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># standard way</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>longMales <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, sex <span class="sc">==</span> <span class="st">"male"</span>, flipper_length_mm <span class="sc">&gt;</span> <span class="dv">20</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># with the pipe</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>longMales2 <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(sex <span class="sc">==</span> <span class="st">"male"</span>, flipper_length_mm <span class="sc">&gt;</span> <span class="dv">20</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="7" type="1">
 <li>Create a subset of the data that includes all penguins on Biscoe island with flipper lengths greater than 20 mm. Remove all of the NA values as well.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>myPenguins <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(<span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Biscoe"</span>, flipper_length_mm <span class="sc">&gt;</span> <span class="dv">20</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Challenge: Using the pipe %&gt;%, string together two commands with only one line of code to create a data set that includes only the columns: species, sex, and flipper length, with only Adelie penguins whose flippers are greater than 180 mm.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>longAdelieSubset <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">select</span>(species, sex, flipper_length_mm) <span class="sc">%&gt;%</span> <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span>, flipper_length_mm <span class="sc">&gt;</span> <span class="dv">180</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
@@ -486,42 +562,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>(Install if you haven’t completed lessons 2 or 3 or practice 2) and load the tidyverse and palmerpenguins packages.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"palmerpenguins"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="1">
 <li>Create a subset of the data that includes all the data from the years 2007 and 2008.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>earlyYears <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year <span class="sc">&lt;</span> <span class="dv">2009</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="3" type="1">
 <li>Create a box plot of the bill lengths by male and female penguins of all species from the years 2007 and 2008.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> sex, <span class="at">y =</span> bill_length_mm, <span class="at">fill =</span> sex)) <span class="sc">+</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Penguin Sex"</span>, <span class="at">y =</span> <span class="st">"Bill Length (mm)"</span>, <span class="at">title =</span> <span class="st">"Male penguins tend to have longer bills"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing non-finite values (`stat_boxplot()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="bootcamp_practice_1_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 <ol start="4" type="1">
 <li>Create a subset of the data that includes only the female penguins.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>femaleOnly <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(sex <span class="sc">==</span> <span class="st">"female"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="5" type="1">
 <li>Create a box plot of the bill depth by species of only the female penguins.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># here I am using the pipe to put the data into the ggplot function, eliminating the need to say what data to use inside of the function. It's just another way of doing the same thing. </span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>femaleOnly <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">y =</span> bill_depth_mm, <span class="at">fill =</span> species)) <span class="sc">+</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Penguin Species"</span>, <span class="at">y =</span> <span class="st">"Bill Depth (mm)"</span>, <span class="at">title =</span> <span class="st">"Bill depth changes by species"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="bootcamp_practice_1_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 <ol start="6" type="1">
 <li>Create a scatter plot of the relationship between bill length and bill depth for penguins on only Dream island and color by species.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(island <span class="sc">==</span> <span class="st">"Dream"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Bill Length (mm)"</span>, <span class="at">y =</span> <span class="st">"Bill Depth (mm)"</span>, <span class="at">title =</span> <span class="st">"Is there a relationship between bill depth and bill length of penguins living on Torgersen Island?"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="bootcamp_practice_1_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+</div>
+</div>
 </div>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

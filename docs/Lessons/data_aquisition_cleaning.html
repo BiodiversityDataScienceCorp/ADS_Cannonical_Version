@@ -175,6 +175,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="../Info/syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">Class Schedule</a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Coding Boot Camp</a>
@@ -394,23 +399,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Install packages from cran, necessary to specify the repos on quarto but not on your local computer copy</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"spocc"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Installing package into '/Users/ameliapruiett/Library/R/x86_64/4.2/library'
+<pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
 (as 'lib' is unspecified)</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/jw/09h6w34n55534tfy1wjbhrwr7h160v/T//Rtmpx5BaZp/downloaded_packages</code></pre>
+    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpfdlBlX/downloaded_packages</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>) <span class="co">#includes ggplot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Installing package into '/Users/ameliapruiett/Library/R/x86_64/4.2/library'
+<pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
 (as 'lib' is unspecified)</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/jw/09h6w34n55534tfy1wjbhrwr7h160v/T//Rtmpx5BaZp/downloaded_packages</code></pre>
+    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpfdlBlX/downloaded_packages</code></pre>
 </div>
 </div>
 <p>Load libraries</p>
@@ -421,7 +426,7 @@ The downloaded binary packages are in
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.0     ✔ readr     2.1.4
 ✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.1     ✔ tibble    3.1.8
+✔ ggplot2   3.4.1     ✔ tibble    3.2.0
 ✔ lubridate 1.9.2     ✔ tidyr     1.3.0
 ✔ purrr     1.0.1     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
@@ -437,9 +442,9 @@ The downloaded binary packages are in
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>myQuery</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Searched: gbif
-Occurrences - Found: 4,647, Returned: 4,647
+Occurrences - Found: 4,611, Returned: 4,611
 Search type: Scientific
-  gbif: Rana draytonii (4647)</code></pre>
+  gbif: Rana draytonii (4611)</code></pre>
 </div>
 </div>
 <p>Great! Now we have our query. We need to access the actual data from GBIF. We will use the “$” to navigate the layers of this data.</p>
@@ -458,7 +463,7 @@ Search type: Scientific
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>rana, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>longitude, <span class="at">y=</span>latitude), <span class="at">show.legend=</span><span class="cn">FALSE</span>)<span class="sc">+</span></span>
 <span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Species occurrences of R. draytonii"</span>, <span class="at">x=</span><span class="st">"longitude"</span>, <span class="at">y=</span><span class="st">"latitude"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1781 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 1738 rows containing missing values (`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
 <p><img src="data_aquisition_cleaning_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>

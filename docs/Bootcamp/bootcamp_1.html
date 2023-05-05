@@ -176,6 +176,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="../Info/syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">Class Schedule</a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Coding Boot Camp</a>
@@ -355,16 +360,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bootcamp-lesson-1" id="toc-bootcamp-lesson-1" class="nav-link active" data-scroll-target="#bootcamp-lesson-1">Bootcamp Lesson 1</a>
-  <ul class="collapse">
-  <li><a href="#welcome-to-rstudio" id="toc-welcome-to-rstudio" class="nav-link" data-scroll-target="#welcome-to-rstudio">Welcome to rstudio!</a>
-  <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  <li><a href="#rstudio-windows" id="toc-rstudio-windows" class="nav-link" data-scroll-target="#rstudio-windows">rstudio windows</a></li>
-  <li><a href="#code-chunks" id="toc-code-chunks" class="nav-link" data-scroll-target="#code-chunks">Code chunks</a></li>
-  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#bootcamp-lesson-1" id="toc-bootcamp-lesson-1" class="nav-link active" data-scroll-target="#bootcamp-lesson-1">Bootcamp Lesson 1</a></li>
+  <li><a href="#once-youve-completed-the-lesson" id="toc-once-youve-completed-the-lesson" class="nav-link" data-scroll-target="#once-youve-completed-the-lesson">Once you’ve completed the lesson</a></li>
   </ul>
 </nav>
     </div>
@@ -394,7 +391,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </a>
 </div>
 </div>
-<section id="welcome-to-rstudio" class="level2">
+</section>
+<section id="once-youve-completed-the-lesson" class="level1">
+<h1>Once you’ve completed the lesson</h1>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand To See Solutions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<section id="welcome-to-rstudio" class="level2 callout-body-container callout-body">
 <h2 class="anchored" data-anchor-id="welcome-to-rstudio">Welcome to rstudio!</h2>
 <p>Let’s start off by clicking the “Visual” button above, so this document is a little easier to read and work with. You’ll likely get a popup window the first time, confirming that you want to switch to Visual Mode. Just click <em>Use Visual Mode</em></p>
 <section id="learning-objectives" class="level3">
@@ -456,10 +467,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>create a variable <code>z</code>, and assign <code>x+y</code> to it, and print to the screen</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the variable "y" here, and print to screen</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the variable "y" here, and print to screen</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="sc">+</span> <span class="dv">8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the variable "z" here, and print to screen</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the variable "z" here, and print to screen</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="functions" class="level4">
 <h4 class="anchored" data-anchor-id="functions">Functions</h4>
@@ -473,30 +486,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>[1] 3</code></pre>
 </div>
 </div>
-<p>YOUR TURN: In the chunk below, create a variable <code>z</code>, set it equal to the square root of 90, and print it out:</p>
+<p>YOUR TURN: In the chunk below, create a variable `rooted``, set it equal to the square root of 90, and print it out:</p>
 <div class="cell">
-
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>rooted <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">90</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>One nice thing about rstudio is that you can readily access documentation for functions by using the “help” command:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(sqrt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The documentation appears in the lower right window in the “help” tab.</p>
 <p>One key question: how do you know what functions exist, and what they do?<br>
 Answer: you Google what you’re trying to do! In the case of R, you might search “How do I do ‘x’ in R?”</p>
 <p>Let’s say you are interested in calculating the absolute value (positive distance from zero) of -35 in R. Take a moment with your group/neighbors, and try to find the answer by searching the internet. In the code chunk below, use the function you found to compute this calculation:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compute the absolute value of -35</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compute the absolute value of -35</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">abs</span>(<span class="sc">-</span><span class="dv">35</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 35</code></pre>
+</div>
 </div>
 <p>You made it!</p>
 <div class="cell">
 
 </div>
+</section>
+</section>
+</section>
+</div>
+</div>
 
 
-</section>
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

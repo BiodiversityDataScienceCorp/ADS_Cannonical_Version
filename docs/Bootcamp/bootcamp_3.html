@@ -176,6 +176,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="../Info/syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">Class Schedule</a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Coding Boot Camp</a>
@@ -355,15 +360,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bootcamp-lesson-3" id="toc-bootcamp-lesson-3" class="nav-link active" data-scroll-target="#bootcamp-lesson-3">Bootcamp Lesson 3</a>
-  <ul class="collapse">
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  <li><a href="#what-is-ggplot" id="toc-what-is-ggplot" class="nav-link" data-scroll-target="#what-is-ggplot">What is ggplot?</a></li>
-  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting Help</a></li>
-  <li><a href="#penguin-data" id="toc-penguin-data" class="nav-link" data-scroll-target="#penguin-data">Penguin Data</a></li>
-  <li><a href="#labels-colors" id="toc-labels-colors" class="nav-link" data-scroll-target="#labels-colors">Labels &amp; Colors</a></li>
-  <li><a href="#saving-your-plot" id="toc-saving-your-plot" class="nav-link" data-scroll-target="#saving-your-plot">Saving your plot</a></li>
-  </ul></li>
+  <li><a href="#bootcamp-lesson-3" id="toc-bootcamp-lesson-3" class="nav-link active" data-scroll-target="#bootcamp-lesson-3">Bootcamp Lesson 3</a></li>
+  <li><a href="#once-youve-completed-the-lesson" id="toc-once-youve-completed-the-lesson" class="nav-link" data-scroll-target="#once-youve-completed-the-lesson">Once you’ve completed the lesson</a></li>
   </ul>
 </nav>
     </div>
@@ -380,7 +378,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<a onclick="fetch('data:text/x-markdown;base64,IyBCb290Y2FtcCBMZXNzb24gMwoKYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9CmtuaXRyOjpvcHRzX2NodW5rJHNldChlY2hvID0gVFJVRSkKYGBgCgojIyMgTGVhcm5pbmcgb2JqZWN0aXZlcyAgCgotIExvYWQgYW5kIGZpbHRlciBkYXRhc2V0cyBhcyBuZWVkZWQKLSBMZWFybiB0aGUgYmFzaWMgZWxlbWVudHMgb2YgZ2dwbG90CgoKIyMjIFdoYXQgaXMgZ2dwbG90PwoKZ2dwbG90IGlzIGFuIFIgcGFja2FnZSBjcmVhdGVkIGJ5IEhhZGxleSBXaWNraGFtIChoZSdzIGtpbmQgb2YgYSBiaWcgZGVhbCBpbiB0aGUgUiB3b3JsZCkuIFRoZSAiZ2ciIHRyYW5zbGF0ZXMgdG8gImdyYW1tYXIgb2YgZ3JhcGhpY3MiLCBhbmQgaXMgZm91bmRlZCBpbiB0aGUgaWRlYSB0aGF0IGFsbCBkYXRhIHZpc3VhbGl6YXRpb25zIGFyZSBjb21wcmlzZWQgb2YgdGhyZWUgY29tcG9uZW50czoKCiogZGF0YSBzZXQKKiBhZXN0aGV0aWNzLCBvciB2aXN1YWwgbWFya3MgdGhhdCByZXByZXNlbnQgdGhlIGRhdGEgKGkuZS4gdGhlIHN0dWZmIHRoYXQgeW91IHNlZSkKKiBnZW9tZXRyaWMgb2JqZWN0cywgb3IgImdlb21zIiAoZS5nIHRoZSB0eXBlIG9mIHBsb3QpCgpnZ3Bsb3QgaXMgcGFydCBvZiB0aGUgInRpZHl2ZXJzZSIgLSBhIHNlcmllcyBvZiBwYWNrYWdlcyB0aGF0IHNoYXJlIGNvbW1vbiBzdHJhdGVnaWVzIGZvciB3b3JraW5nIHdpdGggZGF0YSBhbmQgZ2VuZXJhdGluZyB2aXN1YWxpemF0aW9ucy4gV2UgY2FuIGxvYWQgYWxsIHRoZSBwYWNrYWdlcyBhdCBvbmNlIChpbmNsdWRpbmcgcmVhZHIsIGRwbHlyLCBhbmQgb3RoZXIgcGFja2FnZXMgZm9yIHdvcmtpbmcgd2l0aCBkYXRhKSBieSBydW5uaW5nIHRoaXMgY29tbWFuZDoKCmBgYHtyfQpsaWJyYXJ5KHRpZHl2ZXJzZSkKYGBgCgoKIyMjIEdldHRpbmcgSGVscCAgCmdncGxvdCBoYXMgbWFueSwgbWFueSBvcHRpb25zIGFuZCBwb3NzaWJpbGl0aWVzLiBXaGVuIGdldHRpbmcgc3RhcnRlZCAoYW5kIGV2ZW4gb25jZSB5b3UncmUgYSBnZ3Bsb3QgZXhwZXJ0KSwgaXQncyBhIGdvb2QgaWRlYSB0byByZWZlciB0byBkb2N1bWVudGF0aW9uLiBJbiB0aGUgIkZpbGVzIiBzZWN0aW9uLCBjbGljayBvbiB0aGUgImdncGxvdDItY2hlYXRzaGVldC5wZGYiLiBUaGUgUlN0dWRpbyAiaGVscCIgZnVuY3Rpb24gaXMgYWxzbyB1c2VmdWw6CgpgYGB7cn0KaGVscChnZ3Bsb3QpCmBgYAoKYGBge3J9CmhlbHAoZ2VvbV9qaXR0ZXIpCmBgYAoKQXMgYWx3YXlzLCBlbnRlcmluZyB5b3VyIHF1ZXN0aW9uIG9yIGVycm9yIG1lc3NhZ2UgaW50byB5b3VyIGZhdm9yaXRlIHNlYXJjaCBlbmdpbmUgaXMgdHJ5cGljYWxseSBhIHByZXR0eSBlZmZlY3RpdmUgd2F5IHRvIGdldCBoZWxwLiBDaGFuY2VzIGFyZSBnb29kIHRoYXQgc29tZW9uZSBlbHNlIGhhcyBhbHJlYWR5IGVuY291bnRlcmVkIGEgZ2dwbG90IHByb2JsZW0geW91J3ZlIGVuY291bnRlcmVkLCBhbmQgdGhlIGFuc3dlcnMgYXJlIGxpa2VseSBvbmxpbmUuCgoKIyMjIFBlbmd1aW4gRGF0YQoKV2UgYXJlIGdvaW5nIHRvIHVzZSB0aGUgcGVuZ3VpbnMgZGF0YSBzZXQgYWdhaW4uIFRvIGNhbGwgdXAgdGhpcyBkYXRhLCB3ZSBuZWVkIHRvIGxvYWQgdGhlIHBhbG1lcnBlbmd1aW5zIHBhY2thZ2UuIAoKYGBge3J9CmxpYnJhcnkocGFsbWVycGVuZ3VpbnMpCmBgYAoKCk91ciBnb2FsIGlzIHRvIGNyZWF0ZSBhIGJveCBwbG90IHRoYXQgc2hvd3MgdGhlIGRpZmZlcmVuY2UgaW4gbWFzcyBiZXR3ZWVuIHRoZSBtYWxlIHBlbmd1aW5zIG9mIHRoZSBkaWZmZXJlbnQgc3BlY2llcy4gV2l0aCBhbnkgcHJvZ3JhbW1pbmcgcHJvYmxlbSwgaXQncyBnb29kIHRvIHRoaW5rIGFib3V0IGl0IGluIHRlcm1zIG9mIHN0ZXBzOgoKKiBsb2FkIHRoZSBkYXRhIHNldAoqIGZpbHRlciB0aGUgZGF0YSBzbyBpdCBvbmx5IGNvbnRhaW5zIGRhdGEgSSdtIGludGVyZXN0ZWQgaW4KKiBjcmVhdGUgYSBjaGFydCB3aXRoIHRoYXQgZGF0YQoKT25jZSB5b3UgYnJlYWsgdGhlIHByb2JsZW0gZG93biBpbnRvIHN0ZXBzLCBob3BlZnVsbHkgaXQnbGwgYmUgZWFzaWVyIHRvIHRhY2tsZS4gUGx1cywgZWFjaCBpbmRpdmlkdWFsIHN0ZXAgaXMgJ2dvb2dsZWFibGUnLCBzbyBoZWxwIGlzIG5vdCBmYXIgYXdheS4KCgpMZXQncyBnZXQgdGhlIHN1YnNldCBvZiB0aGUgZGF0YSB0aGF0IGlzIG9ubHkgdGhlIG1hbGUgcGVuZ3VpbnMuIEFzc2lnbiB0aGlzIHRvIHRoZSB2YXJpYWJsZSBtYWxlUGVuZ3VpbnMuIChIaW50OiBpZiB5b3UgZG9uJ3Qga25vdyBob3cgdG8gZG8gdGhpcywgbG9vayBiYWNrIGF0IHRoZSBmaWx0ZXJpbmcgc2VjdGlvbiBvZiBsZXNzb25fMi5SbWQpCmBgYHtyfQptYWxlUGVuZ3VpbnMgPC0gcGVuZ3VpbnMgJT4lIGZpbHRlcihzZXggPT0gIm1hbGUiKQpgYGAKCgpPdXIgIm1hcnkiIHZhcmlhYmxlIG5vdyBqdXN0IGhhcyB0aGUgY291bnQgb2YgIk1hcnlzIiBvdmVyIHRpbWUuIExldCdzIGRvIGEgbGluZSBwbG90IHRvIHNlZSB0aGUgY2hhbmdlIG92ZXIgdGltZS4gSGVyZSBpcyB0aGUgY29kZSB3ZSB3aWxsIHJ1bjoKCmdncGxvdChkYXRhPW1hbGVQZW5ndWlucywgbWFwcGluZz1hZXMoeD1zcGVjaWVzLCB5PWJvZHlfbWFzc19nKSkrZ2VvbV9ib3goKQoKTG9va2luZyBhdCB0aGUgY29kZSwgaGVyZSdzIGhvdyB3ZSdyZSBpbmNsdWRpbmcgdGhlIHRocmVlIGJhc2ljIHBhcnRzIG9mIGEgZ2dwbG90IGNoYXJ0OiAKCiogREFUQSAtIGRhdGE9bWFsZVBlbmd1aW5zCiogQUVTVEhFVElDUyAtIG1hcHBpbmc9YWVzKHg9c3BlY2llcywgeT1ib2R5X21hc3NfZykgIAoqIEdFT00gLSArZ2VvbV9ib3hwbG90KCkgIHRvIGNyZWF0ZSBhIGJveCBwbG90CgoKYGBge3J9CmdncGxvdChkYXRhPW1hbGVQZW5ndWlucywgbWFwcGluZz1hZXMoeD1zcGVjaWVzLCB5PWJvZHlfbWFzc19nKSkrZ2VvbV9ib3hwbG90KCkKYGBgCgoKWU9VUiBUVVJOOgoKTGV0J3Mgc2F5IHlvdSB3YW50IHRvIHNlZSBpZiB0aGVyZSBpcyBhIHJlbGF0aW9uc2hpcCBiZXR3ZWVuIGEgcGVuZ3VpbidzIGJvZHkgbWFzcyBhbmQgaXQncyBmbGlwcGVyIGxlbmd0aC4gQ3JlYXRlIHRoaXMgc2NhdHRlciBwbG90LiBZb3UgZG9uJ3QgbmVlZCB0byBmaWx0ZXIgdGhpcyBkYXRhLCBzaW5jZSB3ZSBhcmUgbG9va2luZyBhdCBhbGwgb2YgdGhlIHBlbmd1aW5zLiBUaGUgeCBheGlzIHNob3VsZCBiZSB0aGUgYm9keSBtYXNzIGFuZCB0aGUgeSBheGlzIHNob3VsZCBiZSB0aGUgZmxpcHBlciBsZW5ndGguIExvb2sgYXQgdGhlIGdncGxvdDItY2hlYXRzaGVldC5wZGYgdG8gZmluZCBvdXQgd2hhdCB0aGUgR0VPTSBzaG91bGQgYmUuIApgYGB7cn0KCgpgYGAKCgojIyMgTGFiZWxzICYgQ29sb3JzCgpZb3UgY2FuIHNwZWNpZnkgbGFiZWxzIHRvIGFkZCB0byB5b3VyIHBsb3QgYnkgdXNpbmcgdGhlICJsYWJzKCkiIGZ1bmN0aW9uOgoKYGBge3J9CmdncGxvdChkYXRhPW1hbGVQZW5ndWlucywgbWFwcGluZz1hZXMoeD1zcGVjaWVzLCB5PWJvZHlfbWFzc19nKSkgKyAKICBnZW9tX2JveHBsb3QoKSArCiAgbGFicyh4ID0gIlBlbmd1aW4gU3BlY2llcyIsIHkgPSAiQm9keSBNYXNzIChnKSIsIHRpdGxlID0gIlBlbmd1aW4gYm9keSBtYXNzIGlzIGRpZmZlcmVudCBieSBzcGVjaWVzIikKYGBgCgpBZGRpdGlvbmFsbHkgeW91IGNhbiBhZGQgY29sb3JzLiBZb3UgY2FuIGFkZCBjb2xvcnMgYnkgYSBjYXRlZ29yaWNhbCB2YXJpYWJsZSAobGlrZSBzcGVjaWVzKSBieSBhZGRpbmcgaXQgdG8gdGhlIGFlcyBhcmd1bWVudC4gSGVyZSB3ZSB3aWxsIHVzZSAiZmlsbCIgYmVjYXVzZSB3ZSB3YW50IHRoZSBjb2xvciB0byBmaWxsIHRoZSB3aG9sZSBib3guIElmIHdlIGp1c3QgaGF2ZSBwb2ludHMsIHdlIGNhbiB1c2UgImNvbG9yID0gIiBpbnN0ZWFkLiAKCmBgYHtyfQpnZ3Bsb3QoZGF0YT1tYWxlUGVuZ3VpbnMsIG1hcHBpbmc9YWVzKHg9c3BlY2llcywgeT1ib2R5X21hc3NfZywgZmlsbCA9IHNwZWNpZXMpKSArIAogIGdlb21fYm94cGxvdCgpICsKICBsYWJzKHggPSAiUGVuZ3VpbiBTcGVjaWVzIiwgeSA9ICJCb2R5IE1hc3MgKGcpIiwgdGl0bGUgPSAiUGVuZ3VpbiBib2R5IG1hc3MgaXMgZGlmZmVyZW50IGJ5IHNwZWNpZXMiKQpgYGAKCllPVVIgVFVSTjoKQ2FuIHlvdSBhZGQgc29tZSBsYWJlbHMgYW5kIGNvbG9yIGJ5IHNwZWNpZXMgdG8geW91ciBzY2F0dGVyIHBsb3Q/CmBgYHtyfQoKCmBgYAoKIyMjIFNhdmluZyB5b3VyIHBsb3QgCgpUbyBzYXZlIHlvdXIgcGxvdCBhcyBhIGZpbGUsIHlvdSBjYW4gdXNlIHRoZSBnZ3NhdmUoKSBmdW5jdGlvbi4gZ2dzYXZlIHdpbGwgc2F2ZSB0aGUgbGFzdCBwbG90IGdlbmVyYXRlZDoKCmBgYHtyfQpnZ3NhdmUoInBsb3QucG5nIiwgaGVpZ2h0PTUsIHdpZHRoPTUsIHVuaXRzPSJjbSIsIHNjYWxlPTMpCmBgYAoKRnJvbSB0aGVyZSwgeW91IGNhbiBkb3dubG9hZCB5b3VyIHBvdCBmaWxlLCBhbmQgdXNlIGl0IGhvd2V2ZXIgeW91IGNob29zZS4KCgpBd2Vzb21lIGpvYiEgCgpXZSBhcmUgZ29pbmcgdG8gdXNlIGdncGxvdCB0byBjcmVhdGUgbWFwcyBsYXRlciB0aGlzIHNlbWVzdGVyLiBUaGUgaW1wb3J0YW50IHRoaW5nIGlzIHRoYXQgeW91IGFyZSBmYW1pbGlhciB3aXRoIHRoZSBzeW50YXggaW4gZ2dwbG90LCBub3QgdGhlIHNwZWNpZmljcyBvZiBhIGJveHBsb3Qgb3Igc2NhdHRlciBwbG90LiBJZiB5b3Ugd2FudCBtb3JlIHByYWN0aWNlLCBjaGVjayBvdXQgcHJhY3RpY2VfMy5SbWQgZm9yIG1vcmUgcGVuZ3VpbiBhY3Rpb24hCgoKCg==').then(res => res.blob()).then(blob => {
+<a onclick="fetch('data:text/x-markdown;base64,IyBCb290Y2FtcCBMZXNzb24gMwoKYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9CmtuaXRyOjpvcHRzX2NodW5rJHNldChlY2hvID0gVFJVRSkKYGBgCgojIyMgTGVhcm5pbmcgb2JqZWN0aXZlcyAgCgotIExvYWQgYW5kIGZpbHRlciBkYXRhc2V0cyBhcyBuZWVkZWQKLSBMZWFybiB0aGUgYmFzaWMgZWxlbWVudHMgb2YgZ2dwbG90CgoKIyMjIFdoYXQgaXMgZ2dwbG90PwoKZ2dwbG90IGlzIGFuIFIgcGFja2FnZSBjcmVhdGVkIGJ5IEhhZGxleSBXaWNraGFtIChoZSdzIGtpbmQgb2YgYSBiaWcgZGVhbCBpbiB0aGUgUiB3b3JsZCkuIFRoZSAiZ2ciIHRyYW5zbGF0ZXMgdG8gImdyYW1tYXIgb2YgZ3JhcGhpY3MiLCBhbmQgaXMgZm91bmRlZCBpbiB0aGUgaWRlYSB0aGF0IGFsbCBkYXRhIHZpc3VhbGl6YXRpb25zIGFyZSBjb21wcmlzZWQgb2YgdGhyZWUgY29tcG9uZW50czoKCiogZGF0YSBzZXQKKiBhZXN0aGV0aWNzLCBvciB2aXN1YWwgbWFya3MgdGhhdCByZXByZXNlbnQgdGhlIGRhdGEgKGkuZS4gdGhlIHN0dWZmIHRoYXQgeW91IHNlZSkKKiBnZW9tZXRyaWMgb2JqZWN0cywgb3IgImdlb21zIiAoZS5nIHRoZSB0eXBlIG9mIHBsb3QpCgpnZ3Bsb3QgaXMgcGFydCBvZiB0aGUgInRpZHl2ZXJzZSIgLSBhIHNlcmllcyBvZiBwYWNrYWdlcyB0aGF0IHNoYXJlIGNvbW1vbiBzdHJhdGVnaWVzIGZvciB3b3JraW5nIHdpdGggZGF0YSBhbmQgZ2VuZXJhdGluZyB2aXN1YWxpemF0aW9ucy4gV2UgY2FuIGxvYWQgYWxsIHRoZSBwYWNrYWdlcyBhdCBvbmNlIChpbmNsdWRpbmcgcmVhZHIsIGRwbHlyLCBhbmQgb3RoZXIgcGFja2FnZXMgZm9yIHdvcmtpbmcgd2l0aCBkYXRhKSBieSBydW5uaW5nIHRoaXMgY29tbWFuZDoKCmBgYHtyfQpsaWJyYXJ5KHRpZHl2ZXJzZSkKYGBgCgoKIyMjIEdldHRpbmcgSGVscCAgCmdncGxvdCBoYXMgbWFueSwgbWFueSBvcHRpb25zIGFuZCBwb3NzaWJpbGl0aWVzLiBXaGVuIGdldHRpbmcgc3RhcnRlZCAoYW5kIGV2ZW4gb25jZSB5b3UncmUgYSBnZ3Bsb3QgZXhwZXJ0KSwgaXQncyBhIGdvb2QgaWRlYSB0byByZWZlciB0byBkb2N1bWVudGF0aW9uLiBJbiB0aGUgIkZpbGVzIiBzZWN0aW9uLCBjbGljayBvbiB0aGUgImdncGxvdDItY2hlYXRzaGVldC5wZGYiLiBUaGUgUlN0dWRpbyAiaGVscCIgZnVuY3Rpb24gaXMgYWxzbyB1c2VmdWw6CgpgYGB7cn0KaGVscChnZ3Bsb3QpCmBgYAoKYGBge3J9CmhlbHAoZ2VvbV9qaXR0ZXIpCmBgYAoKQXMgYWx3YXlzLCBlbnRlcmluZyB5b3VyIHF1ZXN0aW9uIG9yIGVycm9yIG1lc3NhZ2UgaW50byB5b3VyIGZhdm9yaXRlIHNlYXJjaCBlbmdpbmUgaXMgdHJ5cGljYWxseSBhIHByZXR0eSBlZmZlY3RpdmUgd2F5IHRvIGdldCBoZWxwLiBDaGFuY2VzIGFyZSBnb29kIHRoYXQgc29tZW9uZSBlbHNlIGhhcyBhbHJlYWR5IGVuY291bnRlcmVkIGEgZ2dwbG90IHByb2JsZW0geW91J3ZlIGVuY291bnRlcmVkLCBhbmQgdGhlIGFuc3dlcnMgYXJlIGxpa2VseSBvbmxpbmUuCgoKIyMjIFBlbmd1aW4gRGF0YQoKV2UgYXJlIGdvaW5nIHRvIHVzZSB0aGUgcGVuZ3VpbnMgZGF0YSBzZXQgYWdhaW4uIFRvIGNhbGwgdXAgdGhpcyBkYXRhLCB3ZSBuZWVkIHRvIGxvYWQgdGhlIHBhbG1lcnBlbmd1aW5zIHBhY2thZ2UuIAoKYGBge3J9CmxpYnJhcnkocGFsbWVycGVuZ3VpbnMpCmBgYAoKCk91ciBnb2FsIGlzIHRvIGNyZWF0ZSBhIGJveCBwbG90IHRoYXQgc2hvd3MgdGhlIGRpZmZlcmVuY2UgaW4gbWFzcyBiZXR3ZWVuIHRoZSBtYWxlIHBlbmd1aW5zIG9mIHRoZSBkaWZmZXJlbnQgc3BlY2llcy4gV2l0aCBhbnkgcHJvZ3JhbW1pbmcgcHJvYmxlbSwgaXQncyBnb29kIHRvIHRoaW5rIGFib3V0IGl0IGluIHRlcm1zIG9mIHN0ZXBzOgoKKiBsb2FkIHRoZSBkYXRhIHNldAoqIGZpbHRlciB0aGUgZGF0YSBzbyBpdCBvbmx5IGNvbnRhaW5zIGRhdGEgSSdtIGludGVyZXN0ZWQgaW4KKiBjcmVhdGUgYSBjaGFydCB3aXRoIHRoYXQgZGF0YQoKT25jZSB5b3UgYnJlYWsgdGhlIHByb2JsZW0gZG93biBpbnRvIHN0ZXBzLCBob3BlZnVsbHkgaXQnbGwgYmUgZWFzaWVyIHRvIHRhY2tsZS4gUGx1cywgZWFjaCBpbmRpdmlkdWFsIHN0ZXAgaXMgJ2dvb2dsZWFibGUnLCBzbyBoZWxwIGlzIG5vdCBmYXIgYXdheS4KCgpMZXQncyBnZXQgdGhlIHN1YnNldCBvZiB0aGUgZGF0YSB0aGF0IGlzIG9ubHkgdGhlIG1hbGUgcGVuZ3VpbnMuIEFzc2lnbiB0aGlzIHRvIHRoZSB2YXJpYWJsZSBtYWxlUGVuZ3VpbnMuIChIaW50OiBpZiB5b3UgZG9uJ3Qga25vdyBob3cgdG8gZG8gdGhpcywgbG9vayBiYWNrIGF0IHRoZSBmaWx0ZXJpbmcgc2VjdGlvbiBvZiBsZXNzb25fMi5SbWQpCmBgYHtyfQoKYGBgCgoKSGVyZSBpcyBob3cgd2Ugd291bGQgbWFrZSBhIGJhc2ljIGJveHBsb3Qgd2l0aCB0aGF0IGRhdGEuIFdlIG5lZWQgdG8gc3BlY2lmaWMgb3VyIGRhdGEsIGFuZCBheGVzLiBXZSB0aGVuIHNheSB3aGF0IHR5cGUgb2YgcGxvdCB3ZSB3YW50LCBhIGJveHBsb3QuIAoKYGBge3J9CmdncGxvdChkYXRhPW1hbGVQZW5ndWlucywgbWFwcGluZz1hZXMoeD1zcGVjaWVzLCB5PWJvZHlfbWFzc19nKSkgKwogIGdlb21fYm94cGxvdCgpCmBgYApMb29raW5nIGF0IHRoZSBjb2RlLCBoZXJlJ3MgaG93IHdlJ3JlIGluY2x1ZGluZyB0aGUgdGhyZWUgYmFzaWMgcGFydHMgb2YgYSBnZ3Bsb3QgY2hhcnQ6IAogCiogREFUQSAtIGRhdGE9bWFsZVBlbmd1aW5zCiAKKiBBRVNUSEVUSUNTIC0gbWFwcGluZz1hZXMoeD1zcGVjaWVzLCB5PWJvZHlfbWFzc19nKSAgCiAKKiBHRU9NIC0gKyBnZW9tX2JveHBsb3QoKSAgdG8gY3JlYXRlIGEgYm94IHBsb3QKCgpZT1VSIFRVUk46CgpMZXQncyBzYXkgeW91IHdhbnQgdG8gc2VlIGlmIHRoZXJlIGlzIGEgcmVsYXRpb25zaGlwIGJldHdlZW4gYSBwZW5ndWluJ3MgYm9keSBtYXNzIGFuZCBpdCdzIGZsaXBwZXIgbGVuZ3RoLiBDcmVhdGUgdGhpcyBzY2F0dGVyIHBsb3QuIFlvdSBkb24ndCBuZWVkIHRvIGZpbHRlciB0aGlzIGRhdGEsIHNpbmNlIHdlIGFyZSBsb29raW5nIGF0IGFsbCBvZiB0aGUgcGVuZ3VpbnMuIFRoZSB4IGF4aXMgc2hvdWxkIGJlIHRoZSBib2R5IG1hc3MgYW5kIHRoZSB5IGF4aXMgc2hvdWxkIGJlIHRoZSBmbGlwcGVyIGxlbmd0aC4gR29vZ2xlICJnZW9tcyBpbiBnZ3Bsb3QiIHRvIGZpbmQgb3V0IHdoYXQgdGhlIGdlb21fIHNob3VsZCBiZS4gCgpgYGB7cn0KCgpgYGAKCgojIyMgTGFiZWxzICYgQ29sb3JzCgpZb3UgY2FuIHNwZWNpZnkgbGFiZWxzIHRvIGFkZCB0byB5b3VyIHBsb3QgYnkgdXNpbmcgdGhlICJsYWJzKCkiIGZ1bmN0aW9uOgoKYGBge3J9CmdncGxvdChkYXRhPW1hbGVQZW5ndWlucywgbWFwcGluZz1hZXMoeD1zcGVjaWVzLCB5PWJvZHlfbWFzc19nKSkgKyAKICBnZW9tX2JveHBsb3QoKSArCiAgbGFicyh4ID0gIlBlbmd1aW4gU3BlY2llcyIsIHkgPSAiQm9keSBNYXNzIChnKSIsIHRpdGxlID0gIlBlbmd1aW4gYm9keSBtYXNzIGlzIGRpZmZlcmVudCBieSBzcGVjaWVzIikKYGBgCgpBZGRpdGlvbmFsbHkgeW91IGNhbiBhZGQgY29sb3JzLiBZb3UgY2FuIGFkZCBjb2xvcnMgYnkgYSBjYXRlZ29yaWNhbCB2YXJpYWJsZSAobGlrZSBzcGVjaWVzKSBieSBhZGRpbmcgaXQgdG8gdGhlIGFlcyBhcmd1bWVudC4gSGVyZSB3ZSB3aWxsIHVzZSAiZmlsbCIgYmVjYXVzZSB3ZSB3YW50IHRoZSBjb2xvciB0byBmaWxsIHRoZSB3aG9sZSBib3guIElmIHdlIGp1c3QgaGF2ZSBwb2ludHMsIHdlIGNhbiB1c2UgImNvbG9yID0gIiBpbnN0ZWFkLiAKCmBgYHtyfQpnZ3Bsb3QoZGF0YT1tYWxlUGVuZ3VpbnMsIG1hcHBpbmc9YWVzKHg9c3BlY2llcywgeT1ib2R5X21hc3NfZywgZmlsbCA9IHNwZWNpZXMpKSArIAogIGdlb21fYm94cGxvdCgpICsKICBsYWJzKHggPSAiUGVuZ3VpbiBTcGVjaWVzIiwgeSA9ICJCb2R5IE1hc3MgKGcpIiwgdGl0bGUgPSAiUGVuZ3VpbiBib2R5IG1hc3MgaXMgZGlmZmVyZW50IGJ5IHNwZWNpZXMiKQpgYGAKCllPVVIgVFVSTjoKQ2FuIHlvdSBhZGQgc29tZSBsYWJlbHMgYW5kIGNvbG9yIGJ5IHNwZWNpZXMgdG8geW91ciBzY2F0dGVyIHBsb3Q/CmBgYHtyfQoKCmBgYAoKIyMjIFNhdmluZyB5b3VyIHBsb3QgCgpUbyBzYXZlIHlvdXIgcGxvdCBhcyBhIGZpbGUsIHlvdSBjYW4gdXNlIHRoZSBnZ3NhdmUoKSBmdW5jdGlvbi4gZ2dzYXZlIHdpbGwgc2F2ZSB0aGUgbGFzdCBwbG90IGdlbmVyYXRlZDoKCmBgYHtyfQpnZ3NhdmUoInBsb3QucG5nIiwgaGVpZ2h0PTUsIHdpZHRoPTUsIHVuaXRzPSJjbSIsIHNjYWxlPTMpCmBgYAoKRnJvbSB0aGVyZSwgeW91IGNhbiBkb3dubG9hZCB5b3VyIHBvdCBmaWxlLCBhbmQgdXNlIGl0IGhvd2V2ZXIgeW91IGNob29zZS4KCgpBd2Vzb21lIGpvYiEgCgpXZSBhcmUgZ29pbmcgdG8gdXNlIGdncGxvdCB0byBjcmVhdGUgbWFwcyBsYXRlciB0aGlzIHNlbWVzdGVyLiBUaGUgaW1wb3J0YW50IHRoaW5nIGlzIHRoYXQgeW91IGFyZSBmYW1pbGlhciB3aXRoIHRoZSBzeW50YXggaW4gZ2dwbG90LCBub3QgdGhlIHNwZWNpZmljcyBvZiBhIGJveHBsb3Qgb3Igc2NhdHRlciBwbG90LiBJZiB5b3Ugd2FudCBtb3JlIHByYWN0aWNlLCBjaGVjayBvdXQgcHJhY3RpY2VfMy5SbWQgZm9yIG1vcmUgcGVuZ3VpbiBhY3Rpb24hCgoKCgo=').then(res => res.blob()).then(blob => {
       const downloadURL = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       document.body.appendChild(a);
@@ -393,6 +391,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </a>
 </div>
 </div>
+</section>
+<section id="once-youve-completed-the-lesson" class="level1">
+<h1>Once you’ve completed the lesson</h1>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand To See Solutions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <section id="learning-objectives" class="level3">
 <h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
 <ul>
@@ -415,7 +428,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.0     ✔ readr     2.1.4
 ✔ forcats   1.0.0     ✔ stringr   1.5.0
-✔ ggplot2   3.4.1     ✔ tibble    3.1.8
+✔ ggplot2   3.4.1     ✔ tibble    3.2.0
 ✔ lubridate 1.9.2     ✔ tidyr     1.3.0
 ✔ purrr     1.0.1     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
@@ -451,57 +464,86 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Once you break the problem down into steps, hopefully it’ll be easier to tackle. Plus, each individual step is ‘googleable’, so help is not far away.</p>
 <p>Let’s get the subset of the data that is only the male penguins. Assign this to the variable malePenguins. (Hint: if you don’t know how to do this, look back at the filtering section of lesson_2.Rmd)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># malePenguins &lt;- penguins %&gt;% filter(sex == "male")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>malePenguins <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(sex <span class="sc">==</span> <span class="st">"male"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Our “mary” variable now just has the count of “Marys” over time. Let’s do a line plot to see the change over time. Here is the code we will run:</p>
-<p>ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g))+geom_box()</p>
+<p>Here is how we would make a basic boxplot with that data. We need to specific our data, and axes. We then say what type of plot we want, a boxplot.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>malePenguins, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>species, <span class="at">y=</span>body_mass_g)) <span class="sc">+</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="bootcamp_3_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 <p>Looking at the code, here’s how we’re including the three basic parts of a ggplot chart:</p>
 <ul>
-<li>DATA - data=malePenguins</li>
-<li>AESTHETICS - mapping=aes(x=species, y=body_mass_g)<br>
-</li>
-<li>GEOM - +geom_boxplot() to create a box plot</li>
+<li><p>DATA - data=malePenguins</p></li>
+<li><p>AESTHETICS - mapping=aes(x=species, y=body_mass_g)</p></li>
+<li><p>GEOM - + geom_boxplot() to create a box plot</p></li>
 </ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g))+geom_boxplot()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 <p>YOUR TURN:</p>
 <p>Let’s say you want to see if there is a relationship between a penguin’s body mass and it’s flipper length. Create this scatter plot. You don’t need to filter this data, since we are looking at all of the penguins. The x axis should be the body mass and the y axis should be the flipper length. Look at the ggplot2-cheatsheet.pdf to find out what the GEOM should be.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="bootcamp_3_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 </section>
 <section id="labels-colors" class="level3">
 <h3 class="anchored" data-anchor-id="labels-colors">Labels &amp; Colors</h3>
 <p>You can specify labels to add to your plot by using the “labs()” function:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g)) + </span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#geom_boxplot() +</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(x = "Penguin Species", y = "Body Mass (g)", title = "Penguin body mass is different by species")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>malePenguins, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>species, <span class="at">y=</span>body_mass_g)) <span class="sc">+</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Penguin Species"</span>, <span class="at">y =</span> <span class="st">"Body Mass (g)"</span>, <span class="at">title =</span> <span class="st">"Penguin body mass is different by species"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="bootcamp_3_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 <p>Additionally you can add colors. You can add colors by a categorical variable (like species) by adding it to the aes argument. Here we will use “fill” because we want the color to fill the whole box. If we just have points, we can use “color =” instead.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g, fill = species)) + </span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#geom_boxplot() +</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">#labs(x = "Penguin Species", y = "Body Mass (g)", title = "Penguin body mass is different by species")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>malePenguins, <span class="at">mapping=</span><span class="fu">aes</span>(<span class="at">x=</span>species, <span class="at">y=</span>body_mass_g, <span class="at">fill =</span> species)) <span class="sc">+</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Penguin Species"</span>, <span class="at">y =</span> <span class="st">"Body Mass (g)"</span>, <span class="at">title =</span> <span class="st">"Penguin body mass is different by species"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="bootcamp_3_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 <p>YOUR TURN: Can you add some labels and color by species to your scatter plot?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Body mass (g)"</span>, <span class="at">y =</span> <span class="st">"Flipper length (mm)"</span>, <span class="at">title =</span> <span class="st">"Flipper length increases with body mass"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="bootcamp_3_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
 </div>
 </section>
 <section id="saving-your-plot" class="level3">
 <h3 class="anchored" data-anchor-id="saving-your-plot">Saving your plot</h3>
 <p>To save your plot as a file, you can use the ggsave() function. ggsave will save the last plot generated:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#ggsave("plot.png", height=5, width=5, units="cm", scale=3)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">"plot.png"</span>, <span class="at">height=</span><span class="dv">5</span>, <span class="at">width=</span><span class="dv">5</span>, <span class="at">units=</span><span class="st">"cm"</span>, <span class="at">scale=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
+</div>
 </div>
 <p>From there, you can download your pot file, and use it however you choose.</p>
 <p>Awesome job!</p>
 <p>We are going to use ggplot to create maps later this semester. The important thing is that you are familiar with the syntax in ggplot, not the specifics of a boxplot or scatter plot.</p>
-
-
 </section>
+</div>
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
