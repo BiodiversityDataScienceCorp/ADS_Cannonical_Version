@@ -2,7 +2,7 @@
 
 If you'd like to create your own version of the website, here are the steps you need to follow.
 
-## Prerequisites (half of the battle):
+## Prerequisites:
 
 -   Have [R](https://posit.co/download/rstudio-desktop/) and [R studio](https://posit.co/download/rstudio-desktop/) on your local machine
 
