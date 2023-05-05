@@ -84,6 +84,13 @@ ggplot(data=malePenguins, mapping=aes(x=species, y=body_mass_g)) +
   geom_boxplot()
 ```
 
+Looking at the code, here's how we're including the three basic parts of a ggplot chart: 
+ 
+* DATA - data=malePenguins
+ 
+* AESTHETICS - mapping=aes(x=species, y=body_mass_g)  
+ 
+* GEOM - + geom_boxplot()  to create a box plot
 
 YOUR TURN:
 
