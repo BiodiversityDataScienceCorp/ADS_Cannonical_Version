@@ -57,8 +57,8 @@ y
 
 1. (Install if you haven't completed lesson 2) and load the tidyverse and palmerpenguins packages. 
 ```{r}
-install.packages("tidyverse")
-install.packages("palmerpenguins")
+install.packages("tidyverse", repos = "http://cran.us.r-project.org")
+install.packages("palmerpenguins", repos = "http://cran.us.r-project.org")
 
 library("tidyverse")
 library("palmerpenguins")
