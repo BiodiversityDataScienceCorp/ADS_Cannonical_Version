@@ -2,15 +2,23 @@
 
 ## About
 
-While this course doesn't have any specific prerequisites, it is important to have a basic understanding of coding in R. Before attempting the lessons, you should be familiar with all of the content in this Coding Basics tab. There are three small lessons intended to get you familiar with the skills you will need to succeed in the remainder of the course.
+While this course doesn't have any specific prerequisites, it is important to have a basic understanding of coding in R and the [tidyverse](https://www.tidyverse.org/), a package ecosystem with great tools for data wrangling and visualization. Before attempting the lessons, you should be familiar with all of the content in this Coding Basics tab. There are three small lessons intended to get you familiar with the skills you will need to succeed in the remainder of the course. 
 
 ## Structure
 
 There are three lessons, and three practices to gain more experience with what you will learn in the lessons. Each lesson is in its own file, but all of the practices are in one file.
 
+## Application Necessities
+You will need access to R studio. There are two ways of doing this.
 
-## How to Use
+1. You can create a free account on [posit.cloud](https://posit.cloud/) to access a version of R studio on the cloud.
 
+2. You can download [R](https://posit.co/download/rstudio-desktop/) and [R studio](https://posit.co/download/rstudio-desktop/) to your local machine. 
+
+## How to Bootcamp
+Each lesson has a `download this` button at the top of the page, which will download the .R file to your machine. Upload this to either posit.cloud or open it in the R studio application. There are instructions for each learning objective within. When you are done, return to the page and view the solutions.
+
+After completing each lesson, take your skills even further with the practice file. This works the same way- download the .R file, and then come back to check your answers once complete. All of the practices are on one file.  
 
 ## Learning Objectives by Lesson
 
