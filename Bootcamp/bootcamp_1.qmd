@@ -15,6 +15,12 @@ downloadthis::download_file(path = "../_bootcamp_Rmds/bootcamp_1.Rmd", button_la
 ```
 
 
+# Once you've completed the lesson
+
+::: {.callout-tip collapse="true"}
+## Expand To See Solutions
+
+
 ## Welcome to rstudio!
 Let's start off by clicking the "Visual" button above, so this document is a little easier to read and work with. You'll likely get a popup window the first time, confirming that you want to switch to Visual Mode.
 Just click *Use Visual Mode*
@@ -82,10 +88,12 @@ Now it's your turn. Work with your group / people next to you, and do the follow
 
 ```{r}
 # create the variable "y" here, and print to screen
+y <- 3 + 8
 ```
 
 ```{r}
 # create the variable "z" here, and print to screen
+z <- x + y
 ```
 
 
@@ -103,9 +111,10 @@ For example, the function `sqrt(number)` takes the square root of a number. This
 sqrt(9)
 ```
 
-YOUR TURN: In the chunk below, create a variable `z`, set it equal to the square root of 90, and print it out:
+YOUR TURN: In the chunk below, create a variable `rooted``, set it equal to the square root of 90, and print it out:
 
 ```{r}
+rooted <- sqrt(90)
 ```
 
 One nice thing about rstudio is that you can readily access documentation for functions by using the "help" command:
@@ -123,6 +132,7 @@ Let's say you are interested in calculating the absolute value (positive distanc
 
 ```{r}
 # compute the absolute value of -35
+abs(-35)
 ```
 You made it! 
 
@@ -133,3 +143,4 @@ You made it!
 install.packages("downloadthis", repos = "http://cran.us.r-project.org")
 ```
 
+:::

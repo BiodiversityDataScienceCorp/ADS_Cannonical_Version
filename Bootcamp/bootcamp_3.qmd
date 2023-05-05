@@ -14,6 +14,11 @@ library(downloadthis)
 downloadthis::download_file(path = "../_bootcamp_Rmds/bootcamp_3.Rmd", button_label = "Download file", button_type = "default", has_icon = TRUE, icon = "fa fa-save", self_contained = FALSE)
 ``` 
 
+# Once you've completed the lesson
+
+::: {.callout-tip collapse="true"}
+## Expand To See Solutions
+
 ### Learning objectives  
 
 - Load and filter datasets as needed
@@ -136,3 +141,4 @@ Awesome job!
 
 We are going to use ggplot to create maps later this semester. The important thing is that you are familiar with the syntax in ggplot, not the specifics of a boxplot or scatter plot. 
 
+:::
