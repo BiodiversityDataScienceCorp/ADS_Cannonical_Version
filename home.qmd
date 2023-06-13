@@ -8,7 +8,7 @@
 
 [{{< fa scroll >}}](Info/syllabus.qmd) Syllabus
 
-[{{< fa calendar >}}](Info/schedule.qmd) Schedule
+[{{< fa calendar >}}](schedule.qmd) Schedule
 
 [{{< fa code >}}](Bootcamp/coding_basics_for_this_course.qmd) Coding Boot Camp
 
