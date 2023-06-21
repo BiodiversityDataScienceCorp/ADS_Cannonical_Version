@@ -167,7 +167,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Info/contact_us.html" class="sidebar-item-text sidebar-link">Contact Us</a>
+  <a href="../Info/contact_us.html" class="sidebar-item-text sidebar-link">contact_us.html</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -395,7 +395,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpGtUpIV/downloaded_packages</code></pre>
+    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//Rtmp7GRhiR/downloaded_packages</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -420,7 +420,7 @@ The downloaded binary packages are in
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ranaData <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"ranaData.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>New names:
-Rows: 1792 Columns: 4
+Rows: 1826 Columns: 4
 ── Column specification
 ──────────────────────────────────────────────────────── Delimiter: "," dbl
 (3): ...1, longitude, latitude date (1): eventDate
@@ -446,7 +446,7 @@ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(<span class="fu">na.omit</span>(<span class="fu">as.Date</span>(ranaData<span class="sc">$</span>eventDate)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "1891-09-30" "2023-04-11"</code></pre>
+<pre><code>[1] "1891-09-30" "2023-06-12"</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># our date identified ranges from 1891 to 2023</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

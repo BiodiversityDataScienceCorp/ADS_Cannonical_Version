@@ -1,4 +1,5 @@
-# Contact Us
+[{{< fa message >}}](Info/contact_us.qmd) Contact Us
+
 
 
 

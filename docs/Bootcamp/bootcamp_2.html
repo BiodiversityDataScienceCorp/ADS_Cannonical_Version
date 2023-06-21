@@ -168,7 +168,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Info/contact_us.html" class="sidebar-item-text sidebar-link">Contact Us</a>
+  <a href="../Info/contact_us.html" class="sidebar-item-text sidebar-link">contact_us.html</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -428,25 +428,15 @@ Expand To See Solutions
 <pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
 (as 'lib' is unspecified)</code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: unable to access index for repository http://cran.us.r-project.org/src/contrib:
-  cannot open URL 'http://cran.us.r-project.org/src/contrib/PACKAGES'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'tidyverse' is not available for this version of R
-
-A version of this package for your version of R might be available elsewhere,
-see the ideas at
-https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: unable to access index for repository http://cran.us.r-project.org/bin/macosx/contrib/4.2:
-  cannot open URL 'http://cran.us.r-project.org/bin/macosx/contrib/4.2/PACKAGES'</code></pre>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+The downloaded binary packages are in
+    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpRQddTh/downloaded_packages</code></pre>
 </div>
 </div>
 <p>Once you have installed a package, you need to load it into your workspace. You need to do this every time you run the file.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.0     ✔ readr     2.1.4
@@ -463,27 +453,17 @@ https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-package
 <p>Your turn. For this lesson, we will use the “palmerpenguins” package, which contains a data set. This data has various measurements of penguins collectd near Palmer Station in Antarctica and was made available by Dr.&nbsp;Kristen Gorman.</p>
 <p>Using the same syntax as above, install and load the “palmerpenguins” package.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Installing package into '/Users/MilaUserAccount/Library/R/x86_64/4.2/library'
 (as 'lib' is unspecified)</code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: unable to access index for repository http://cran.us.r-project.org/src/contrib:
-  cannot open URL 'http://cran.us.r-project.org/src/contrib/PACKAGES'</code></pre>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+The downloaded binary packages are in
+    /var/folders/8_/66ctd00n6b9839b2ghhk1gjw0000gp/T//RtmpRQddTh/downloaded_packages</code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'palmerpenguins' is not available for this version of R
-
-A version of this package for your version of R might be available elsewhere,
-see the ideas at
-https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: unable to access index for repository http://cran.us.r-project.org/bin/macosx/contrib/4.2:
-  cannot open URL 'http://cran.us.r-project.org/bin/macosx/contrib/4.2/PACKAGES'</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"palmerpenguins"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"palmerpenguins"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now we have access to a data set, called penguins.</p>
 </section>
@@ -491,7 +471,7 @@ https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-package
 <h3 class="anchored" data-anchor-id="looking-at-a-data-set-and-accessing-a-column">Looking at a data set and accessing a column</h3>
 <p>You can get a glance of a data set with the function “glimpse.”</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 344
 Columns: 8
@@ -507,22 +487,22 @@ $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 
 </div>
 <p>From glimpse above, we can see that the data set contains 8 columns. To access one column, we use the dataSet$column syntax. We can then assign it to a variable.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>islands <span class="ot">&lt;-</span> penguins<span class="sc">$</span>island</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>islands <span class="ot">&lt;-</span> penguins<span class="sc">$</span>island</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now your turn. Create a variable (remember, to assign a variable use the syntax: x &lt;- thing) called penguinFlipperLength that is the flipper_length_mm column.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>penguinFlipperLength <span class="ot">&lt;-</span> penguins<span class="sc">$</span>flipper_length_mm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>penguinFlipperLength <span class="ot">&lt;-</span> penguins<span class="sc">$</span>flipper_length_mm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="selecting" class="level3">
 <h3 class="anchored" data-anchor-id="selecting">Selecting</h3>
 <p>While the syntax data$ColumnName is useful in many cases, there are times when we want to have multiple columns in a new variable. For example, we may be interested in only the penguin island and mass. We can do this with the select function.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>penguinIslandMass <span class="ot">&lt;-</span> <span class="fu">select</span>(penguins, island, body_mass_g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>penguinIslandMass <span class="ot">&lt;-</span> <span class="fu">select</span>(penguins, island, body_mass_g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Your turn. Select species and flipper_length_mm and assign it to the variable penguinSpFlipper.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>penguinSpFlipper <span class="ot">&lt;-</span> <span class="fu">select</span>(penguins, species, flipper_length_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>penguinSpFlipper <span class="ot">&lt;-</span> <span class="fu">select</span>(penguins, species, flipper_length_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Select is very useful when we have a large data set that contains information that we are uninterested in, or when we need to put our data in a specific format.</p>
 </section>
@@ -531,7 +511,7 @@ $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 
 <p>Let’s say we wanted to look at just a subset of the penguins. There are a few species of penguins in the data. We could scroll through all 344 rows of the data and note the species, or we could have R do this for us.</p>
 <p>To know all of the species present in the data, we can use the function ‘unique’. Unique looks for all of the unique values. The argument we will give unique is the specific column that we want to know all of the species of.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(penguins<span class="sc">$</span>species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">unique</span>(penguins<span class="sc">$</span>species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] Adelie    Gentoo    Chinstrap
 Levels: Adelie Chinstrap Gentoo</code></pre>
@@ -539,7 +519,7 @@ Levels: Adelie Chinstrap Gentoo</code></pre>
 </div>
 <p>Great! Now we see there are three species of penguins. Let’s say we want all of the data for only the Adelie penguins. We can accomplish this with filtering. The syntax is filter(data, column name <em>relational operator</em> value). Note that we need to put Adelie in quotes because it is a word. If we filter by a number, we don’t need quotes.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>adelieData <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, species <span class="sc">==</span> <span class="st">"Adelie"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>adelieData <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, species <span class="sc">==</span> <span class="st">"Adelie"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="relational-operators" class="level3">
@@ -556,7 +536,7 @@ Levels: Adelie Chinstrap Gentoo</code></pre>
 <p>In the <code>filter</code> function, relational operators are used to define a condition.</p>
 <p>Your turn. Create a variable called longFlipperData that is the subset of the penguin data with flipper length in mm greater than 22.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>longFlipperData <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, flipper_length_mm <span class="sc">&gt;</span> <span class="dv">22</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>longFlipperData <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, flipper_length_mm <span class="sc">&gt;</span> <span class="dv">22</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="logical-operators" class="level3">
@@ -569,11 +549,11 @@ Levels: Adelie Chinstrap Gentoo</code></pre>
 <p>In the <code>filter</code> function, logical operators are used to join conditions together.</p>
 <p>Here’s an example of how to use a logical operator with the <code>filter</code> function:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>femaleHeavyPenguins <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, sex <span class="sc">==</span> <span class="st">"female"</span> <span class="sc">&amp;</span> body_mass_g <span class="sc">&gt;</span> <span class="dv">5000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>femaleHeavyPenguins <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, sex <span class="sc">==</span> <span class="st">"female"</span> <span class="sc">&amp;</span> body_mass_g <span class="sc">&gt;</span> <span class="dv">5000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Your turn. Create a variable called biscoeAndDreamSmall that contains all the penguins from either Biscoe OR Dream Island that are less than 3000 g.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>biscoeAndDreamSmall <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Biscoe"</span> <span class="sc">|</span> island <span class="sc">==</span> <span class="st">"Dream"</span> <span class="sc">&amp;</span> body_mass_g <span class="sc">&lt;</span> <span class="dv">300</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>biscoeAndDreamSmall <span class="ot">&lt;-</span> <span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Biscoe"</span> <span class="sc">|</span> island <span class="sc">==</span> <span class="st">"Dream"</span> <span class="sc">&amp;</span> body_mass_g <span class="sc">&lt;</span> <span class="dv">300</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="the-pipe" class="level3">
@@ -583,8 +563,8 @@ Levels: Adelie Chinstrap Gentoo</code></pre>
 <p>The purpose of the pipe is to string functions and data together. You can think of it as sort of the glue that joins pieces of an assembly line together. Another way to think of it is to read it as “AND THEN”.</p>
 <p>Below we can rewrite a command using the filter function with the pipe. After the assignment symbol (&lt;-) we start with the data set, followed by the pipe, followed by the filter function. What’s different about the arguments in the filter function in this case?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>adelieData2 <span class="ot">&lt;-</span>penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span>)</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>adelieData2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>adelieData2 <span class="ot">&lt;-</span>penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>adelieData2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 152 × 8
    species island    bill_length_mm bill_depth_mm flipper_…¹ body_…² sex    year
@@ -605,22 +585,22 @@ Levels: Adelie Chinstrap Gentoo</code></pre>
 </div>
 <p>Try using the pipe in the code chunk below to create a data subset of penguins that are male and assign it to the variable malePenguins. Print it to the screen.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>malePenguins <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(sex <span class="sc">==</span> <span class="st">"male"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>malePenguins <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">filter</span>(sex <span class="sc">==</span> <span class="st">"male"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You can also use the pipe for select (and many other functions as well). Instead of putting the data name inside of the function, you can put it before the pipe.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>penguinIslandMass2 <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">select</span>(island, body_mass_g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>penguinIslandMass2 <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">select</span>(island, body_mass_g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Your turn. Use the pipe syntax to assign the columns bill_length_mm and sex to a new variable with select.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>billAndSex <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">select</span>(bill_length_mm, sex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>billAndSex <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> <span class="fu">select</span>(bill_length_mm, sex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="removing-na-values" class="level3">
 <h3 class="anchored" data-anchor-id="removing-na-values">Removing NA values</h3>
 <p>Our penguin data set contains NA values in some rows. Often, NA values create problems for calculating statistics and running models. There are many ways of doing this. One is to remove all rows with NAs in any column using the function na.omit.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>noNAPenguins <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>noNAPenguins <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You can see that there are 333 rows (by the 333 observations in the Environment tab). We started with 344 rows in the original penguin set.</p>
 <p>Great job!</p>

@@ -1,2 +1,3 @@
 # Lessons
 
+Lessons are in-class activities that we will work through together. They are intended to lay the ground work for your assignment for the week, and are all building towards your final SSA. 

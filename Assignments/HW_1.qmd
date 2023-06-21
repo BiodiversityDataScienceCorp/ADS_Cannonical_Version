@@ -67,6 +67,6 @@ Coding Challenge: Create this assignment in markdown
 
 -   **UA students upload your document into D2L**
 
--   **Update the google sheet below with your GitHub and Slack Username <https://docs.google.com/spreadsheets/d/1ooLI9HfDxCiuGlLvv8L5sxLxbeWj6d5IGIapKAPUdA4/edit?usp=sharing>**
+-   **Update our class google sheet with your GitHub and Slack Username **
 
 -   If you have not joined Slack (in class activity), please do so [here](https://join.slack.com/t/adsmonarchcon-cgp8626/shared_invite/zt-1nducmn51-3vGovy2GVZoYK~t5JsMUKQ).
