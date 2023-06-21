@@ -2,7 +2,6 @@
 
 [{{< fa people-group >}}](Info/our_team.qmd) Our Team
 
-[{{< fa message >}}](Info/contact_us.qmd) Contact Us
 
 # Course Materials
 
