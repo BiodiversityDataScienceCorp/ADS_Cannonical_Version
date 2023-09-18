@@ -14,7 +14,7 @@ website:
       - href: Info/contact_us.qmd
       - href: Info/syllabus.qmd
       - href: schedule.qmd
-      - section: "Coding Boot Campz"
+      - section: "Coding Boot Campzz"
         contents: 
           - href: Bootcamp/coding_basics_for_this_course.qmd
           - href: Bootcamp/bootcamp_1.qmd
