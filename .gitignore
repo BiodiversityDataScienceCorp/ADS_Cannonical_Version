@@ -58,3 +58,5 @@ ranaData.csv
 /_site/
 .DS_Store
 
+
+/.luarc.json
