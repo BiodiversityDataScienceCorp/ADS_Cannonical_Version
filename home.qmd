@@ -9,7 +9,7 @@
 
 [{{< fa calendar >}}](schedule.qmd) Schedule
 
-[{{< fa code >}}](Bootcamp/coding_basics_for_this_course.qmd) Coding Boot Camp
+[{{< fa code >}}](Bootcamp/coding_basics_for_this_course.qmd) Coding Boot Campzz
 
 [{{< fa book-open >}}](Readings/readings.qmd)  Readings
 

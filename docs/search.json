@@ -58,14 +58,14 @@
   {
     "objectID": "home.html",
     "href": "home.html",
-    "title": "",
+    "title": "Home",
     "section": "",
-    "text": "Home\n Our Team\n\n\nCourse Materials\n Syllabus\n Schedule\n Coding Boot Camp\n Readings\n Lessons\n Assignments\n\n\nFor Instructors\n Creating your own website\n Tips"
+    "text": "Home\n Our Team\n\n\nCourse Materials\n Syllabus\n Schedule\n Coding Boot Campzz\n Readings\n Lessons\n Assignments\n\n\nFor Instructors\n Creating your own website\n Tips"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "",
+    "title": "Home",
     "section": "",
     "text": "Home\n Our Team\n\n\nCourse Materials\n Syllabus\n Schedule\n Coding Boot Camp\n Readings\n Lessons\n Assignments\n\n\nFor Instructors\n Creating your own website\n Tips"
   },
@@ -247,6 +247,13 @@
   {
     "objectID": "schedule.html",
     "href": "schedule.html",
+    "title": "Class Schedule",
+    "section": "",
+    "text": "Week\nTopic\nReading\nLesson\nAssignment\n\n\n\n\n1\nAccounts creation\n\n\n\n\n\n2\nEndangered Species Act\n\n\n\n\n\n3\nGitHub, R, R studio\n\n\n\n\n\n4\nGBIF - data wrangling, viz\n\n\n\n\n\n5\nFocal species - data wrangling, viz\n\n\n\n\n\n6\nCurrent SDM\n\n\n\n\n\n7\nFuture SDM\n\n\n\n\n\n8\nFocal species SDM\n\n\n\n\n\n9\nFocal species presentation + repo\n\n\n\n\n\n10\nPresentation\n\n\n\n\n\n11\nGroup work re stakeholder feedback\n\n\n\n\n\n12\nGroup work re stakeholder feedback\n\n\n\n\n\n13\nGroup work for final presentations\n\n\n\n\n\n14\nStakeholder visit\n\n\n\n\n\n15\nReflection and evaluation"
+  },
+  {
+    "objectID": "schedule.html#class-schedule",
+    "href": "schedule.html#class-schedule",
     "title": "Class Schedule",
     "section": "",
     "text": "Week\nTopic\nReading\nLesson\nAssignment\n\n\n\n\n1\nAccounts creation\n\n\n\n\n\n2\nEndangered Species Act\n\n\n\n\n\n3\nGitHub, R, R studio\n\n\n\n\n\n4\nGBIF - data wrangling, viz\n\n\n\n\n\n5\nFocal species - data wrangling, viz\n\n\n\n\n\n6\nCurrent SDM\n\n\n\n\n\n7\nFuture SDM\n\n\n\n\n\n8\nFocal species SDM\n\n\n\n\n\n9\nFocal species presentation + repo\n\n\n\n\n\n10\nPresentation\n\n\n\n\n\n11\nGroup work re stakeholder feedback\n\n\n\n\n\n12\nGroup work re stakeholder feedback\n\n\n\n\n\n13\nGroup work for final presentations\n\n\n\n\n\n14\nStakeholder visit\n\n\n\n\n\n15\nReflection and evaluation"
